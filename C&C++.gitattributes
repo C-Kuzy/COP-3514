@@ -12,6 +12,7 @@
 
  # Applying Necessary Programming Language Ignores for the current Repository
  # Current Repository: C-Kuzy/COP-3514
+
  "Files This Repository Wants to detect:"
   *.c linguist-detectable=true
   *.c++ linguist-detectable=true

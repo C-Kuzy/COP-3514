@@ -5,6 +5,22 @@
 */
 
  // Purpose of C Programming...?
-    // - C provides access to machine-level concepts that other langauges want to hide (using pointers and bytes)
-    // - 
+    
+   // - C provides access to machine-level concepts that other langauges want to hide (using pointers and bytes)
+   // - C is usally used for applications that prioritize embedded systems and game development
 
+ // Origins of C Programming
+    
+   // - C is considered a by-prject of UNIX
+      
+      // - Developed at Bell Laboratories
+      // - Major contributers Ken Thompson and Dennis Ritchie
+
+ // What are the C-Based Languages?
+    
+    // C++: Super set of C with object-oriented programming
+    // Objective - C: A superset of C with Object-oriented capabilities for Mac OS and iOS
+    // Java: Based on C++ and therefore inherits many C features
+    // C#: A more recent langauge derived from C++ and Java concepts/fundamentals
+
+// PREPARE FOR THE FOLLOWING CHAPTERS OF INFORMATION AND FOLLOW ALONG!

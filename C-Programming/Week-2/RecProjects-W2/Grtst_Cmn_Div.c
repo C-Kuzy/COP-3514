@@ -1,6 +1,6 @@
 /*
  Author: Connor Kouznetsov
- Description: Using a program that after entering two integeres will calculate &
+ Description: Using a program that after entering two integers will calculate &
               display the greatest common divisor (GCD)
 */
 

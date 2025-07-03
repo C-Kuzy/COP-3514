@@ -84,3 +84,18 @@
         // Block vs Line comments... Which are better?
             // Line comments are safer because you won't have to worry about the comment accidentally consuming part of a program
             
+ // Necessary Variables &/or Types
+
+        // Most programs need ways to store data temporarily, so we use variables! Each variable needs a type...
+            // We can most commonly use int, double, and char...
+
+ // What to do when printing values of a variable...
+
+        // printf can be used to display a variable's value
+            // printf("Height: %d\n", height);
+                // height is the variable we are calling for the temporarily stored value to display
+                // "%d" is a placeholder for our integer
+        
+        // Theres no limit to the # of variables that are printed by a single call of printf
+            // This means you can set as many variables up to work in your program
+            // Remember that %d only works for whole number integers... Use %f if you have a float value, otherwise known as a decimal number

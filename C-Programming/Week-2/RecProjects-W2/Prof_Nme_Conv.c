@@ -1,6 +1,6 @@
 /*
  Author: Connor Kouznetsov
- Description: 
+ Description: Recitation week #2 practice
 */
 
 #include <stdio.h>
@@ -11,7 +11,7 @@ int main()
 
     printf("Enter a valid First & Last name: ");
 
-    // Read the frist letter
+    // Read the first letter
     scanf(" %c", &initial);
 
     // Skip the rest of the first name

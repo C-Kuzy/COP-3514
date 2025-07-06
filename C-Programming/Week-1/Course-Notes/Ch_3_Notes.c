@@ -4,7 +4,7 @@
  Description: Chapter 3 Formatted Input/Outputs
 */
 
- // What are Identifiers?
+    // What are Identifiers?
 
     // Identifiers are variables, functions, macros, and other entities we use as they contain letters, digits, and underscores (cannot start with a digit)
         // Examples:              times100          |          you_are_cool         |             power_of_3            |            _better
@@ -22,4 +22,11 @@
 
     // Printing Variable Values
 
-    
+        printf // Is used to display the current value of a variable
+            printf("Height: %d\n", height); // used to display the current value of an initialized height variable
+                // Know there is no limit to the number of variables which we can call using printf
+                // Note that compilers are not required to check if a specific conversion specification is appropriate
+                    // This means that if an incorrect specification is used, the program will produce pointless information
+
+    // Initialization of Variables  
+              

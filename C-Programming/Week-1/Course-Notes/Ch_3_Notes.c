@@ -29,4 +29,10 @@
                     // This means that if an incorrect specification is used, the program will produce pointless information
 
     // Initialization of Variables  
-              
+        
+        int height = 15; // The inital value of a variable may be included in its declaration: 
+        int height = 15, length = 3, width = 7 // Any number of variables can be initialized within the same declaration
+                // The concept here is that each variable requires initialization, aka defining a value (= 15, = 3, or = 7)
+
+        // Remember, when initializing a variable, most are automatically set to zero when it executes, but some are not default at zero
+        // A variable which does not have a default value or been assigned a value is considered uninitialized, resulting in an unpredictable result

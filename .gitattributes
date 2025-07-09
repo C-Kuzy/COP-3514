@@ -28,7 +28,7 @@
   *.go linguist-detectable=false
   *.txt linguist-detectable=false
   *.rtf linguist-detectable=false
-  *.docx linguist-detecable=false
-  *.xlsx linguist-detecable=false
-  *.pptx linguist-detecable=false
+  *.docx linguist-detectable=false
+  *.xlsx linguist-detectable=false
+  *.pptx linguist-detectable=false
   *.pdf linguist-detectable=false

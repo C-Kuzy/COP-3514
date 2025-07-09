@@ -16,7 +16,7 @@
  "Files This Repository Wants to detect:"
   *.c linguist-detectable=true
   *.c++ linguist-detectable=true
-  *.pdf linguist-detecable=true
+  *.asm linguist-detectable=true
 
  "Files This Repository is Restricing:"
   *.py linguist-detectable=false

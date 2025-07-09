@@ -17,7 +17,7 @@
   *.c linguist-detectable=true
   *.c++ linguist-detectable=true
 
- "Files This Repository is Restricing:"
+ "Files This Repository is Restricting:"
   *.py linguist-detectable=false
   *.java linguist-detectable=false
   *.html linguist-detectable=false

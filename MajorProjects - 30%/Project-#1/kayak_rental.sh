@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Directions:
+# Directions: Necessary for testing locally on WSL/Unix sub systems
 #
 # The `exe` variable must be the same as your executable's name. Adjust if needed.
 #

@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Local testing script
+# Local testing script for Linux/WSL/Unix Subsystems
 # Make sure you're in the P2_t2_tests directory
 
 echo "=== COMPILING ==="

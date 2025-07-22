@@ -15,11 +15,11 @@
 
  "Files This Repository Wants to detect:"
   *.c linguist-detectable=true
-  *.c++ linguist-detectable=true
 
  "Files This Repository is Restricting:"
   *.py linguist-detectable=false
   *.java linguist-detectable=false
+  *.c++ linguist-detectable=false
   *.html linguist-detectable=false
   *.css linguist-detectable=false
   *.js linguist-detectable=false
@@ -32,3 +32,4 @@
   *.xlsx linguist-detectable=false
   *.pptx linguist-detectable=false
   *.pdf linguist-detectable=false
+  *.sh linguist-detectable=false

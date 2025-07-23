@@ -56,3 +56,12 @@ static const Question quiz[] = {
              "s1.num == s2.num && strcmp(s1.str,s2.str)==0"},   // 3 == D
             3,                                                  // Answer = (3 == D)
             "Compare integers directly; compare strings with strcmp()==0."},
+
+    /* QUESTION #5 */ 
+    {"Which of the following correctly declares a dynamic array of integers of size n?", 
+            {"int a; a = n * malloc(sizeof(int));",     // 0 == A
+             "int a; a = malloc(n * sizeof(int));",     // 1 == B
+             "int *a; a = malloc(n* sizeof(int));",     // 2 == C
+             "int *a; a = n * malloc(sizeof(int));"},   // 3 == D
+            2,                                          // Answer = (2 == C)
+            "Need a *pointer* and malloc(n*sizeof(int))."},

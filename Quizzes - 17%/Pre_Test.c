@@ -1,7 +1,4 @@
 /*
-
-STILL BEING EDITED AS OF 7/21/2025
-
  Author: Connor Kouznetsov
  Description: 2025 Summer C Semester: COP-3514 PRE-TEST Multiple Choice Answer Bank
 */

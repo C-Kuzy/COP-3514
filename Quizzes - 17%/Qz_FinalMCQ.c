@@ -38,3 +38,12 @@ static const Question quiz[] = {
              "For writing and creating a new file 'source.txt' if 'source.txt' doesn't exist"},        // 3 == D
              3,                                                                                        // Answer = (3 == D)
              "\"w\" creates/truncates the file and opens it for writing."},
+
+    /* QUESTION #3 */ 
+    {"What statement is correct for reading a row of data?\n'course_id' is a string variable,'student_id' is an int variable, and 'status' is a string variable.\n\nfscanf(pFile, '\%s \%d \%s', _________________________);", 
+            {"&course_id, &student_id, &status",   // 0 == A
+             "&course_id, student_id, &status",    // 1 == B
+             "course_id, student_id, status",      // 2 == C 
+             "course_id, &student_id, status"},    // 3 == D
+            3,                                     // Answer = (3 == D) 
+            "Arrays decay to pointers automatically; the int still needs &."},

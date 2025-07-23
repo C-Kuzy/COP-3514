@@ -47,3 +47,12 @@ static const Question quiz[] = {
              "course_id, &student_id, status"},    // 3 == D
             3,                                     // Answer = (3 == D) 
             "Arrays decay to pointers automatically; the int still needs &."},
+
+    /* QUESTION #4 */ 
+    {"Given the following struct declaration and int, which condition will determine if s1 & s2 contain the same values for num & str?\n\nstruct s {\n  int num;\n  char str[31];\n}\nstruct s s1, s2;\n", 
+            {"s1 == s2",                                        // 0 == A
+             "s1.num == s2.num && s1.str == s2.str",            // 1 == B
+             "s1.num == s2.num && strcmp(s1.str,s2.str)",       // 2 == C
+             "s1.num == s2.num && strcmp(s1.str,s2.str)==0"},   // 3 == D
+            3,                                                  // Answer = (3 == D)
+            "Compare integers directly; compare strings with strcmp()==0."},

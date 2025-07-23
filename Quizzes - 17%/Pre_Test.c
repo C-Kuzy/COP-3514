@@ -41,17 +41,32 @@ static const Question quiz[] = {
             },
 
     /* QUESTION #3 */
-    {"What is the value of sum after the following program fragment is executed? Assume sum and i are int variables.\n\nsum = 0;\nfor (i = 0; i < 3; i++) {\n"
-            {"",},
-
-
-    },
+    {"What is the value of sum after the following program fragment is executed? Assume sum and i are int variables.\n\nsum = 0;\nfor (i = 0; i < 3; i++) {\n sum += i;\n if (i \% 2 == 1)\n break;\n}"
+            {"0",                      // 0 == A
+             "1",                      // 1 == B
+             "2",                      // 2 == C
+             "3",                      // 3 == D
+             "None of the above..."},  // 4 == E
+            1,                         // Answer = (1 == B)
+            },
 
     /* QUESTION #4 */
-    {""{"",},}
+    {"Which of the following loops would adequately add 1 to each element stored in values? Assume that values is an integer array (list) of 10 elements and j is an integer variable."
+            {"for (j=0; j<9; j++) values[j]++; ////In Python: for j in range (1, 9): values[j]=1",       // 0 == A
+             "for (j=0; j<=10; j++) values[j]++; ////In Python: for j in range (1, 11): values[j]=1 ",   // 1 == B
+             "for (j=1; j<10; j++) values[j]++; //In Python: for j in range (1, 10): values[j]=1 ",      // 2 == C
+             "for (j=0; j<10; j++) values[j]++; //In Python: for j in range (0, 10): values[j]=1 ",      // 3 == D
+             "None of the above..."},                                                                    // 4 == E
+            3,
+            },
 
     /* QUESTION #5 */
-    {""{"",},}
+    {"What output does the following program fragment produce?\nint n;\nfor (n = 9; n > 0; n -= 2) {\n   printf('\%d', n);"
+            {"9 7 5 3",
+             "",
+             "",
+             "",
+             ""},},
 
 }
 
@@ -77,7 +92,7 @@ int main(void) {
         qs_ordr[i] = i;
     shuffle_int_array(qs_ordr, NQ);
 
-    printf("\nWelcome to Summer C: 2025 COP-3514 Final Exam Multiple Choice Review (enter Q/q to quit)\n\n");
+    printf("\nWelcome to Summer C: 2025 COP-3514 Pre-TEST Examination (enter Q/q to quit)\n\n");
 
     int correct_count = 0;
     int correct_bank[NQ] = {0}; // 1 if correct, 0 if not

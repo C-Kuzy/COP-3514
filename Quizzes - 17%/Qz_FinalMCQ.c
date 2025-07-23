@@ -29,3 +29,12 @@ static const Question quiz[] = {
              "For creating a new file 'source.txt' for writing"},   // 3 == D
             0,                                                      // Answer = (0 == A)
             "Mode \"r\" opens an *existing* file read‑only."},
+
+    /* QUESTION #2 */ 
+    {"What does the following program open 'source.txt' to do?\n\n#include <stdio.h>\nint main() {\n  FILE *fp;\n\n  fp = fopen('source.txt', 'w')\n  return 0;\n}", 
+            {"For reading",                                                                            // 0 == A
+             "For reading and writing",                                                                // 1 == B
+             "For writing and does not open the file if 'source.txt' doesn't exist (prompts error)",   // 2 == C
+             "For writing and creating a new file 'source.txt' if 'source.txt' doesn't exist"},        // 3 == D
+             3,                                                                                        // Answer = (3 == D)
+             "\"w\" creates/truncates the file and opens it for writing."},

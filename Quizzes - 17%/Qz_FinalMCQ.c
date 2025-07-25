@@ -124,3 +124,5 @@ static const Question quiz[] = {
             2,                        // Answer = (2 == C)
             "Headers hold *declarations*; put the actual function definition "
             "in a .c source file to avoid multiple‑definition errors."}};
+
+#define NQ ((int)(sizeof quiz / sizeof quiz[0]))

@@ -65,3 +65,12 @@ static const Question quiz[] = {
              "int *a; a = n * malloc(sizeof(int));"},   // 3 == D
             2,                                          // Answer = (2 == C)
             "Need a *pointer* and malloc(n*sizeof(int))."},
+
+    /* QUESTION #6 */ 
+    {"Given a linked list of 'node' declared as follows, which of the following conditions checks if p is pointing to the FIRST NODE of the linked list named 'list'.\n\nstruct node {\n  int number;\n  struct node *next;\n};", 
+            {"p == list",          // 0 == A
+             "p == NULL",          // 1 == B
+             "p->next == NULL",    // 2 == C
+             "p == list->next"},   // 3 == D
+            0,                     // Answer = (0 == A) 
+            "`list` holds the address of the *head* node, so p==list."},

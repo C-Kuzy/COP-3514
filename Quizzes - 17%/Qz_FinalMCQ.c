@@ -94,3 +94,33 @@ static const Question quiz[] = {
             2,                                // Answer = (2 == C)
             "The loop frees the node (dangling) *before* keeping a link to the "
             "next node, so all remaining nodes become unreachable (leak)."},
+
+    /* QUESTION #9 */ 
+    {"Which function‑prototype syntax using a function pointer is **invalid**?", 
+            {"int    g(int (*f)(int), int n);",   // 0 == A
+             "double g(char f());",               // 1 == B
+             "int    g((*f)(int), int n);",       // 2 == C
+             "double g(double f(int,int));"},     // 3 == D
+            2,                                    // Answer = (2 == C)
+            "`int g((*f)(int), int n);` is illegal because the pointer‑to‑"
+            "function declarator `(*f)(int)` *lacks a base type*.  In C a "
+            "declarator must be preceded by its type (e.g., `int (*f)(int)`)."},
+
+    /* QUESTION #10 */ 
+    {"Which of the following statements will calculate the integral of square root of 0 to 1, using the integrate() function?", 
+            {"integrate(0.0, 1);",            // 0 == A
+             "integrate(sqrt(x), 0.0, 1);",   // 1 == B
+             "integrate(sqrt, 0.0, 1);",      // 2 == C
+             "integrate(sqrt(0.0, 1));"},     // 3 == D
+            2,                                // Answer = (2 == C)
+            "Pass a *function pointer* (`sqrt`) plus the lower & upper bounds."},
+
+    /* QUESTION #11 */ 
+    {"Which of these should **NOT** be placed in a header file?", 
+            {"Macro definition",      // 0 == A
+             "Type definition",       // 1 == B
+             "Function definition",   // 2 == C
+             "Function prototype"},   // 3 == D
+            2,                        // Answer = (2 == C)
+            "Headers hold *declarations*; put the actual function definition "
+            "in a .c source file to avoid multiple‑definition errors."}};

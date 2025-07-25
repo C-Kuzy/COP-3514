@@ -146,3 +146,21 @@ int main(void) {
     for (int i = 0; i < NQ; ++i)
         qs_ordr[i] = i;
     shuffle_int_array(qs_ordr, NQ);
+
+    printf("\nWelcome to Summer C: 2025 COP-3514 Final Exam Multiple Choice Review (enter Q/q to quit)\n\n");
+
+    int correct_count = 0;
+    int correct_bank[NQ] = {0}; // 1 if correct, 0 if not
+
+    for (int qn = 0; qn < NQ; ++qn) {
+        const Question *q = &quiz[qs_ordr[qn]];
+
+        int aorder[4] = {0, 1, 2, 3};
+        shuffle_int_array(aorder, 4);
+
+        int correct_pos = 0;
+        for (int k = 0; k < 4; ++k)
+            if (aorder[k] == q->correct) {
+                correct_pos = k;
+                break;
+            }

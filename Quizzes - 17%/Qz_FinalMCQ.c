@@ -126,3 +126,23 @@ static const Question quiz[] = {
             "in a .c source file to avoid multiple‑definition errors."}};
 
 #define NQ ((int)(sizeof quiz / sizeof quiz[0]))
+
+/* ---------- helpers ---------- */
+static void shuffle_int_array(int *a, int n) {
+    for (int i = n - 1; i > 0; --i)
+    {
+        int j = rand() % (i + 1);
+        int tmp = a[i];
+        a[i] = a[j];
+        a[j] = tmp;
+    }
+}
+
+* ---------- Main Function ---------- */
+int main(void) {
+    srand((unsigned)time(NULL)); /* new order each run */
+
+    int qs_ordr[NQ];
+    for (int i = 0; i < NQ; ++i)
+        qs_ordr[i] = i;
+    shuffle_int_array(qs_ordr, NQ);

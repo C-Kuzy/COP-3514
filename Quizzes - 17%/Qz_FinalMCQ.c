@@ -84,3 +84,13 @@ static const Question quiz[] = {
             2,                     // Answer = (2 == C)
             "In a singly‑linked list, the last node’s `next` field is **NULL** "
             "because there is no successor."},
+
+    /* QUESTION #8 */ 
+    {"What's wrong with the following function?\n\nvoid clear_list(struct node *list) {\n  struct node *p;\n  for (p = list; p != NULL; p = p->next)\n    free(p);\n}", 
+            {"Causes memory leak",            // 0 == A
+             "Leaves a dangling pointer",     // 1 == B
+             "Both A & B",                    // 2 == C
+             "Neither issue – it is fine"},   // 3 == D
+            2,                                // Answer = (2 == C)
+            "The loop frees the node (dangling) *before* keeping a link to the "
+            "next node, so all remaining nodes become unreachable (leak)."},

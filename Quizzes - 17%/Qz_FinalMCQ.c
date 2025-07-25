@@ -164,3 +164,46 @@ int main(void) {
                 correct_pos = k;
                 break;
             }
+        printf("\nQ%d: %s\n", qn + 1, q->prompt);
+        for (int k = 0; k < 4; ++k)
+            printf("   %c) %s\n", 'A' + k, q->choices[aorder[k]]);
+
+        printf("ENTER YOUR ANSWER {A‑D / Q}: ");
+        char ans;
+        if (scanf(" %c", &ans) != 1) {
+            puts("Invalid Input Error.");
+            return 1;
+        }
+        ans = toupper((unsigned char)ans);
+
+        if (ans == 'Q') {
+            puts("See ya Later!");
+            break;
+        }
+        if (ans < 'A' || ans > 'D') {
+            puts("Please enter A‑D or Q.");
+            --qn;
+            continue;
+        }
+
+        if (ans - 'A' == correct_pos) {
+            puts("✅ CORRECT! ✅");
+            correct_count++;
+            correct_bank[qn] = 1;
+        }
+        else {
+            printf("❌ INCORRECT ❌. Correct answer: %c\n    %s\n",
+                   'A' + correct_pos, q->why);
+        }
+    }
+
+    // Print answer bank and percentage
+    printf("\n=== Answer Bank ===\n");
+    for (int i = 0; i < NQ; ++i) {
+        printf("Q%d: %s\n", i + 1, correct_bank[i] ? "✅ CORRECT ✅" : "❌ INCORRECT ❌");
+    }
+    double percent = 100.0 * correct_count / NQ;
+    printf("\nTOTAL QUIZ SCORE: %d/%d (%.2f%%)\n\n", correct_count, NQ, percent);
+
+    return 0;
+}

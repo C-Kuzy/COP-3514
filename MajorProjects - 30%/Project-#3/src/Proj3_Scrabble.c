@@ -5,7 +5,7 @@
                           game known as Scrabble. The goal is to read two words from a file named "input.txt" 
                           which will then follow the game's specified rules to calculate each user's score to 
                           determine a winner. Refer to the following example below to understand the goal...
-
+                         
     1. WHAT THE PROGRAM SHOULD ACHIEVE:
 
             - Example User Prompted Input(s):

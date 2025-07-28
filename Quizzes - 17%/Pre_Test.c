@@ -61,12 +61,14 @@ static const Question quiz[] = {
             },
 
     /* QUESTION #5 */
-    {"What output does the following program fragment produce?\nint n;\nfor (n = 9; n > 0; n -= 2) {\n   printf('\%d', n);"
-            {"9 7 5 3",
-             "",
-             "",
-             "",
-             ""},},
+    {"What output does the following program fragment produce?\nint n;\nfor (n = 9; n > 0; n -= 2) {\n   printf('\%d', n);\n}"
+            {"9 7 5 3",                 
+             "9 7 5 3 1",
+             "9 8 7 6 5 4 3 2 1",
+             "Infinite Loop",
+             "None of the above..."},
+            1,
+            },
 
 }
 

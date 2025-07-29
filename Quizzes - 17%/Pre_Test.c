@@ -11,10 +11,10 @@
 #define MX_Options 5
 
 /* ---------------------------- Question Bank Structure ---------------------------- */
-struct {
+typedef struct {
     const char *prompt;               // Refers to Displaying Question Prompt
     const char *choices[MX_Options];  // Refers to displaying answer choices A-E 
-    int correct;                      // Searches through 
+    int correct;                      // Searches through answer choices and selects the correct answer
     const char *why;                  // Got the Question wrong? There's feedback for you!
 } Question;
 
@@ -39,7 +39,7 @@ static const Question quiz[] = {
              "It stores the largest value in the list (the maximum) in foo",                      // 3 == D
              "None of the above..."},                                                             // 4 == E
             3,                                                                                    // Answer = (3 == D)
-            },
+            ""},
 
     /* QUESTION #3 */
     {"What is the value of sum after the following program fragment is executed? Assume sum and i are int variables.\n\nsum = 0;\nfor (i = 0; i < 3; i++) {\n sum += i;\n if (i \% 2 == 1)\n break;\n}"
@@ -49,7 +49,7 @@ static const Question quiz[] = {
              "3",                      // 3 == D
              "None of the above..."},  // 4 == E
             1,                         // Answer = (1 == B)
-            },
+            ""},
 
     /* QUESTION #4 */
     {"Which of the following loops would adequately add 1 to each element stored in values? Assume that values is an integer array (list) of 10 elements and j is an integer variable."
@@ -58,18 +58,18 @@ static const Question quiz[] = {
              "for (j=1; j<10; j++) values[j]++; //In Python: for j in range (1, 10): values[j]=1 ",      // 2 == C
              "for (j=0; j<10; j++) values[j]++; //In Python: for j in range (0, 10): values[j]=1 ",      // 3 == D
              "None of the above..."},                                                                    // 4 == E
-            3,
-            },
+            3,                                                                                           // Answer = (3 == D)
+            ""},
 
     /* QUESTION #5 */
     {"What output does the following program fragment produce?\nint n;\nfor (n = 9; n > 0; n -= 2) {\n   printf('\%d', n);\n}"
-            {"9 7 5 3",                 
-             "9 7 5 3 1",
-             "9 8 7 6 5 4 3 2 1",
-             "Infinite Loop",
-             "None of the above..."},
+            {"9 7 5 3",                // 0 == A
+             "9 7 5 3 1",              // 1 == B
+             "9 8 7 6 5 4 3 2 1",      // 2 == C
+             "Infinite Loop",          // 3 == D
+             "None of the above..."},  // 4 == E
             1,
-            },
+            ""},
 
 }
 

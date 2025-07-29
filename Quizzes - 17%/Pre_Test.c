@@ -17,7 +17,7 @@ struct {
     const char *why;                  // Got the Question wrong? There's feedback for you!
 } Question;
 
-/* REFERENCE QUESTIONS FOR Multiple Choice: Canvas -> COP 3514 -> Modules -> 1 - Pre-Test */
+/* REFERENCE QUESTIONS FOR Multiple Choice: Canvas -> COP 3514 -> Modules -> Week #1 -> 1 - Pre-Test */
 static const Question quiz[] = {
 
     /* QUESTION #1 */

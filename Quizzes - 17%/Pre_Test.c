@@ -7,6 +7,7 @@
 #include <ctype.h>
 #include <stdlib.h>
 #include <time.h>
+#include <stddef.h>
 #define MX_Options 5
 
 /* ---------------------------- Question Bank Structure ---------------------------- */

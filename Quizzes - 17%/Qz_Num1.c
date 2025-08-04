@@ -22,7 +22,7 @@ struct {
 static const Question quiz[] = {
 
     /* QUESTION #1 */
-    {"What is an lvalue in C programming?\n",
+    {"What is an lvalue in C programming?\n\n",
         {"An error message",                     // 0 == A
          "A label name",                         // 1 == B
          "An object stored in computer memory",  // 2 == C
@@ -31,7 +31,7 @@ static const Question quiz[] = {
         ""},
 
     /* QUESTION #2 */
-    {"What does the statement 'count++' do?\n",
+    {"What does the statement 'count++' do?\n\n",
         {"Decrements 'count' by 1",   // 0 == A
          "Increments 'count' by 1",   // 1 == B
          "Sets 'count' to 0",         // 2 == C
@@ -40,7 +40,7 @@ static const Question quiz[] = {
         ""},
 
     /* QUESTION #3 */
-    {"Which of the following is a correct use of assignment chaining?\n",
+    {"Which of the following is a correct use of assignment chaining?\n\n",
         {"i + j + k = 0;",     // 0 == A
          "i = j = k = 0;",     // 1 == B
          "i == j == k == 0;",  // 2 == C
@@ -59,19 +59,24 @@ static const Question quiz[] = {
 
     /* QUESTION #5 */
     {"Which form of increment returns the incremented value immediately?\n",
-        {"++x",   //
-         "x--",   //
-         "x++",   //
-         "--x"},  //
-        0,        //
+        {"++x",   // 0 == A
+         "x--",   // 1 == B
+         "x++",   // 2 == C
+         "--x"},  // 3 == D
+        0,        // Answer = (0 == A)
         ""},
 
     /* QUESTION #6 */
     {"In a 'switch' statement, what data types can the controlling expression be?\n",
-        {""}}
+        {"string and float",  // 0 == A
+         "array",             // 1 == B
+         "float and double",  // 2 == C
+         "int, char, enum"},  // 3 == D
+        3,                    // Answer = (3 == D)
+        ""}, 
 
     /* QUESTION #7 */
-
+    {"What is the output if grade = 3\n\n switch (grade) {\n  case 4: printf('Excellent');\n  case 3: printf('Good');\n  case 2: printf('Average');\n  case 1: printf('Poor');\n  case 0: printf('Failing');\n  default: printf('Illegal grade');\n}\n\n"{}}
 
     /* QUESTION #8 */
 
@@ -82,7 +87,7 @@ static const Question quiz[] = {
     /* QUESTION #10 */
 
 
-    /* QUESTION #11 */ //ha
+    /* QUESTION #11 */
 
 
     /* QUESTION #12 */
@@ -113,7 +118,7 @@ static const Question quiz[] = {
     {{}}
 
 
-#define NQ ((int) )
+#define NQ ((int)(sizeof quiz / sizeof quiz[0]))
 
 /* ---------- Main Function ---------- */
 int main(void) {
@@ -185,5 +190,3 @@ int main(void) {
 
     return 0;
 }
-
-

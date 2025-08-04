@@ -7,6 +7,7 @@
 #include <ctype.h>
 #include <stdlib.h>
 #include <time.h>
+#include <stddef.h>
 #define MX_Options 4
 
 
@@ -49,7 +50,7 @@ static const Question quiz[] = {
             "Arrays decay to pointers automatically; the int still needs &."},
 
     /* QUESTION #4 */ 
-    {"Given the following struct declaration and int, which condition will determine if s1 & s2 contain the same values for num & str?\n\nstruct s {\n  int num;\n  char str[31];\n}\nstruct s s1, s2;\n", 
+    {"Given the following struct declaration and int, which condition will determine if s1 & s2 contain the same values for num & str?\n\nstruct s {\n  int num;\n  char str[31];\n}\nstruct s s1, s2;", 
             {"s1 == s2",                                        // 0 == A
              "s1.num == s2.num && s1.str == s2.str",            // 1 == B
              "s1.num == s2.num && strcmp(s1.str,s2.str)",       // 2 == C
@@ -138,7 +139,7 @@ static void shuffle_int_array(int *a, int n) {
     }
 }
 
-* ---------- Main Function ---------- */
+/* ---------- Main Function ---------- */
 int main(void) {
     srand((unsigned)time(NULL)); /* new order each run */
 
@@ -164,6 +165,7 @@ int main(void) {
                 correct_pos = k;
                 break;
             }
+
         printf("\nQ%d: %s\n", qn + 1, q->prompt);
         for (int k = 0; k < 4; ++k)
             printf("   %c) %s\n", 'A' + k, q->choices[aorder[k]]);

@@ -31,7 +31,7 @@ static const Question quiz[] = {
         ""},
 
     /* QUESTION #2 */
-    {"What does the statement 'count++' do?",
+    {"What does the statement \"count++\" do?",
         {"Decrements 'count' by 1",   // 0 == A
          "Increments 'count' by 1",   // 1 == B
          "Sets 'count' to 0",         // 2 == C
@@ -67,7 +67,7 @@ static const Question quiz[] = {
         ""},
 
     /* QUESTION #6 */
-    {"In a 'switch' statement, what data types can the controlling expression be?",
+    {"In a \"switch\" statement, what data types can the controlling expression be?",
         {"string and float",  // 0 == A
          "array",             // 1 == B
          "float and double",  // 2 == C
@@ -76,46 +76,82 @@ static const Question quiz[] = {
         ""}, 
 
     /* QUESTION #7 */
-    {"What is the output if grade = 3\n\n switch (grade) {\n  case 4: printf('Excellent');\n  case 3: printf('Good');\n  case 2: printf('Average');\n  case 1: printf('Poor');\n  case 0: printf('Failing');\n  default: printf('Illegal grade');\n}\n\n"{,}},
+    {"What is the output if grade = 3\n\n switch (grade) {\n  case 4: printf(\"Excellent\");\n  case 3: printf(\"Good\");\n  case 2: printf(\"Average\");\n  case 1: printf(\"Poor\");\n  case 0: printf(\"Failing\");\n  default: printf(\"Illegal grade\");\n}\n\n",
+        {"GoodAveragePoorFailingIllegal grade",
+         "Illegal grade",
+         "GoodAverage",
+         "Good"},
+        0,
+        ""},
 
     /* QUESTION #8 */
-
+    {"Which Unix command is used to move or rename a file?",
+        {"mv",  // 0 == A
+         "cp",  // 1 == B
+         "cd",  // 2 == C
+         "rm"}, // 3 == D
+        0,      // Answer = (0 == A)
+        "HINT: Does 2 Operations, MOVES and RENAMES a file or directory"},
 
     /* QUESTION #9 */
-
+    {"What does \"rm-i\" do?",
+        {"Moves files",                      // 0 == A
+         "Removes files with confirmation",  // 1 == B
+         "Copies files",                     // 2 == C
+         "Renames files"},                   // 3 == D
+        1,                                   // Answer = (1 == B)
+        ""},
 
     /* QUESTION #10 */
-
+    {"How can you clear the terminal screen?",
+        {"rm screen",  // 0 == A
+         "Ctrl + l",   // 1 == B 
+         "clear + l",  // 2 == C
+         "Ctrl + c"},  // 3 == D
+        1,             // Answer = (1 == B)
+        ""},
 
     /* QUESTION #11 */
-
+    {"Which relational operator has lower precedence than \"!=\" ?",
+        {"=<", // 0 == A
+         "==", // 1 == B
+         "<",  // 2 == C
+         ">"}, // 3 == D
+        1,     // Answer = (1 == B)
+        ""},
 
     /* QUESTION #12 */
-
+    {"What is the output of...\n\ni = 3;\n j = 2;\nk = 1;\nprintf(\"\%d\")",
+        {"0",
+         "1",
+         "true",
+         "false"},
+        1,
+        ""},
 
     /* QUESTION #13 */
-
+    {"Which operator is unary?",{"","","",""},},
 
     /* QUESTION #14 */
-
+    {"Which of these tests if a value is between i and k?",{"","","",""},},
 
     /* QUESTION #15 */
-
+    {"",{"","","",""},},
 
     /* QUESTION #16 */
-
+    {"",{"","","",""},},
 
     /* QUESTION #17 */
-
+    {"",{"","","",""},},
 
     /* QUESTION #18 */
-
+    {"",{"","","",""},},
 
     /* QUESTION #19 */
-
+    {"",{"","","",""},},
 
     /* QUESTION #20 */
-    
+    {"",{"","","",""},},
 
 
 #define NQ ((int)(sizeof quiz / sizeof quiz[0]))

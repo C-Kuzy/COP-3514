@@ -185,19 +185,21 @@ static const Question quiz[] = {
 
     /* QUESTION #19 */
     {"Which of these represents the correct form if for multiple statements?",
-        {"if expression (statements)",
-         "if (expression): statements",
-         "if (expression) { statements }",
-         "if expression { statements }"},
-        2,
+        {"if expression (statements)",      // 0 == A
+         "if (expression): statements",     // 1 == B
+         "if (expression) { statements }",  // 2 == C
+         "if expression { statements }"},   // 3 == D
+        2,                                  // Answer = (2 == C)
         ""},
 
     /* QUESTION #20 */
     {"Which of these statements is true about scanf and format strings?",
-        {"Scanf uses default values for missing inputs.",
-         "Scanf always reads all input, even if it's incorrect.",
-         "Scanf  expects input to match non-whitespace characters in the format string.",
-         "Scanf"},},
+        {"Scanf uses default values for missing inputs",                                  // 0 == A
+         "Scanf always reads all input, even if it's incorrect",                          // 1 == B
+         "Scanf  expects input to match non-whitespace characters in the format string",  // 2 == C
+         "Scanf expects input to match non-whitespace characters in the format string"},  // 3 == D
+        3,                                                                                // Answer = (3 == D)
+        ""},
 
 
 #define NQ ((int)(sizeof quiz / sizeof quiz[0]))

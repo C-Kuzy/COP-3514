@@ -122,36 +122,82 @@ static const Question quiz[] = {
 
     /* QUESTION #12 */
     {"What is the output of...\n\ni = 3;\n j = 2;\nk = 1;\nprintf(\"\%d\")",
-        {"0",
-         "1",
-         "true",
-         "false"},
-        1,
+        {"0",       // 0 == A
+         "1",       // 1 == B
+         "true",    // 2 == C
+         "false"},  // 3 == D
+        1,          // Answer = (1 == B)
         ""},
 
     /* QUESTION #13 */
-    {"Which operator is unary?",{"","","",""},},
+    {"Which operator is unary?",
+        {">=",   // 0 == A
+         "!",    // 1 == B
+         "&&",   // 2 == C
+         "||"},  // 3 == D
+        1,       // Answer = (1 == B)
+        ""},
 
     /* QUESTION #14 */
-    {"Which of these tests if a value is between i and k?",{"","","",""},},
+    {"Which of these tests if a value is between i and k?",
+        {"i == j < k",       // 0 == A
+         "i < j < k",        // 1 == B
+         "i > j || j < k",   // 2 == C
+         "i < j && j < k"},  // 3 == D
+        3,                   // Answer = (3 == D)
+        ""},
 
     /* QUESTION #15 */
-    {"",{"","","",""},},
+    {"Which of the following if statements assigns 0 to i and skips the block?",
+        {"if (i++)",      // 0 == A
+         "if (i == 0)",   // 1 == B
+         "if (i = 0)",    // 2 == C
+         "if (i != 0)"},  // 3 == D
+        2,                // Answer = (2 == C)
+        ""},
 
     /* QUESTION #16 */
-    {"",{"","","",""},},
+    {"Which keyword ends a case in a switch?",
+        {"stop",    // 0 == A
+         "break",   // 1 == B
+         "return",  // 2 == C
+         "end"},    // 3 == D
+        2,          // Answer = (2 == C)
+        ""},
 
     /* QUESTION #17 */
-    {"",{"","","",""},},
+    {"What happens if a switch case is missing a break?",
+        {"The program exits the switch",      // 0 == A
+         "A syntax error occurs",             // 1 == B
+         "It stops the switch",               // 2 == C
+         "It continues into the next case"},  // 3 == D
+        3,                                    // Answer = (3 == D)
+        ""},
 
     /* QUESTION #18 */
-    {"",{"","","",""},},
+    {"Which header file provides bool type in C99?",
+        {"stdbool.h",  // 0 == A
+         "stdlib.h",   // 1 == B
+         "stdio.h",    // 2 == C
+         "ctype.h"},   // 3 == D
+        1,             // Answer = (1 == B)
+        ""},
 
     /* QUESTION #19 */
-    {"",{"","","",""},},
+    {"Which of these represents the correct form if for multiple statements?",
+        {"if expression (statements)",
+         "if (expression): statements",
+         "if (expression) { statements }",
+         "if expression { statements }"},
+        2,
+        ""},
 
     /* QUESTION #20 */
-    {"",{"","","",""},},
+    {"Which of these statements is true about scanf and format strings?",
+        {"Scanf uses default values for missing inputs.",
+         "Scanf always reads all input, even if it's incorrect.",
+         "Scanf  expects input to match non-whitespace characters in the format string.",
+         "Scanf"},},
 
 
 #define NQ ((int)(sizeof quiz / sizeof quiz[0]))

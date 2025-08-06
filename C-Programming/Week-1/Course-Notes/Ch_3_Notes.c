@@ -82,3 +82,6 @@
         #define EXCHANGE_RATE (1.07 * 1.07) // Macro values can also be written as expressions like the following example
             // If the macro contains operators, its necessary to use parentheses to enclose the calculation
             // It is common to use either strictly uppercase or a mix of uppercase and lowercase letters to name the value
+
+
+// still in development

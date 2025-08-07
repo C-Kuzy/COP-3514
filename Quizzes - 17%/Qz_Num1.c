@@ -28,7 +28,7 @@ static const Question quiz[] = {
          "An object stored in computer memory",  // 2 == C
          "A literal constant"},                  // 3 == D
         2,                                       // Answer = (2 == C)
-        ""},
+        "HINT: "},
 
     /* QUESTION #2 */
     {"What does the statement \"count++\" do?",
@@ -37,7 +37,7 @@ static const Question quiz[] = {
          "Sets 'count' to 0",         // 2 == C
          "Multiplies 'count' by 2"},  // 3 == D
         1,                            // Answer = (1 == B)  
-        ""},
+        "HINT: "},
 
     /* QUESTION #3 */
     {"Which of the following is a correct use of assignment chaining?",
@@ -46,7 +46,7 @@ static const Question quiz[] = {
          "i == j == k == 0;",  // 2 == C
          "i = j == k = 0;"},   // 3 == D
         1,                     // Answer = (1 == B)
-        ""},
+        "HINT: "},
 
     /* QUESTION #4 */
     {"What is the output of the following statement?",
@@ -55,7 +55,7 @@ static const Question quiz[] = {
          "40 5",   // 2 == C
          "40 4"},  // 3 == D
         0,         // Answer = (0 == A)
-        ""},
+        "HINT: "},
 
     /* QUESTION #5 */
     {"Which form of increment returns the incremented value immediately?",
@@ -64,7 +64,7 @@ static const Question quiz[] = {
          "x++",   // 2 == C
          "--x"},  // 3 == D
         0,        // Answer = (0 == A)
-        ""},
+        "HINT: "},
 
     /* QUESTION #6 */
     {"In a \"switch\" statement, what data types can the controlling expression be?",
@@ -73,7 +73,7 @@ static const Question quiz[] = {
          "float and double",  // 2 == C
          "int, char, enum"},  // 3 == D
         3,                    // Answer = (3 == D)
-        ""}, 
+        "HINT: "}, 
 
     /* QUESTION #7 */
     {"What is the output if grade = 3\n\n switch (grade) {\n  case 4: printf(\"Excellent\");\n  case 3: printf(\"Good\");\n  case 2: printf(\"Average\");\n  case 1: printf(\"Poor\");\n  case 0: printf(\"Failing\");\n  default: printf(\"Illegal grade\");\n}\n\n",
@@ -82,7 +82,7 @@ static const Question quiz[] = {
          "GoodAverage",
          "Good"},
         0,
-        ""},
+        "HINT: "},
 
     /* QUESTION #8 */
     {"Which Unix command is used to move or rename a file?",
@@ -100,7 +100,7 @@ static const Question quiz[] = {
          "Copies files",                     // 2 == C
          "Renames files"},                   // 3 == D
         1,                                   // Answer = (1 == B)
-        ""},
+        "HINT: "},
 
     /* QUESTION #10 */
     {"How can you clear the terminal screen?",
@@ -109,7 +109,7 @@ static const Question quiz[] = {
          "clear + l",  // 2 == C
          "Ctrl + c"},  // 3 == D
         1,             // Answer = (1 == B)
-        ""},
+        "HINT: "},
 
     /* QUESTION #11 */
     {"Which relational operator has lower precedence than \"!=\" ?",
@@ -118,7 +118,7 @@ static const Question quiz[] = {
          "<",  // 2 == C
          ">"}, // 3 == D
         1,     // Answer = (1 == B)
-        ""},
+        "HINT: "},
 
     /* QUESTION #12 */
     {"What is the output of...\n\ni = 3;\n j = 2;\nk = 1;\nprintf(\"\%d\")",
@@ -127,7 +127,7 @@ static const Question quiz[] = {
          "true",    // 2 == C
          "false"},  // 3 == D
         1,          // Answer = (1 == B)
-        ""},
+        "HINT: "},
 
     /* QUESTION #13 */
     {"Which operator is unary?",
@@ -136,7 +136,7 @@ static const Question quiz[] = {
          "&&",   // 2 == C
          "||"},  // 3 == D
         1,       // Answer = (1 == B)
-        ""},
+        "HINT: "},
 
     /* QUESTION #14 */
     {"Which of these tests if a value is between i and k?",
@@ -145,7 +145,7 @@ static const Question quiz[] = {
          "i > j || j < k",   // 2 == C
          "i < j && j < k"},  // 3 == D
         3,                   // Answer = (3 == D)
-        ""},
+        "HINT: "},
 
     /* QUESTION #15 */
     {"Which of the following if statements assigns 0 to i and skips the block?",
@@ -154,7 +154,7 @@ static const Question quiz[] = {
          "if (i = 0)",    // 2 == C
          "if (i != 0)"},  // 3 == D
         2,                // Answer = (2 == C)
-        ""},
+        "HINT: "},
 
     /* QUESTION #16 */
     {"Which keyword ends a case in a switch?",
@@ -163,7 +163,7 @@ static const Question quiz[] = {
          "return",  // 2 == C
          "end"},    // 3 == D
         2,          // Answer = (2 == C)
-        ""},
+        "HINT: "},
 
     /* QUESTION #17 */
     {"What happens if a switch case is missing a break?",
@@ -172,7 +172,7 @@ static const Question quiz[] = {
          "It stops the switch",               // 2 == C
          "It continues into the next case"},  // 3 == D
         3,                                    // Answer = (3 == D)
-        ""},
+        "HINT: "},
 
     /* QUESTION #18 */
     {"Which header file provides bool type in C99?",
@@ -181,7 +181,7 @@ static const Question quiz[] = {
          "stdio.h",    // 2 == C
          "ctype.h"},   // 3 == D
         1,             // Answer = (1 == B)
-        ""},
+        "HINT: "},
 
     /* QUESTION #19 */
     {"Which of these represents the correct form if for multiple statements?",
@@ -190,7 +190,7 @@ static const Question quiz[] = {
          "if (expression) { statements }",  // 2 == C
          "if expression { statements }"},   // 3 == D
         2,                                  // Answer = (2 == C)
-        ""},
+        "HINT:"},
 
     /* QUESTION #20 */
     {"Which of these statements is true about scanf and format strings?",
@@ -199,7 +199,7 @@ static const Question quiz[] = {
          "Scanf  expects input to match non-whitespace characters in the format string",  // 2 == C
          "Scanf expects input to match non-whitespace characters in the format string"},  // 3 == D
         3,                                                                                // Answer = (3 == D)
-        ""},
+        "HINT: "},
 
 
 #define NQ ((int)(sizeof quiz / sizeof quiz[0]))

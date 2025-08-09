@@ -79,7 +79,7 @@ int KayakMcProject() {
         return 1; // The use of "1" stops the program
     }
 
-    // STEP #8: Prompt and allow the user to enter an amount of hours
+    // STEP #8: Prompt & allow the user to enter an amount of hours
     printf("Enter hours: ");
     scanf("%d", &Hours); // The use of %d will be prominent in our program since every number is a whole number/integer
 

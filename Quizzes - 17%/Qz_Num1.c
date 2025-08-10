@@ -196,7 +196,7 @@ static const Question quiz[] = {
     {"Which of these statements is true about scanf and format strings?",
         {"Scanf uses default values for missing inputs",                                  // 0 == A
          "Scanf always reads all input, even if it's incorrect",                          // 1 == B
-         "Scanf  expects input to match non-whitespace characters in the format string",  // 2 == C
+         "Scanf expects input to match non-whitespace characters in the format string",  // 2 == C
          "Scanf expects input to match non-whitespace characters in the format string"},  // 3 == D
         3,                                                                                // Answer = (3 == D)
         "HINT: Pay attention to how scanf matches what you type to the format you specify."}

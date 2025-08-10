@@ -1,217 +1,208 @@
 /*
  Author: C-Kuzy
- Description: 2025 Summer C Semester: COP-3514 Chapter 6 Quiz Bank
+ Description: 2025 Summer C Semester: COP-3514 Chapter 4/5 Quiz Bank
 */
 
 #include <stdio.h>
 #include <ctype.h>
 #include <stdlib.h>
 #include <time.h>
+#include <stddef.h>
 #define MX_Options 4
 
 /* ---------------------------- Question Bank Structure ---------------------------- */
 typedef struct {
     const char *prompt;               // Refers to Displaying Question Prompt
     const char *choices[MX_Options];  // Refers to displaying answer choices A-E 
-    int correct;                      // Initializes a correct response!
+    int correct;                      // Searches through answer choices and selects the correct answer
     const char *why;                  // Got the Question wrong? There's feedback for you!
 } Question;
 
-/* REFERENCE QUESTIONS FOR Multiple Choice: Canvas -> COP 3514 -> Modules -> Week #2 -> 3 - Chapter 6  */
+/* REFERENCE QUESTIONS FOR Multiple Choice: Canvas -> COP 3514 -> Modules -> Week #2 -> 2 - Chapter 4 & 5 */
 static const Question quiz[] = {
 
     /* QUESTION #1 */
-    {"What Unix text editor is guaranteed to be available on most systems?\n",
-        {"vi",     // 0 == A
-         "code",   // 1 == B
-         "nano",   // 2 == C
-         "emacs"}, // 3 == D
-        0,         // Answer = (0 == A)
-        "HINT: Consider which editor is present even on the most minimal Unix installations."},
+    {"What is an lvalue in C programming?",
+        {"An error message",                     // 0 == A
+         "A label name",                         // 1 == B
+         "An object stored in computer memory",  // 2 == C
+         "A literal constant"},                  // 3 == D
+        2,                                       // Answer = (2 == C)
+        "HINT: Think about what can appear on the left side of an assignment."},
 
     /* QUESTION #2 */
-    {"What does the statement 'count++' do?\n",
-        {":w",      // 0 == A
-         ":q!",     // 1 == B
-         ":wq",     // 2 == C
-         ":quit"},  // 3 == D
-        2,          // Answer = (2 == C)
-        "HINT: Think about common commands for saving and quitting in text editors."},
+    {"What does the statement \"count++\" do?",
+        {"Decrements 'count' by 1",   // 0 == A
+         "Increments 'count' by 1",   // 1 == B
+         "Sets 'count' to 0",         // 2 == C
+         "Multiplies 'count' by 2"},  // 3 == D
+        1,                            // Answer = (1 == B)  
+        "HINT: Consider what the double plus operator does to a variable."},
 
     /* QUESTION #3 */
-    {"In a while loop, when is the controlling expression evaluated?\n",
-        {"Only once at the start",                 // 0 == A
-         "After each iteration expect the first",  // 1 == B
-         "After the loop body executes",           // 2 == C
-         "Before the loop body executes"},         // 3 == D
-        3,                                         // Answer = (3 == D)
-        "HINT: Consider when the loop decides whether to continue or stop."},
+    {"Which of the following is a correct use of assignment chaining?",
+        {"i + j + k = 0;",     // 0 == A
+         "i = j = k = 0;",     // 1 == B
+         "i == j == k == 0;",  // 2 == C
+         "i = j == k = 0;"},   // 3 == D
+        1,                     // Answer = (1 == B)
+        "HINT: Assignment chaining lets you set several variables to the same value in one statement."},
 
     /* QUESTION #4 */
-    {"What happens when a while loop controlling expression is always true?\n",
-        {"Infintie loop",                    // 0 == A
-         "Syntax Error",                     // 1 == B
-         "The loop will execute only once",  // 2 == C
-         "The loop won't execute"},          // 3 == D
-        0,                                   // Answer = (0 == A)
-        "HINT: Think about what happens if the condition never becomes false."},
+    {"What is the output of the following statement?",
+        {"32 5",   // 0 == A
+         "32 4",   // 1 == B
+         "40 5",   // 2 == C
+         "40 4"},  // 3 == D
+        0,         // Answer = (0 == A)
+        "HINT: Pay attention to the order in which operations are performed and values are updated."},
 
     /* QUESTION #5 */
-    {"Which statement is true about a do-while loop?"
-        {"It cannot contain break statements",                      // 0 == A
-         "The expression is tested before the loop body executes",  // 1 == B
-         "The expression must always be true",                      // 2 == C
-         "The loop body executes at least once"},                   // 3 == D
-        3,                                                          // Answer = (3 == D)
-        "HINT: Consider the difference between while and do-while loops regarding when the body runs."},
+    {"Which form of increment returns the incremented value immediately?",
+        {"++x",   // 0 == A
+         "x--",   // 1 == B
+         "x++",   // 2 == C
+         "--x"},  // 3 == D
+        0,        // Answer = (0 == A)
+        "HINT: Consider whether the increment happens before or after the value is used."},
 
     /* QUESTION #6 */
-    {"What is the output of the following code?\n\nfor (n = 9; n != 0; n--)\n printf(\"\%d \", n--); \n",
-        {"9 7 5 3 3",          // 0 == A
-         "9 8 7 6 5 4 3 2 1",  // 1 == B
-         "9 7 5 3 1",          // 2 == C
-         "8 6 4 2"},           // 3 == D
-        2,                     // Answer = (2 == C)
-        "HINT: Pay attention to how the loop variable changes inside and outside the printf statement."},
+    {"In a \"switch\" statement, what data types can the controlling expression be?",
+        {"string and float",  // 0 == A
+         "array",             // 1 == B
+         "float and double",  // 2 == C
+         "int, char, enum"},  // 3 == D
+        3,                    // Answer = (3 == D)
+        "HINT: Only certain types are allowed for switch control; think about which types are discrete values."}, 
 
     /* QUESTION #7 */
-    {"Which operator is used to separate multiple expressions in a for loop",
-        {"&",   // 0 == A               
-         ":",   // 1 == B
-         ";",   // 2 == C
-         ","},  // 3 == D
-        3,      // Answer = (3 == D)
-        "HINT: This operator allows you to list several expressions in one place."},
+    {"What is the output if grade = 3\n\n switch (grade) {\n  case 4: printf(\"Excellent\");\n  case 3: printf(\"Good\");\n  case 2: printf(\"Average\");\n  case 1: printf(\"Poor\");\n  case 0: printf(\"Failing\");\n  default: printf(\"Illegal grade\");\n}\n\n",
+        {"GoodAveragePoorFailingIllegal grade",
+         "Illegal grade",
+         "GoodAverage",
+         "Good"},
+        0,
+        "HINT: Notice if there are any break statements and how control flows through the cases."},
 
     /* QUESTION #8 */
-    {"What is the correct command to delete a line in vi?",
-        {"dd",  // 0 == A
-         "yy",  // 1 == B
-         "p",   // 2 == C
-         "u"},  // 3 == D
+    {"Which Unix command is used to move or rename a file?",
+        {"mv",  // 0 == A
+         "cp",  // 1 == B
+         "cd",  // 2 == C
+         "rm"}, // 3 == D
         0,      // Answer = (0 == A)
-        "HINT: Think about the command that removes the current line in vi."},
+        "HINT: This command is used for both moving and renaming files or directories."},
 
     /* QUESTION #9 */
-    {"Which C loop structure is best for counting iterations",
-        {"for",       // 0 == A
-         "do-while",  // 1 == B
-         "switch",    // 2 == C
-         "while"},    // 3 == D
-        0,            // Answer = (0 == A)
-        "HINT: Consider which loop is typically used when you know how many times to repeat."},
+    {"What does \"rm-i\" do?",
+        {"Moves files",                      // 0 == A
+         "Removes files with confirmation",  // 1 == B
+         "Copies files",                     // 2 == C
+         "Renames files"},                   // 3 == D
+        1,                                   // Answer = (1 == B)
+        "HINT: The '-i' option in Unix commands often means interactive or asks for confirmation."},
 
     /* QUESTION #10 */
-    {"Which keyword exits the innermost loop or switch?",
-        {"return",    // 0 == A
-         "continue",  // 1 == B
-         "stop",      // 2 == C
-         "break"},    // 3 == D
-        3,            // Answer = (3 == D)
-        "HINT: This keyword is used to leave a loop or switch immediately."},
+    {"How can you clear the terminal screen?",
+        {"rm screen",  // 0 == A
+         "Ctrl + l",   // 1 == B 
+         "clear + l",  // 2 == C
+         "Ctrl + c"},  // 3 == D
+        1,             // Answer = (1 == B)
+        "HINT: There is a keyboard shortcut that refreshes your view in many terminals."},
 
     /* QUESTION #11 */
-    {"Which keyword skips to the next iteration of the loop?",
-        {"pass",      // 0 == A
-         "continue",  // 1 == B
-         "break",     // 2 == C
-         "goto"},     // 3 == D
-        1,            // Answer = (1 == B)
-        "HINT: This keyword causes the loop to jump to its next cycle, skipping the rest of the body."},
+    {"Which relational operator has lower precedence than \"!=\" ?",
+        {"=<", // 0 == A
+         "==", // 1 == B
+         "<",  // 2 == C
+         ">"}, // 3 == D
+        1,     // Answer = (1 == B)
+        "HINT: Precedence determines the order in which operators are evaluated in expressions."},
 
     /* QUESTION #12 */
-    {"What is the output of the following code?\n\nsum = 0;\n for (i = 0; i < 3; i++) {\n  if (i \% 2 == 1)\n  break;\n  sum += i;\n}",
-        {"5",   // 0 == A
-         "0",   // 1 == B
-         "3",   // 2 == C
-         "1"},  // 3 == D
-        1,      // Answer = (1 == B)
-        "HINT: Consider how the break statement affects the loop and when it will execute."},
+    {"What is the output of...\n\ni = 3;\n j = 2;\nk = 1;\nprintf(\"\%d\")",
+        {"0",       // 0 == A
+         "1",       // 1 == B
+         "true",    // 2 == C
+         "false"},  // 3 == D
+        1,          // Answer = (1 == B)
+        "HINT: Check which variable is being printed and what its value is at that moment."},
 
     /* QUESTION #13 */
-    {"What is the output of the following code?\n\nsum = 0;\n for (i = 0; i < 3; i++) {\n  if(i \% 2 == 1)\n  continue;\n  sum += i;\n}",
-        {"1",   // 0 == A
-         "2",   // 1 == B
-         "0",   // 2 == C
-         "3"},  // 3 == D
-        1,      // Answer = (1 == B)
-        "HINT: Think about which values are skipped and which are added to sum."},
+    {"Which operator is unary?",
+        {">=",   // 0 == A
+         "!",    // 1 == B
+         "&&",   // 2 == C
+         "||"},  // 3 == D
+        1,       // Answer = (1 == B)
+        "HINT: This type of operator works with just one operand, not two."},
 
     /* QUESTION #14 */
-    {"What is a null statement?",
-        {"An empty statement marked by a semicolon",     // 0 == A
-         "A statement with only a label",                // 1 == B
-         "A statement with variables but no operation",  // 2 == C
-         "An incomplete declaration"},                   // 3 == D
-        0,                                               // Answer = (0 == A)
-        "HINT: This kind of statement doesn't perform any action but is syntactically valid."},
+    {"Which of these tests if a value is between i and k?",
+        {"i == j < k",       // 0 == A
+         "i < j < k",        // 1 == B
+         "i > j || j < k",   // 2 == C
+         "i < j && j < k"},  // 3 == D
+        3,                   // Answer = (3 == D)
+        "HINT: You need to check two conditions at the same time for this."},
 
     /* QUESTION #15 */
-    {"In which loop is this commonly seen: \"for (;;)\"?",
-        {"To exit a loop immediately",       // 0 == A
-         "To count up to 10",                // 1 == B
-         "To loop a fixed number of times",  // 2 == C
-         "To create an infinite loop"},      // 3 == D
-        3,                                   // Answer = (3 == D)
-        "HINT: Consider what happens when the loop condition is always true."},
+    {"Which of the following if statements assigns 0 to i and skips the block?",
+        {"if (i++)",      // 0 == A
+         "if (i == 0)",   // 1 == B
+         "if (i = 0)",    // 2 == C
+         "if (i != 0)"},  // 3 == D
+        2,                // Answer = (2 == C)
+        "HINT: Watch out for the difference between assignment and comparison in conditions."},
 
     /* QUESTION #16 */
-    {"What is the output of the following code?\n\ni = 3;\nwhile (i < 0); { printf(\"\%d \", i); --i; }",
-        {"Does not compile",  // 0 == A
-         "3 2 1",             // 1 == B
-         "3 2 1 0",           // 2 == C
-         "Infinite loop"},    // 3 == D
-        3,                    // Answer = (3 == D)
-        "HINT: Look closely at the loop condition and the placement of the semicolon."},
+    {"Which keyword ends a case in a switch?",
+        {"stop",    // 0 == A
+         "break",   // 1 == B
+         "return",  // 2 == C
+         "end"},    // 3 == D
+        2,          // Answer = (2 == C)
+        "HINT: This keyword is used to exit a block and continue after the switch."},
 
     /* QUESTION #17 */
-    {"Which command pastes a copied line in vi?",
-        {"rm",   // 0 == A
-         "p",    // 1 == B
-         "dd",   // 2 == C
-         "yy"},  // 3 == D
-        1,       // Answer = (1 == B)
-        "HINT: Think about the command that places the copied content after the current line."},
+    {"What happens if a switch case is missing a break?",
+        {"The program exits the switch",      // 0 == A
+         "A syntax error occurs",             // 1 == B
+         "It stops the switch",               // 2 == C
+         "It continues into the next case"},  // 3 == D
+        3,                                    // Answer = (3 == D)
+        "HINT: Consider what happens when there is no instruction to stop after a case."},
 
     /* QUESTION #18 */
-    {"Which loop construct guarantees the loop body executes at least once?",
-        {"do-while",  // 0 == A
-         "for",       // 1 == B
-         "switch",    // 2 == C
-         "while"},    // 3 == D
-        0,            // Answer = (0 == A)
-        "HINT: Consider which loop checks its condition after running the body."},
+    {"Which header file provides bool type in C99?",
+        {"stdbool.h",  // 0 == A
+         "stdlib.h",   // 1 == B
+         "stdio.h",    // 2 == C
+         "ctype.h"},   // 3 == D
+        1,             // Answer = (1 == B)
+        "HINT: This header was added to the C language standard to support true/false values."},
 
     /* QUESTION #19 */
-    {"In vi, how do you undo the last action?",
-        {":undo",     // 0 == A
-         "u",         // 1 == B
-         "ctrl + z",  // 2 == C
-         ":back"},    // 3 == D
-        1,            // Answer = (1 == B)
-        "HINT: This is a single-key command in normal mode."},
+    {"Which of these represents the correct form if for multiple statements?",
+        {"if expression (statements)",      // 0 == A
+         "if (expression): statements",     // 1 == B
+         "if (expression) { statements }",  // 2 == C
+         "if expression { statements }"},   // 3 == D
+        2,                                  // Answer = (2 == C)
+        "HINT: In C, blocks of code are grouped using a specific type of bracket."},
 
     /* QUESTION #20 */
-    {"Which command in vi allows you to copy a line?",
-        {"mv",   // 0 == A
-         "dd",   // 1 == B
-         ":wq",  // 2 == C
-         "yy"},  // 3 == D
-        3,       // Answer = (3 == D)
-        "HINT: This command is used to yank or copy the current line for later pasting."},
+    {"Which of these statements is true about scanf and format strings?",
+        {"Scanf uses default values for missing inputs",                                  // 0 == A
+         "Scanf always reads all input, even if it's incorrect",                          // 1 == B
+         "Scanf  expects input to match non-whitespace characters in the format string",  // 2 == C
+         "Scanf expects input to match non-whitespace characters in the format string"},  // 3 == D
+        3,                                                                                // Answer = (3 == D)
+        "HINT: Pay attention to how scanf matches what you type to the format you specify."}
 };
-#define NQ ((int)(sizeof quiz / sizeof quiz[0]))
 
-/* ---------- helpers ---------- */
-static void shuffle_int_array(int *a, int n) {
-    for (int i = n - 1 > 0; --i)
-    {
-        int j = rand() % (i + 1);
-        int tmp = a[i];
-        a[i] = a[j];
-        a[j] = tmp;
-    }
-}
+#define NQ ((int)(sizeof quiz / sizeof quiz[0]))
 
 /* ---------- Main Function ---------- */
 int main(void) {
@@ -222,7 +213,7 @@ int main(void) {
         qs_ordr[i] = i;
     shuffle_int_array(qs_ordr, NQ);
 
-    printf("\nWelcome to Summer C: 2025 COP-3514 Quiz #2 -- Chapter 6 Multiple Choice Review (enter Q/q to quit)\n\n");
+    printf("\nWelcome to Summer C: 2025 COP-3514 Quiz #1 -- Chapter 4 & 5 Multiple Choice Review (enter Q/q to quit)\n\n");
 
     int correct_count = 0;
     int correct_bank[NQ] = {0}; // 1 if correct, 0 if not

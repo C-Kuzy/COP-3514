@@ -45,10 +45,16 @@ static const Question quiz[] = {
          "After the loop body executes",
          ""},
         3,
-        ""},
+        "HINT: "},
 
     /* QUESTION #4 */
-    {""}
+    {"What happens when a while loop controlling expression is always true?\n",
+        {"Infintie loop",                    //
+         "Syntax Error",                     //
+         "The loop will execute only once",  //
+         "The loop won't execute"},          //
+        0,                                   //
+        "HINT: "},
 
     /* QUESTION #5 */
 

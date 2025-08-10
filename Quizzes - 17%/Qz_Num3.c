@@ -199,7 +199,7 @@ static const Question quiz[] = {
          "'e'"},  // 3 == D
         3,        // Answer = (3 == D)
         "HINT: "},
-
+};
 #define NQ ((int)(sizeof quiz / sizeof quiz[0]))
 
 /* ---------- helpers ---------- */

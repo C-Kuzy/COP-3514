@@ -7,7 +7,7 @@
 #include <ctype.h>
 #include <stdlib.h>
 #include <time.h>
-#define MX_Options 5
+#define MX_Options 4
 
 /* ---------------------------- Question Bank Structure ---------------------------- */
 typedef struct {
@@ -21,9 +21,13 @@ typedef struct {
 static const Question quiz[] = {
 
     /* QUESTION #1 */
-    {"What is an lvalue in C programming?\n",
-        {"An error message",
-         " A label name"}}
+    {"What is the correct format specifier for printing an unsigned int?",
+        {"\%d",   //
+         "\%u",   //
+         "\%ld",  //
+         "\%i"},  //
+        1,
+        "HINT: "},
 
     /* QUESTION #2 */
     {"",
@@ -35,13 +39,31 @@ static const Question quiz[] = {
         "HINT: "},
 
     /* QUESTION #3 */
-
+    {"",
+        {"",
+         "",
+         "",
+         ""},
+        ,
+        "HINT: "},
 
     /* QUESTION #4 */
-
+    {"",
+        {"",
+         "",
+         "",
+         ""},
+        ,
+        "HINT: "},
 
     /* QUESTION #5 */
-
+    {"",
+        {"",
+         "",
+         "",
+         ""},
+        ,
+        "HINT: "},
 
     /* QUESTION #6 */
 

@@ -147,57 +147,57 @@ static const Question quiz[] = {
         "HINT: "},
 
     /* QUESTION #15 */
-    {"",
-        {"", // 0 == A
-         "", // 1 == B
-         "", // 2 == C
-         ""}, // 3 == D
-        ,      // Answer = ( == )
+    {"Which loop skips characters until a newline using getchar()?",
+        {"do { ch = getchar(); } while (ch == '\\n');",   // 0 == A
+         "while (ch != '');",                             // 1 == B
+         "do { ch = getchar(); } while (ch == '');",      // 2 == C
+         "do { ch = getchar(); } while (ch != '\\n');"},  // 3 == D
+        3,                                                // Answer = (3 == D)
         "HINT: "},
 
     /* QUESTION #16 */
-    {"",
-        {"", // 0 == A
-         "", // 1 == B
-         "", // 2 == C
-         ""}, // 3 == D
-        ,      // Answer = ( == )
+    {"What is the purpose of toupper(ch)?",
+        {"Tests if a character is alphabet",  // 0 == A
+         "Converts a number to character",    // 1 == B
+         "Converts character to uppercase",   // 2 == C
+         "Converts character to lowercase"},  // 3 == D
+        2,                                    // Answer = (2 == C)
         "HINT: "},
 
     /* QUESTION #17 */
-    {"",
-        {"", // 0 == A
-         "", // 1 == B
-         "", // 2 == C
-         ""}, // 3 == D
-        ,      // Answer = ( == )
+    {"Which header must be included to use toupper()",
+        {"string.h",   // 0 == A
+         "stdio.h",    // 1 == B
+         "stdbool.h",  // 2 == C
+         "ctype.h"},   // 3 == D
+        3,             // Answer = (3 == D)
         "HINT: "},
 
     /* QUESTION #18 */
-    {"",
-        {"", // 0 == A
-         "", // 1 == B
-         "", // 2 == C
-         ""}, // 3 == D
-        ,      // Answer = ( == )
+    {"Which format specifier is used to print a float value?",
+        {"\%ld",  // 0 == A
+         "\%c",   // 1 == B
+         "\%f",   // 2 == C
+         "\%d"},  // 3 == D
+        2,        // Answer = (2 == C)
         "HINT: "},
 
     /* QUESTION #19 */
-    {"",
-        {"", // 0 == A
-         "", // 1 == B
-         "", // 2 == C
-         ""}, // 3 == D
-        ,      // Answer = ( == )
+    {"Which of the following is a character constant?",
+        {"A",        // 0 == A
+         "'A'",      // 1 == B
+         "\"A\"",    // 2 == C
+         "char A"},  // 3 == D
+        1,           // Answer = (1 == B)
         "HINT: "},
     
     /* QUESTION #20 */
-    {"",
-        {"", // 0 == A
-         "", // 1 == B
-         "", // 2 == C
-         ""}, // 3 == D
-        ,      // Answer = ( == )
+    {"What is the output of the following?:\n\nchar ch = 'b';\nch = ch + 3;",
+        {"'k'",   // 0 == A
+         "'d'",   // 1 == B
+         "'u'",   // 2 == C
+         "'e'"},  // 3 == D
+        3,        // Answer = (3 == D)
         "HINT: "},
 
 #define NQ ((int)(sizeof quiz / sizeof quiz[0]))

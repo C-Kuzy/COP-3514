@@ -183,21 +183,21 @@ static const Question quiz[] = {
         "HINT: "},
 
     /* QUESTION #19 */
-    {"",
-        {"",
-         "",
-         "",
-         ""},
-        ,
+    {"In vi, how do you undo the last action?",
+        {":undo",     // 0 == A
+         "u",         // 1 == B
+         "ctrl + z",  // 2 == C
+         ":back"},    // 3 == D
+        1,            // Answer = (1 == B)
         "HINT: "},
 
     /* QUESTION #20 */
-    {"",
-        {"",
-         "",
-         "",
-         ""},
-        ,
+    {"Which command in vi allows you to copy a line?",
+        {"mv",   // 0 == A
+         "dd",   // 1 == B
+         ":wq",  // 2 == C
+         "yy"},  // 3 == D
+        3,       // Answer = (3 == D)
         "HINT: "},
 
 #define NQ ((int)(sizeof quiz / sizeof quiz[0]))

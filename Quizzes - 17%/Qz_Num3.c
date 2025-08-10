@@ -66,84 +66,84 @@ static const Question quiz[] = {
         "HINT: "},
 
     /* QUESTION #6 */
-    {"",
-        {"", // 0 == A
-         "", // 1 == B
-         "", // 2 == C
-         ""}, // 3 == D
-        ,      // Answer = ( == )
+    {"What is the correct way to prevent overflow when multiplying two ints?",
+        {"i = j * (long)j;",    // 0 == A
+         "i = j * j",           // 1 == B
+         "i = (long) j * j;",   // 2 == C
+         "i = (long)(j * j);"}, // 3 == D
+        2,                      // Answer = (2 == C)
         "HINT: "},
 
     /* QUESTION #7 */
-    {"",
-        {"", // 0 == A
-         "", // 1 == B
-         "", // 2 == C
-         ""}, // 3 == D
-        ,      // Answer = ( == )
+    {"Which cast will convert an int to double in division?",
+        {"(float)dividend / divisor",    // 0 == A
+         "(long)dividend / divisor",     // 1 == B
+         "(int)dividend / divisor",      // 2 == C
+         "(double)dividend / divisor"},  // 3 == D
+        3,                               // Answer = (3 == D)
         "HINT: "},
 
     /* QUESTION #8 */
-    {"",
-        {"", // 0 == A
-         "", // 1 == B
-         "", // 2 == C
-         ""}, // 3 == D
-        ,      // Answer = ( == )
+    {"Which floating type in C offers the highest level of precision?",
+        {"double",       // 0 == A
+         "long double",  // 1 == B
+         "extended",     // 2 == C
+         "float"},       // 3 == D
+        1,               // Answer = (1 == B)
         "HINT: "},
 
     /* QUESTION #9 */
-    {"",
-        {"", // 0 == A
-         "", // 1 == B
-         "", // 2 == C
-         ""}, // 3 == D
-        ,      // Answer = ( == )
+    {"How do you specify a float constant explicitly?",
+        {"3.14F",   // 0 == A
+         "3.14",    // 1 == B
+         "F3.14",   // 2 == C
+         "3.14L"},  // 3 == D
+        0,          // Answer = (0 == A)
         "HINT: "},
 
     /* QUESTION #10 */
-    {"",
-        {"", // 0 == A
-         "", // 1 == B
-         "", // 2 == C
-         ""}, // 3 == D
-        ,      // Answer = ( == )
+    {"What does the typedef \"typedef int Bool;\" do?",
+        {"Creates a type alias for int",  // 0 == A
+         "Changes bool's size",           // 1 == B
+         "Makes a new integer type",      // 2 == C
+         "Defines a macro"},              // 3 == D
+        0,                                // Answer = (0 == A)
         "HINT: "},
 
     /* QUESTION #11 */
-    {"",
-        {"", // 0 == A
-         "", // 1 == B
-         "", // 2 == C
-         ""}, // 3 == D
-        ,      // Answer = ( == )
+    {"Which header defines types like size_t?",
+        {"limits.h",                             // 0 == A
+         "string.h",                             // 1 == B
+         "stdio.h",                              // 2 == C
+         "typedefs in the C standard library"},  // 3 == D
+        3,                                       // Answer = (3 == D)
         "HINT: "},
 
     /* QUESTION #12 */
-    {"",
-        {"", // 0 == A
-         "", // 1 == B
-         "", // 2 == C
-         ""}, // 3 == D
-        ,      // Answer = ( == )
+    {"What is the ASCII value of 'A'?",
+        {"48",   // 0 == A
+         "65",   // 1 == B
+         "32",   // 2 == C
+         "97"},  // 3 == D
+        1,       // Answer = (1 == B)
         "HINT: "},
 
     /* QUESTION #13 */
-    {"",
-        {"", // 0 == A
-         "", // 1 == B
-         "", // 2 == C
-         ""}, // 3 == D
-        ,      // Answer = ( == )
+    {"Which of these reads a single character using scanf?",
+        {"scanf(\"\%s\", \&ch);",   // 0 == A
+         "scanf(\"\%d\", \&ch);",   // 1 == B
+         "scanf(\"\%f\", \&ch);",   // 2 == C
+         "scanf(\"\%c\", \&ch);"},  // 3 == D
+        3,                          // Answer = (3 == D)
         "HINT: "},
 
     /* QUESTION #14 */
-    {"",
-        {"", // 0 == A
-         "", // 1 == B
-         "", // 2 == C
-         ""}, // 3 == D
-        ,      // Answer = ( == )
+    {"How does getchar() differ from scanf()?",
+        {"It returns a char",                             // 0 == A
+         "It skips white space",                          // 1 == B
+         "It reads one character, including whitespace",  // 2 == C
+         "It reads an entire line"},                      // 3 == D
+        2,                                                // Answer = (2 == B)
         "HINT: "},
 
     /* QUESTION #15 */
@@ -204,8 +204,7 @@ static const Question quiz[] = {
 
 /* ---------- helpers ---------- */
 static void shuffle_int_array(int *a, int n) {
-    for (int i = n - 1 > 0; --i)
-    {
+    for (int i = n - 1; i > 0; --i) {
         int j = rand() % (i + 1);
         int tmp = a[i];
         a[i] = a[j];

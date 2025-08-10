@@ -22,47 +22,47 @@ static const Question quiz[] = {
 
     /* QUESTION #1 */
     {"What is the correct format specifier for printing an unsigned int?",
-        {"\%d",   //
-         "\%u",   //
-         "\%ld",  //
-         "\%i"},  //
-        1,
+        {"\%d",   // 0 == A
+         "\%u",   // 1 == B
+         "\%ld",  // 2 == C
+         "\%i"},  // 3 == D
+        1,        // Answer = (1 == B)
         "HINT: "},
 
     /* QUESTION #2 */
-    {"",
-        {"",
-         "",
-         "",
-         ""},
-        ,
+    {"Which type conversion is the safest to prevent data loss",
+        {"Converting float to int",      // 0 == A
+         "Converting char to int",       // 1 == B
+         "Converting int to long",       // 2 == C
+         "Converting double to float"},  // 3 == D
+        2,                               // Answer = (2 == C)
         "HINT: "},
 
     /* QUESTION #3 */
-    {"",
-        {"",
-         "",
-         "",
-         ""},
-        ,
+    {"Which format specifier is used to print a long int?",
+        {"\%hd",  // 0 == A
+         "\%ld",  // 1 == B
+         "\%f",   // 2 == C
+         "\%d"},  // 3 == D
+        1,        // Answer = (1 == B)
         "HINT: "},
 
     /* QUESTION #4 */
-    {"",
-        {"",
-         "",
-         "",
-         ""},
-        ,
+    {"Free Question: What is Unsigned int equivalent to?",
+        {"long int",      // 0 == A
+         "unsigned int",  // 1 == B
+         "int",           // 2 == C
+         "short int"},    // 3 == D
+        1,                // Answer = (1 == B)
         "HINT: "},
 
     /* QUESTION #5 */
-    {"",
-        {"",
-         "",
-         "",
-         ""},
-        ,
+    {"What is integer overflow",
+        {"An error in scanf",                               // 0 == A
+         "A variable is too large to store in memory",      // 1 == B
+         "An arithmetic result is too large to represent",  // 2 == C
+         "The program crashes"},                            // 3 == D
+        2,                                                  // Answer = (2 == C)
         "HINT: "},
 
     /* QUESTION #6 */

@@ -27,7 +27,7 @@ static const Question quiz[] = {
          "nano",   // 2 == C
          "emacs"}, // 3 == D
         0,         // Answer = (0 == A)
-        "HINT: "},
+        "HINT: Consider which editor is present even on the most minimal Unix installations."},
 
     /* QUESTION #2 */
     {"What does the statement 'count++' do?\n",
@@ -36,7 +36,7 @@ static const Question quiz[] = {
          ":wq",     // 2 == C
          ":quit"},  // 3 == D
         2,          // Answer = (2 == C)
-        "HINT: "},
+        "HINT: Think about common commands for saving and quitting in text editors."},
 
     /* QUESTION #3 */
     {"In a while loop, when is the controlling expression evaluated?\n",
@@ -45,7 +45,7 @@ static const Question quiz[] = {
          "After the loop body executes",           // 2 == C
          "Before the loop body executes"},         // 3 == D
         3,                                         // Answer = (3 == D)
-        "HINT: "},
+        "HINT: Consider when the loop decides whether to continue or stop."},
 
     /* QUESTION #4 */
     {"What happens when a while loop controlling expression is always true?\n",
@@ -54,7 +54,7 @@ static const Question quiz[] = {
          "The loop will execute only once",  // 2 == C
          "The loop won't execute"},          // 3 == D
         0,                                   // Answer = (0 == A)
-        "HINT: "},
+        "HINT: Think about what happens if the condition never becomes false."},
 
     /* QUESTION #5 */
     {"Which statement is true about a do-while loop?"
@@ -63,7 +63,7 @@ static const Question quiz[] = {
          "The expression must always be true",                      // 2 == C
          "The loop body executes at least once"},                   // 3 == D
         3,                                                          // Answer = (3 == D)
-        "HINT: "},
+        "HINT: Consider the difference between while and do-while loops regarding when the body runs."},
 
     /* QUESTION #6 */
     {"What is the output of the following code?\n\nfor (n = 9; n != 0; n--)\n printf(\"\%d \", n--); \n",
@@ -72,7 +72,7 @@ static const Question quiz[] = {
          "9 7 5 3 1",          // 2 == C
          "8 6 4 2"},           // 3 == D
         2,                     // Answer = (2 == C)
-        "HINT: "},
+        "HINT: Pay attention to how the loop variable changes inside and outside the printf statement."},
 
     /* QUESTION #7 */
     {"Which operator is used to separate multiple expressions in a for loop",
@@ -81,7 +81,7 @@ static const Question quiz[] = {
          ";",   // 2 == C
          ","},  // 3 == D
         3,      // Answer = (3 == D)
-        "HINT: "},
+        "HINT: This operator allows you to list several expressions in one place."},
 
     /* QUESTION #8 */
     {"What is the correct command to delete a line in vi?",
@@ -90,7 +90,7 @@ static const Question quiz[] = {
          "p",   // 2 == C
          "u"},  // 3 == D
         0,      // Answer = (0 == A)
-        "HINT: "},
+        "HINT: Think about the command that removes the current line in vi."},
 
     /* QUESTION #9 */
     {"Which C loop structure is best for counting iterations",
@@ -99,7 +99,7 @@ static const Question quiz[] = {
          "switch",    // 2 == C
          "while"},    // 3 == D
         0,            // Answer = (0 == A)
-        "HINT: "},
+        "HINT: Consider which loop is typically used when you know how many times to repeat."},
 
     /* QUESTION #10 */
     {"Which keyword exits the innermost loop or switch?",
@@ -108,7 +108,7 @@ static const Question quiz[] = {
          "stop",      // 2 == C
          "break"},    // 3 == D
         3,            // Answer = (3 == D)
-        "HINT: "},
+        "HINT: This keyword is used to leave a loop or switch immediately."},
 
     /* QUESTION #11 */
     {"Which keyword skips to the next iteration of the loop?",
@@ -117,7 +117,7 @@ static const Question quiz[] = {
          "break",     // 2 == C
          "goto"},     // 3 == D
         1,            // Answer = (1 == B)
-        "HINT: "},
+        "HINT: This keyword causes the loop to jump to its next cycle, skipping the rest of the body."},
 
     /* QUESTION #12 */
     {"What is the output of the following code?\n\nsum = 0;\n for (i = 0; i < 3; i++) {\n  if (i \% 2 == 1)\n  break;\n  sum += i;\n}",
@@ -126,7 +126,7 @@ static const Question quiz[] = {
          "3",   // 2 == C
          "1"},  // 3 == D
         1,      // Answer = (1 == B)
-        "HINT: "},
+        "HINT: Consider how the break statement affects the loop and when it will execute."},
 
     /* QUESTION #13 */
     {"What is the output of the following code?\n\nsum = 0;\n for (i = 0; i < 3; i++) {\n  if(i \% 2 == 1)\n  continue;\n  sum += i;\n}",
@@ -135,7 +135,7 @@ static const Question quiz[] = {
          "0",   // 2 == C
          "3"},  // 3 == D
         1,      // Answer = (1 == B)
-        "HINT: "},
+        "HINT: Think about which values are skipped and which are added to sum."},
 
     /* QUESTION #14 */
     {"What is a null statement?",
@@ -144,7 +144,7 @@ static const Question quiz[] = {
          "A statement with variables but no operation",  // 2 == C
          "An incomplete declaration"},                   // 3 == D
         0,                                               // Answer = (0 == A)
-        "HINT: "},
+        "HINT: This kind of statement doesn't perform any action but is syntactically valid."},
 
     /* QUESTION #15 */
     {"In which loop is this commonly seen: \"for (;;)\"?",
@@ -153,7 +153,7 @@ static const Question quiz[] = {
          "To loop a fixed number of times",  // 2 == C
          "To create an infinite loop"},      // 3 == D
         3,                                   // Answer = (3 == D)
-        "HINT: "},
+        "HINT: Consider what happens when the loop condition is always true."},
 
     /* QUESTION #16 */
     {"What is the output of the following code?\n\ni = 3;\nwhile (i < 0); { printf(\"\%d \", i); --i; }",
@@ -162,7 +162,7 @@ static const Question quiz[] = {
          "3 2 1 0",           // 2 == C
          "Infinite loop"},    // 3 == D
         3,                    // Answer = (3 == D)
-        "HINT: "},
+        "HINT: Look closely at the loop condition and the placement of the semicolon."},
 
     /* QUESTION #17 */
     {"Which command pastes a copied line in vi?",
@@ -171,7 +171,7 @@ static const Question quiz[] = {
          "dd",   // 2 == C
          "yy"},  // 3 == D
         1,       // Answer = (1 == B)
-        "HINT: "},
+        "HINT: Think about the command that places the copied content after the current line."},
 
     /* QUESTION #18 */
     {"Which loop construct guarantees the loop body executes at least once?",
@@ -180,7 +180,7 @@ static const Question quiz[] = {
          "switch",    // 2 == C
          "while"},    // 3 == D
         0,            // Answer = (0 == A)
-        "HINT: "},
+        "HINT: Consider which loop checks its condition after running the body."},
 
     /* QUESTION #19 */
     {"In vi, how do you undo the last action?",
@@ -189,7 +189,7 @@ static const Question quiz[] = {
          "ctrl + z",  // 2 == C
          ":back"},    // 3 == D
         1,            // Answer = (1 == B)
-        "HINT: "},
+        "HINT: This is a single-key command in normal mode."},
 
     /* QUESTION #20 */
     {"Which command in vi allows you to copy a line?",
@@ -198,8 +198,8 @@ static const Question quiz[] = {
          ":wq",  // 2 == C
          "yy"},  // 3 == D
         3,       // Answer = (3 == D)
-        "HINT: "},
-
+        "HINT: This command is used to yank or copy the current line for later pasting."},
+};
 #define NQ ((int)(sizeof quiz / sizeof quiz[0]))
 
 /* ---------- helpers ---------- */
@@ -222,7 +222,7 @@ int main(void) {
         qs_ordr[i] = i;
     shuffle_int_array(qs_ordr, NQ);
 
-    printf("\nWelcome to Summer C: 2025 COP-3514 Final Exam Multiple Choice Review (enter Q/q to quit)\n\n");
+    printf("\nWelcome to Summer C: 2025 COP-3514 Quiz #2 -- Chapter 6 Multiple Choice Review (enter Q/q to quit)\n\n");
 
     int correct_count = 0;
     int correct_bank[NQ] = {0}; // 1 if correct, 0 if not

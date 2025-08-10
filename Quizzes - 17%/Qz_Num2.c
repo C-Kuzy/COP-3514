@@ -130,29 +130,29 @@ static const Question quiz[] = {
 
     /* QUESTION #13 */
     {"What is the output of the following C code?\n\nsum = 0;\n for (i = 0; i < 3; i++) {\n  if(i \% 2 == 1)\n  continue;\n  sum += i;\n}",
-        {"",
-         "",
-         "",
-         ""},
-        ,
+        {"1",   // 0 == A
+         "2",   // 1 == B
+         "0",   // 2 == C
+         "3"},  // 3 == D
+        1,      // Answer = (1 == B)
         "HINT: "},
 
     /* QUESTION #14 */
-    {"",
-        {"",
-         "",
-         "",
-         ""},
-        ,
+    {"What is a null statement?",
+        {"An empty statement marked by a semicolon",     // 0 == A
+         "A statement with only a label",                // 1 == B
+         "A statement with variables but no operation",  // 2 == C
+         "An incomplete declaration"},                   // 3 == D
+        0,                                               // Answer = (0 == A)
         "HINT: "},
 
     /* QUESTION #15 */
-    {"",
-        {"",
-         "",
-         "",
-         ""},
-        ,
+    {"In which loop is this commonly seen: \"for (;;)\"?",
+        {"To exit a loop immediately",       // 0 == A
+         "To count up to 10",                // 1 == B
+         "To loop a fixed number of times",  // 2 == C
+         "To create an infinite loop"},      // 3 == D
+        3,                                   // Answer = (3 == D)
         "HINT: "},
 
     /* QUESTION #16 */

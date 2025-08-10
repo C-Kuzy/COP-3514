@@ -62,53 +62,53 @@ static const Question quiz[] = {
          "The expression is tested before the loop body executes",
          "The expression ",
          ""},
-        ,
-        ""},
+        3,
+        "HINT: "},
 
     /* QUESTION #6 */
-    {"",
-        {"",
-         "",
-         "",
-         ""},
-        ,
-        ""},
+    {"What is the output of this C code?\nfor (n = 9; n != 0; n--)\n printf(\"\%d \", n--); \n",
+        {"9 7 5 3 3",
+         "9 8 7 6 5 4 3 2 1",
+         "9 7 5 3 1",
+         "8 6 4 2"},
+        2,
+        "HINT: "},
 
     /* QUESTION #7 */
-    {"",
-        {"",
-         "",
-         "",
-         ""},
-        ,
-        ""},
+    {"Which operator is used to separate multiple expressions in a for loop",
+        {"&",
+         ":",
+         ";",
+         ","},
+        3,
+        "HINT: "},
 
     /* QUESTION #8 */
-    {"",
-        {"",
-         "",
-         "",
-         ""},
-        ,
-        ""},
+    {"What is the correct command to delete a line in vi?",
+        {"dd",
+         "yy",
+         "p",
+         "u"},
+        0,
+        "HINT: "},
 
     /* QUESTION #9 */
-    {"",
-        {"",
-         "",
-         "",
-         ""},
-        ,
-        ""},
+    {"Which C loop structure is best for counting iterations",
+        {"for",
+         "do-while",
+         "switch",
+         "while"},
+        0,
+        "HINT: "},
 
     /* QUESTION #10 */
-    {"",
-        {"",
-         "",
-         "",
-         ""},
-        ,
-        ""},
+    {"Which keyword exits the innermost loop or switch?",
+        {"return",
+         "continue",
+         "stop",
+         "break"},
+        3,
+        "HINT: "},
 
     /* QUESTION #11 */
     {"",
@@ -117,7 +117,7 @@ static const Question quiz[] = {
          "",
          ""},
         ,
-        ""},
+        "HINT: "},
 
     /* QUESTION #12 */
     {"",
@@ -126,7 +126,7 @@ static const Question quiz[] = {
          "",
          ""},
         ,
-        ""},
+        "HINT: "},
 
     /* QUESTION #13 */
     {"",
@@ -135,7 +135,7 @@ static const Question quiz[] = {
          "",
          ""},
         ,
-        ""},
+        "HINT: "},
 
     /* QUESTION #14 */
     {"",
@@ -144,7 +144,7 @@ static const Question quiz[] = {
          "",
          ""},
         ,
-        ""},
+        "HINT: "},
 
     /* QUESTION #15 */
     {"",
@@ -153,7 +153,7 @@ static const Question quiz[] = {
          "",
          ""},
         ,
-        ""},
+        "HINT: "},
 
     /* QUESTION #16 */
     {"",
@@ -162,7 +162,7 @@ static const Question quiz[] = {
          "",
          ""},
         ,
-        ""},
+        "HINT: "},
 
     /* QUESTION #17 */
     {"",
@@ -171,7 +171,7 @@ static const Question quiz[] = {
          "",
          ""},
         ,
-        ""},
+        "HINT: "},
 
     /* QUESTION #18 */
     {"",
@@ -180,7 +180,7 @@ static const Question quiz[] = {
          "",
          ""},
         ,
-        ""},
+        "HINT: "},
 
     /* QUESTION #19 */
     {"",
@@ -189,7 +189,7 @@ static const Question quiz[] = {
          "",
          ""},
         ,
-        ""},
+        "HINT: "},
 
     /* QUESTION #20 */
     {"",
@@ -198,7 +198,7 @@ static const Question quiz[] = {
          "",
          ""},
         ,
-        ""},
+        "HINT: "},
 
 #define NQ ((int)(sizeof quiz / sizeof quiz[0]))
 

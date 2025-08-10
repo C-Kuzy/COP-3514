@@ -66,7 +66,7 @@ static const Question quiz[] = {
         "HINT: "},
 
     /* QUESTION #6 */
-    {"What is the output of the following C code?\n\nfor (n = 9; n != 0; n--)\n printf(\"\%d \", n--); \n",
+    {"What is the output of the following code?\n\nfor (n = 9; n != 0; n--)\n printf(\"\%d \", n--); \n",
         {"9 7 5 3 3",          // 0 == A
          "9 8 7 6 5 4 3 2 1",  // 1 == B
          "9 7 5 3 1",          // 2 == C
@@ -120,7 +120,7 @@ static const Question quiz[] = {
         "HINT: "},
 
     /* QUESTION #12 */
-    {"What is the output of the following C code?\n\nsum = 0;\n for (i = 0; i < 3; i++) {\n  if (i \% 2 == 1)\n  break;\n  sum += i;\n}",
+    {"What is the output of the following code?\n\nsum = 0;\n for (i = 0; i < 3; i++) {\n  if (i \% 2 == 1)\n  break;\n  sum += i;\n}",
         {"5",   // 0 == A
          "0",   // 1 == B
          "3",   // 2 == C
@@ -129,7 +129,7 @@ static const Question quiz[] = {
         "HINT: "},
 
     /* QUESTION #13 */
-    {"What is the output of the following C code?\n\nsum = 0;\n for (i = 0; i < 3; i++) {\n  if(i \% 2 == 1)\n  continue;\n  sum += i;\n}",
+    {"What is the output of the following code?\n\nsum = 0;\n for (i = 0; i < 3; i++) {\n  if(i \% 2 == 1)\n  continue;\n  sum += i;\n}",
         {"1",   // 0 == A
          "2",   // 1 == B
          "0",   // 2 == C
@@ -156,30 +156,30 @@ static const Question quiz[] = {
         "HINT: "},
 
     /* QUESTION #16 */
-    {"",
-        {"",
-         "",
-         "",
-         ""},
-        ,
+    {"What is the output of the following code?\n\ni = 3;\nwhile (i < 0); { printf(\"\%d \", i); --i; }",
+        {"Does not compile",  // 0 == A
+         "3 2 1",             // 1 == B
+         "3 2 1 0",           // 2 == C
+         "Infinite loop"},    // 3 == D
+        3,                    // Answer = (3 == D)
         "HINT: "},
 
     /* QUESTION #17 */
-    {"",
-        {"",
-         "",
-         "",
-         ""},
-        ,
+    {"Which command pastes a copied line in vi?",
+        {"rm",   // 0 == A
+         "p",    // 1 == B
+         "dd",   // 2 == C
+         "yy"},  // 3 == D
+        1,       // Answer = (1 == B)
         "HINT: "},
 
     /* QUESTION #18 */
-    {"",
-        {"",
-         "",
-         "",
-         ""},
-        ,
+    {"Which loop construct guarantees the loop body executes at least once?",
+        {"do-while",  // 0 == A
+         "for",       // 1 == B
+         "switch",    // 2 == C
+         "while"},    // 3 == D
+        0,            // Answer = (0 == A)
         "HINT: "},
 
     /* QUESTION #19 */

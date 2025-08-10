@@ -66,7 +66,7 @@ static const Question quiz[] = {
         "HINT: "},
 
     /* QUESTION #6 */
-    {"What is the output of this C code?\nfor (n = 9; n != 0; n--)\n printf(\"\%d \", n--); \n",
+    {"What is the output of the following C code?\n\nfor (n = 9; n != 0; n--)\n printf(\"\%d \", n--); \n",
         {"9 7 5 3 3",          // 0 == A
          "9 8 7 6 5 4 3 2 1",  // 1 == B
          "9 7 5 3 1",          // 2 == C
@@ -120,16 +120,16 @@ static const Question quiz[] = {
         "HINT: "},
 
     /* QUESTION #12 */
-    {"",
-        {"",
-         "",
-         "",
-         ""},
-        ,
+    {"What is the output of the following C code?\n\nsum = 0;\n for (i = 0; i < 3; i++) {\n  if (i \% 2 == 1)\n  break;\n  sum += i;\n}",
+        {"5",   // 0 == A
+         "0",   // 1 == B
+         "3",   // 2 == C
+         "1"},  // 3 == D
+        1,      // Answer = (1 == B)
         "HINT: "},
 
     /* QUESTION #13 */
-    {"",
+    {"What is the output of the following C code?\n\nsum = 0;\n for (i = 0; i < 3; i++) {\n  if(i \% 2 == 1)\n  continue;\n  sum += i;\n}",
         {"",
          "",
          "",

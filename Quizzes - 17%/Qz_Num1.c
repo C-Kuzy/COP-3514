@@ -28,7 +28,7 @@ static const Question quiz[] = {
          "An object stored in computer memory",  // 2 == C
          "A literal constant"},                  // 3 == D
         2,                                       // Answer = (2 == C)
-        "HINT: "},
+        "HINT: lvalues "},
 
     /* QUESTION #2 */
     {"What does the statement \"count++\" do?",
@@ -37,7 +37,7 @@ static const Question quiz[] = {
          "Sets 'count' to 0",         // 2 == C
          "Multiplies 'count' by 2"},  // 3 == D
         1,                            // Answer = (1 == B)  
-        "HINT: "},
+        "HINT: Think of the symbols"},
 
     /* QUESTION #3 */
     {"Which of the following is a correct use of assignment chaining?",
@@ -46,7 +46,7 @@ static const Question quiz[] = {
          "i == j == k == 0;",  // 2 == C
          "i = j == k = 0;"},   // 3 == D
         1,                     // Answer = (1 == B)
-        "HINT: "},
+        "HINT: Think that they must logically be the same"},
 
     /* QUESTION #4 */
     {"What is the output of the following statement?",
@@ -213,7 +213,7 @@ int main(void) {
         qs_ordr[i] = i;
     shuffle_int_array(qs_ordr, NQ);
 
-    printf("\nWelcome to Summer C: 2025 COP-3514 Final Exam Multiple Choice Review (enter Q/q to quit)\n\n");
+    printf("\nWelcome to Summer C: 2025 COP-3514 Quiz #1 -- Chapter 4 & 5 Multiple Choice Review (enter Q/q to quit)\n\n");
 
     int correct_count = 0;
     int correct_bank[NQ] = {0}; // 1 if correct, 0 if not

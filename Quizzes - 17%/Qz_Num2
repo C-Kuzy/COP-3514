@@ -22,11 +22,11 @@ static const Question quiz[] = {
 
     /* QUESTION #1 */
     {"What Unix text editor is guaranteed to be available on most systems?\n",
-        {"vi",     //
-         "code",   //
-         "nano",   //
-         "emacs"}, //
-        0,         // Answer = 
+        {"vi",     // 0 == A
+         "code",   // 1 == B
+         "nano",   // 2 == C
+         "emacs"}, // 3 == D
+        0,         // Answer = (0 == A)
         "HINT: "},
 
     /* QUESTION #2 */

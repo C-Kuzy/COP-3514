@@ -28,7 +28,7 @@ static const Question quiz[] = {
          "An object stored in computer memory",  // 2 == C
          "A literal constant"},                  // 3 == D
         2,                                       // Answer = (2 == C)
-        "HINT: lvalues "},
+        "HINT: Think about what can appear on the left side of an assignment."},
 
     /* QUESTION #2 */
     {"What does the statement \"count++\" do?",
@@ -37,7 +37,7 @@ static const Question quiz[] = {
          "Sets 'count' to 0",         // 2 == C
          "Multiplies 'count' by 2"},  // 3 == D
         1,                            // Answer = (1 == B)  
-        "HINT: Think of the symbols"},
+        "HINT: Consider what the double plus operator does to a variable."},
 
     /* QUESTION #3 */
     {"Which of the following is a correct use of assignment chaining?",
@@ -46,7 +46,7 @@ static const Question quiz[] = {
          "i == j == k == 0;",  // 2 == C
          "i = j == k = 0;"},   // 3 == D
         1,                     // Answer = (1 == B)
-        "HINT: Think that they must logically be the same"},
+        "HINT: Assignment chaining lets you set several variables to the same value in one statement."},
 
     /* QUESTION #4 */
     {"What is the output of the following statement?",
@@ -55,7 +55,7 @@ static const Question quiz[] = {
          "40 5",   // 2 == C
          "40 4"},  // 3 == D
         0,         // Answer = (0 == A)
-        "HINT: "},
+        "HINT: Pay attention to the order in which operations are performed and values are updated."},
 
     /* QUESTION #5 */
     {"Which form of increment returns the incremented value immediately?",
@@ -64,7 +64,7 @@ static const Question quiz[] = {
          "x++",   // 2 == C
          "--x"},  // 3 == D
         0,        // Answer = (0 == A)
-        "HINT: "},
+        "HINT: Consider whether the increment happens before or after the value is used."},
 
     /* QUESTION #6 */
     {"In a \"switch\" statement, what data types can the controlling expression be?",
@@ -73,7 +73,7 @@ static const Question quiz[] = {
          "float and double",  // 2 == C
          "int, char, enum"},  // 3 == D
         3,                    // Answer = (3 == D)
-        "HINT: "}, 
+        "HINT: Only certain types are allowed for switch control; think about which types are discrete values."}, 
 
     /* QUESTION #7 */
     {"What is the output if grade = 3\n\n switch (grade) {\n  case 4: printf(\"Excellent\");\n  case 3: printf(\"Good\");\n  case 2: printf(\"Average\");\n  case 1: printf(\"Poor\");\n  case 0: printf(\"Failing\");\n  default: printf(\"Illegal grade\");\n}\n\n",
@@ -82,7 +82,7 @@ static const Question quiz[] = {
          "GoodAverage",
          "Good"},
         0,
-        "HINT: "},
+        "HINT: Notice if there are any break statements and how control flows through the cases."},
 
     /* QUESTION #8 */
     {"Which Unix command is used to move or rename a file?",
@@ -91,7 +91,7 @@ static const Question quiz[] = {
          "cd",  // 2 == C
          "rm"}, // 3 == D
         0,      // Answer = (0 == A)
-        "HINT: Does 2 Operations, MOVES and RENAMES a file or directory"},
+        "HINT: This command is used for both moving and renaming files or directories."},
 
     /* QUESTION #9 */
     {"What does \"rm-i\" do?",
@@ -100,7 +100,7 @@ static const Question quiz[] = {
          "Copies files",                     // 2 == C
          "Renames files"},                   // 3 == D
         1,                                   // Answer = (1 == B)
-        "HINT: "},
+        "HINT: The '-i' option in Unix commands often means interactive or asks for confirmation."},
 
     /* QUESTION #10 */
     {"How can you clear the terminal screen?",
@@ -109,7 +109,7 @@ static const Question quiz[] = {
          "clear + l",  // 2 == C
          "Ctrl + c"},  // 3 == D
         1,             // Answer = (1 == B)
-        "HINT: "},
+        "HINT: There is a keyboard shortcut that refreshes your view in many terminals."},
 
     /* QUESTION #11 */
     {"Which relational operator has lower precedence than \"!=\" ?",
@@ -118,7 +118,7 @@ static const Question quiz[] = {
          "<",  // 2 == C
          ">"}, // 3 == D
         1,     // Answer = (1 == B)
-        "HINT: "},
+        "HINT: Precedence determines the order in which operators are evaluated in expressions."},
 
     /* QUESTION #12 */
     {"What is the output of...\n\ni = 3;\n j = 2;\nk = 1;\nprintf(\"\%d\")",
@@ -127,7 +127,7 @@ static const Question quiz[] = {
          "true",    // 2 == C
          "false"},  // 3 == D
         1,          // Answer = (1 == B)
-        "HINT: "},
+        "HINT: Check which variable is being printed and what its value is at that moment."},
 
     /* QUESTION #13 */
     {"Which operator is unary?",
@@ -136,7 +136,7 @@ static const Question quiz[] = {
          "&&",   // 2 == C
          "||"},  // 3 == D
         1,       // Answer = (1 == B)
-        "HINT: "},
+        "HINT: This type of operator works with just one operand, not two."},
 
     /* QUESTION #14 */
     {"Which of these tests if a value is between i and k?",
@@ -145,7 +145,7 @@ static const Question quiz[] = {
          "i > j || j < k",   // 2 == C
          "i < j && j < k"},  // 3 == D
         3,                   // Answer = (3 == D)
-        "HINT: "},
+        "HINT: You need to check two conditions at the same time for this."},
 
     /* QUESTION #15 */
     {"Which of the following if statements assigns 0 to i and skips the block?",
@@ -154,7 +154,7 @@ static const Question quiz[] = {
          "if (i = 0)",    // 2 == C
          "if (i != 0)"},  // 3 == D
         2,                // Answer = (2 == C)
-        "HINT: "},
+        "HINT: Watch out for the difference between assignment and comparison in conditions."},
 
     /* QUESTION #16 */
     {"Which keyword ends a case in a switch?",
@@ -163,7 +163,7 @@ static const Question quiz[] = {
          "return",  // 2 == C
          "end"},    // 3 == D
         2,          // Answer = (2 == C)
-        "HINT: "},
+        "HINT: This keyword is used to exit a block and continue after the switch."},
 
     /* QUESTION #17 */
     {"What happens if a switch case is missing a break?",
@@ -172,7 +172,7 @@ static const Question quiz[] = {
          "It stops the switch",               // 2 == C
          "It continues into the next case"},  // 3 == D
         3,                                    // Answer = (3 == D)
-        "HINT: "},
+        "HINT: Consider what happens when there is no instruction to stop after a case."},
 
     /* QUESTION #18 */
     {"Which header file provides bool type in C99?",
@@ -181,7 +181,7 @@ static const Question quiz[] = {
          "stdio.h",    // 2 == C
          "ctype.h"},   // 3 == D
         1,             // Answer = (1 == B)
-        "HINT: "},
+        "HINT: This header was added to the C language standard to support true/false values."},
 
     /* QUESTION #19 */
     {"Which of these represents the correct form if for multiple statements?",
@@ -190,7 +190,7 @@ static const Question quiz[] = {
          "if (expression) { statements }",  // 2 == C
          "if expression { statements }"},   // 3 == D
         2,                                  // Answer = (2 == C)
-        "HINT:"},
+        "HINT: In C, blocks of code are grouped using a specific type of bracket."},
 
     /* QUESTION #20 */
     {"Which of these statements is true about scanf and format strings?",
@@ -199,8 +199,8 @@ static const Question quiz[] = {
          "Scanf  expects input to match non-whitespace characters in the format string",  // 2 == C
          "Scanf expects input to match non-whitespace characters in the format string"},  // 3 == D
         3,                                                                                // Answer = (3 == D)
-        "HINT: "},
-
+        "HINT: Pay attention to how scanf matches what you type to the format you specify."}
+};
 
 #define NQ ((int)(sizeof quiz / sizeof quiz[0]))
 

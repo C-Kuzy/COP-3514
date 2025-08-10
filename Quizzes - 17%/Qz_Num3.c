@@ -27,7 +27,7 @@ static const Question quiz[] = {
          "\%ld",  // 2 == C
          "\%i"},  // 3 == D
         1,        // Answer = (1 == B)
-        "HINT: "},
+        "HINT: Consider which specifier is designed for non-negative integer values."},
 
     /* QUESTION #2 */
     {"Which type conversion is the safest to prevent data loss",
@@ -36,7 +36,7 @@ static const Question quiz[] = {
          "Converting int to long",       // 2 == C
          "Converting double to float"},  // 3 == D
         2,                               // Answer = (2 == C)
-        "HINT: "},
+        "HINT: Think about which conversion increases the range of possible values."},
 
     /* QUESTION #3 */
     {"Which format specifier is used to print a long int?",
@@ -45,7 +45,7 @@ static const Question quiz[] = {
          "\%f",   // 2 == C
          "\%d"},  // 3 == D
         1,        // Answer = (1 == B)
-        "HINT: "},
+        "HINT: The specifier for long integers includes a letter that stands for 'long'."},
 
     /* QUESTION #4 */
     {"Free Question: What is Unsigned int equivalent to?",
@@ -54,7 +54,7 @@ static const Question quiz[] = {
          "int",           // 2 == C
          "short int"},    // 3 == D
         1,                // Answer = (1 == B)
-        "HINT: "},
+        "HINT: Focus on the keyword that means 'no negative values'."},
 
     /* QUESTION #5 */
     {"What is integer overflow",
@@ -63,7 +63,7 @@ static const Question quiz[] = {
          "An arithmetic result is too large to represent",  // 2 == C
          "The program crashes"},                            // 3 == D
         2,                                                  // Answer = (2 == C)
-        "HINT: "},
+        "HINT: This happens when a calculation exceeds the maximum value for its type."},
 
     /* QUESTION #6 */
     {"What is the correct way to prevent overflow when multiplying two ints?",
@@ -72,7 +72,7 @@ static const Question quiz[] = {
          "i = (long) j * j;",   // 2 == C
          "i = (long)(j * j);"}, // 3 == D
         2,                      // Answer = (2 == C)
-        "HINT: "},
+        "HINT: Consider when and how you cast to a larger type during multiplication."},
 
     /* QUESTION #7 */
     {"Which cast will convert an int to double in division?",
@@ -81,7 +81,7 @@ static const Question quiz[] = {
          "(int)dividend / divisor",      // 2 == C
          "(double)dividend / divisor"},  // 3 == D
         3,                               // Answer = (3 == D)
-        "HINT: "},
+        "HINT: Look for the cast that changes the type to allow decimal results."},
 
     /* QUESTION #8 */
     {"Which floating type in C offers the highest level of precision?",
@@ -90,7 +90,7 @@ static const Question quiz[] = {
          "extended",     // 2 == C
          "float"},       // 3 == D
         1,               // Answer = (1 == B)
-        "HINT: "},
+        "HINT: The name of this type suggests it is even larger than 'double'."},
 
     /* QUESTION #9 */
     {"How do you specify a float constant explicitly?",
@@ -99,7 +99,7 @@ static const Question quiz[] = {
          "F3.14",   // 2 == C
          "3.14L"},  // 3 == D
         0,          // Answer = (0 == A)
-        "HINT: "},
+        "HINT: There is a letter you can add to a number to indicate it's a float."},
 
     /* QUESTION #10 */
     {"What does the typedef \"typedef int Bool;\" do?",
@@ -108,7 +108,7 @@ static const Question quiz[] = {
          "Makes a new integer type",      // 2 == C
          "Defines a macro"},              // 3 == D
         0,                                // Answer = (0 == A)
-        "HINT: "},
+        "HINT: Typedef is used to create alternative names for existing types."},
 
     /* QUESTION #11 */
     {"Which header defines types like size_t?",
@@ -117,7 +117,7 @@ static const Question quiz[] = {
          "stdio.h",                              // 2 == C
          "typedefs in the C standard library"},  // 3 == D
         3,                                       // Answer = (3 == D)
-        "HINT: "},
+        "HINT: These types are defined in standard library headers for portability."},
 
     /* QUESTION #12 */
     {"What is the ASCII value of 'A'?",
@@ -126,7 +126,7 @@ static const Question quiz[] = {
          "32",   // 2 == C
          "97"},  // 3 == D
         1,       // Answer = (1 == B)
-        "HINT: "},
+        "HINT: ASCII values for uppercase letters start above 60."},
 
     /* QUESTION #13 */
     {"Which of these reads a single character using scanf?",
@@ -135,7 +135,7 @@ static const Question quiz[] = {
          "scanf(\"\%f\", &ch);",   // 2 == C
          "scanf(\"\%c\", &ch);"},  // 3 == D
         3,                          // Answer = (3 == D)
-        "HINT: "},
+        "HINT: The format specifier for a single character is different from string or number."},
 
     /* QUESTION #14 */
     {"How does getchar() differ from scanf()?",
@@ -143,8 +143,8 @@ static const Question quiz[] = {
          "It skips white space",                          // 1 == B
          "It reads one character, including whitespace",  // 2 == C
          "It reads an entire line"},                      // 3 == D
-        2,                                                // Answer = (2 == B)
-        "HINT: "},
+        2,                                                // Answer = (2 == C)
+        "HINT: Consider how each function handles spaces and newlines."},
 
     /* QUESTION #15 */
     {"Which loop skips characters until a newline using getchar()?",
@@ -153,7 +153,7 @@ static const Question quiz[] = {
          "do { ch = getchar(); } while (ch == '');",      // 2 == C
          "do { ch = getchar(); } while (ch != '\\n');"},  // 3 == D
         3,                                                // Answer = (3 == D)
-        "HINT: "},
+        "HINT: The loop should continue until it finds the newline character."},
 
     /* QUESTION #16 */
     {"What is the purpose of toupper(ch)?",
@@ -162,7 +162,7 @@ static const Question quiz[] = {
          "Converts character to uppercase",   // 2 == C
          "Converts character to lowercase"},  // 3 == D
         2,                                    // Answer = (2 == C)
-        "HINT: "},
+        "HINT: This function changes the case of a letter if possible."},
 
     /* QUESTION #17 */
     {"Which header must be included to use toupper()",
@@ -171,7 +171,7 @@ static const Question quiz[] = {
          "stdbool.h",  // 2 == C
          "ctype.h"},   // 3 == D
         3,             // Answer = (3 == D)
-        "HINT: "},
+        "HINT: Functions for character classification and conversion are found in this header."},
 
     /* QUESTION #18 */
     {"Which format specifier is used to print a float value?",
@@ -180,7 +180,7 @@ static const Question quiz[] = {
          "\%f",   // 2 == C
          "\%d"},  // 3 == D
         2,        // Answer = (2 == C)
-        "HINT: "},
+        "HINT: The specifier for floating-point numbers is different from integers and characters."},
 
     /* QUESTION #19 */
     {"Which of the following is a character constant?",
@@ -189,7 +189,7 @@ static const Question quiz[] = {
          "\"A\"",    // 2 == C
          "char A"},  // 3 == D
         1,           // Answer = (1 == B)
-        "HINT: "},
+        "HINT: Character constants are written using a specific type of quotation mark."},
     
     /* QUESTION #20 */
     {"What is the output of the following?:\n\nchar ch = 'b';\nch = ch + 3;",
@@ -198,7 +198,7 @@ static const Question quiz[] = {
          "'u'",   // 2 == C
          "'e'"},  // 3 == D
         3,        // Answer = (3 == D)
-        "HINT: "},
+        "HINT: Adding a number to a character advances its ASCII value."},
 };
 #define NQ ((int)(sizeof quiz / sizeof quiz[0]))
 

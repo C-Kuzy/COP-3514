@@ -29,7 +29,7 @@ static const Question quiz[] = {
              "3",   // 3 == D
              "6"},  // 4 == E
             0,      // Answer = (0 == A)
-            "HINT: Perform modulo first: i \% j = 3 \% 4 = R3... Then do addition: 3 + 5 = 8"},
+            "HINT: Try breaking the expression into two steps and use the order of operations."},
     
     /* QUESTION #2 */
     {"The following code accomplishes which of the tasks written below? Assume the list is an int array with 10 elements that store positive int values.\n\nint foo = 0;\nint j;\nfor (j = 0; j < 10; j++) {\n  if (foo < list[j]) foo = list[j];\n"
@@ -39,7 +39,7 @@ static const Question quiz[] = {
              "It stores the largest value in the list (the maximum) in foo",                      // 3 == D
              "None of the above..."},                                                             // 4 == E
             3,                                                                                    // Answer = (3 == D)
-            "HINT: "},
+            "HINT: Think about how the value of 'foo' changes as the loop checks each element."},
 
     /* QUESTION #3 */
     {"What is the value of sum after the following program fragment is executed? Assume sum and i are int variables.\n\nsum = 0;\nfor (i = 0; i < 3; i++) {\n sum += i;\n if (i \% 2 == 1)\n break;\n}"
@@ -49,17 +49,17 @@ static const Question quiz[] = {
              "3",                      // 3 == D
              "None of the above..."},  // 4 == E
             1,                         // Answer = (1 == B)
-            "HINT: "},
+            "HINT: Consider how the break statement affects the loop and when it will execute."},
 
     /* QUESTION #4 */
     {"Which of the following loops would adequately add 1 to each element stored in values? Assume that values is an integer array (list) of 10 elements and j is an integer variable."
-            {"for (j=0; j<9; j++) values[j]++; ////In Python: for j in range (1, 9): values[j]=1",       // 0 == A
-             "for (j=0; j<=10; j++) values[j]++; ////In Python: for j in range (1, 11): values[j]=1 ",   // 1 == B
-             "for (j=1; j<10; j++) values[j]++; //In Python: for j in range (1, 10): values[j]=1 ",      // 2 == C
-             "for (j=0; j<10; j++) values[j]++; //In Python: for j in range (0, 10): values[j]=1 ",      // 3 == D
-             "None of the above..."},                                                                    // 4 == E
-            3,                                                                                           // Answer = (3 == D)
-            "HINT: "},
+            {"for (j = 0; j < 9; j++) values[j]++; //In Python: for j in range (1, 9): values[j]=1",       // 0 == A
+             "for (j = 0; j <= 10; j++) values[j]++; //In Python: for j in range (1, 11): values[j]=1 ",   // 1 == B
+             "for (j = 1; j < 10; j++) values[j]++; //In Python: for j in range (1, 10): values[j]=1 ",    // 2 == C
+             "for (j = 0; j < 10; j++) values[j]++; //In Python: for j in range (0, 10): values[j]=1 ",    // 3 == D
+             "None of the above..."},                                                                      // 4 == E
+            3,                                                                                             // Answer = (3 == D)
+            "HINT: Think about the starting and ending index values for a typical array in C."},
 
     /* QUESTION #5 */
     {"What output does the following program fragment produce?\nint n;\nfor (n = 9; n > 0; n -= 2) {\n   printf('\%d', n);\n}"
@@ -69,8 +69,7 @@ static const Question quiz[] = {
              "Infinite Loop",          // 3 == D
              "None of the above..."},  // 4 == E
             1,                         // Answer = (1 == B)
-            "HINT: "},
-
+            "HINT: Watch how the loop variable changes each time and when the loop stops."},
 }
 
 #define NQ ((int)(sizeof quiz / sizeof quiz[0]))

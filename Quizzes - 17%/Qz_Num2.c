@@ -31,92 +31,92 @@ static const Question quiz[] = {
 
     /* QUESTION #2 */
     {"What does the statement 'count++' do?\n",
-        {":w",      //
-         ":q!",     //
-         ":wq",     //
-         ":quit"},  //
-        2,          //
+        {":w",      // 0 == A
+         ":q!",     // 1 == B
+         ":wq",     // 2 == C
+         ":quit"},  // 3 == D
+        2,          // Answer = (2 == C)
         "HINT: "},
 
     /* QUESTION #3 */
     {"In a while loop, when is the controlling expression evaluated?\n",
-        {"Only once at the start",                 //
-         "After each iteration expect the first",  //
-         "After the loop body executes",           //
-         "Before the loop body executes"},         //
-        3,                                         //
+        {"Only once at the start",                 // 0 == A
+         "After each iteration expect the first",  // 1 == B
+         "After the loop body executes",           // 2 == C
+         "Before the loop body executes"},         // 3 == D
+        3,                                         // Answer = (3 == D)
         "HINT: "},
 
     /* QUESTION #4 */
     {"What happens when a while loop controlling expression is always true?\n",
-        {"Infintie loop",                    //
-         "Syntax Error",                     //
-         "The loop will execute only once",  //
-         "The loop won't execute"},          //
-        0,                                   //
+        {"Infintie loop",                    // 0 == A
+         "Syntax Error",                     // 1 == B
+         "The loop will execute only once",  // 2 == C
+         "The loop won't execute"},          // 3 == D
+        0,                                   // Answer = (0 == A)
         "HINT: "},
 
     /* QUESTION #5 */
     {"Which statement is true about a do-while loop?"
-        {"It cannot contain break statements",
-         "The expression is tested before the loop body executes",
-         "The expression ",
-         ""},
-        3,
+        {"It cannot contain break statements",                      // 0 == A
+         "The expression is tested before the loop body executes",  // 1 == B
+         "The expression must always be true",                      // 2 == C
+         "The loop body executes at least once"},                   // 3 == D
+        3,                                                          // Answer = (3 == D)
         "HINT: "},
 
     /* QUESTION #6 */
     {"What is the output of this C code?\nfor (n = 9; n != 0; n--)\n printf(\"\%d \", n--); \n",
-        {"9 7 5 3 3",
-         "9 8 7 6 5 4 3 2 1",
-         "9 7 5 3 1",
-         "8 6 4 2"},
-        2,
+        {"9 7 5 3 3",          // 0 == A
+         "9 8 7 6 5 4 3 2 1",  // 1 == B
+         "9 7 5 3 1",          // 2 == C
+         "8 6 4 2"},           // 3 == D
+        2,                     // Answer = (2 == C)
         "HINT: "},
 
     /* QUESTION #7 */
     {"Which operator is used to separate multiple expressions in a for loop",
-        {"&",
-         ":",
-         ";",
-         ","},
-        3,
+        {"&",   // 0 == A               
+         ":",   // 1 == B
+         ";",   // 2 == C
+         ","},  // 3 == D
+        3,      // Answer = (3 == D)
         "HINT: "},
 
     /* QUESTION #8 */
     {"What is the correct command to delete a line in vi?",
-        {"dd",
-         "yy",
-         "p",
-         "u"},
-        0,
+        {"dd",  // 0 == A
+         "yy",  // 1 == B
+         "p",   // 2 == C
+         "u"},  // 3 == D
+        0,      // Answer = (0 == A)
         "HINT: "},
 
     /* QUESTION #9 */
     {"Which C loop structure is best for counting iterations",
-        {"for",
-         "do-while",
-         "switch",
-         "while"},
-        0,
+        {"for",       // 0 == A
+         "do-while",  // 1 == B
+         "switch",    // 2 == C
+         "while"},    // 3 == D
+        0,            // Answer = (0 == A)
         "HINT: "},
 
     /* QUESTION #10 */
     {"Which keyword exits the innermost loop or switch?",
-        {"return",
-         "continue",
-         "stop",
-         "break"},
-        3,
+        {"return",    // 0 == A
+         "continue",  // 1 == B
+         "stop",      // 2 == C
+         "break"},    // 3 == D
+        3,            // Answer = (3 == D)
         "HINT: "},
 
     /* QUESTION #11 */
-    {"",
-        {"",
-         "",
-         "",
-         ""},
-        ,
+    {"Which keyword skips to the next iteration of the loop?",
+        {"pass",      // 0 == A
+         "continue",  // 1 == B
+         "break",     // 2 == C
+         "goto"},     // 3 == D
+        1,            // Answer = (1 == B)
         "HINT: "},
 
     /* QUESTION #12 */

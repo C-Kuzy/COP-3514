@@ -130,10 +130,10 @@ static const Question quiz[] = {
 
     /* QUESTION #13 */
     {"Which of these reads a single character using scanf?",
-        {"scanf(\"\%s\", \&ch);",   // 0 == A
-         "scanf(\"\%d\", \&ch);",   // 1 == B
-         "scanf(\"\%f\", \&ch);",   // 2 == C
-         "scanf(\"\%c\", \&ch);"},  // 3 == D
+        {"scanf(\"\%s\", &ch);",   // 0 == A
+         "scanf(\"\%d\", &ch);",   // 1 == B
+         "scanf(\"\%f\", &ch);",   // 2 == C
+         "scanf(\"\%c\", &ch);"},  // 3 == D
         3,                          // Answer = (3 == D)
         "HINT: "},
 

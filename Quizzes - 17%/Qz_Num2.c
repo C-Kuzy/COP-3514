@@ -57,7 +57,7 @@ static const Question quiz[] = {
         "HINT: Think about what happens if the condition never becomes false."},
 
     /* QUESTION #5 */
-    {"Which statement is true about a do-while loop?"
+    {"Which statement is true about a do-while loop?",
         {"It cannot contain break statements",                      // 0 == A
          "The expression is tested before the loop body executes",  // 1 == B
          "The expression must always be true",                      // 2 == C
@@ -204,8 +204,7 @@ static const Question quiz[] = {
 
 /* ---------- helpers ---------- */
 static void shuffle_int_array(int *a, int n) {
-    for (int i = n - 1 > 0; --i)
-    {
+    for (int i = n - 1; i > 0; --i) {
         int j = rand() % (i + 1);
         int tmp = a[i];
         a[i] = a[j];

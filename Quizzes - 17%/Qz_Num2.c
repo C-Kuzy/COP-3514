@@ -35,16 +35,16 @@ static const Question quiz[] = {
          ":q!",     //
          ":wq",     //
          ":quit"},  //
-        2,
+        2,          //
         "HINT: "},
 
     /* QUESTION #3 */
     {"In a while loop, when is the controlling expression evaluated?\n",
-        {"Only once at the start",
-         "After each iteration expect the first",
-         "After the loop body executes",
-         ""},
-        3,
+        {"Only once at the start",                 //
+         "After each iteration expect the first",  //
+         "After the loop body executes",           //
+         "Before the loop body executes"},         //
+        3,                                         //
         "HINT: "},
 
     /* QUESTION #4 */
@@ -57,52 +57,148 @@ static const Question quiz[] = {
         "HINT: "},
 
     /* QUESTION #5 */
-
+    {"Which statement is true about a do-while loop?"
+        {"It cannot contain break statements",
+         "The expression is tested before the loop body executes",
+         "The expression ",
+         ""},
+        ,
+        ""},
 
     /* QUESTION #6 */
-
+    {"",
+        {"",
+         "",
+         "",
+         ""},
+        ,
+        ""},
 
     /* QUESTION #7 */
-
+    {"",
+        {"",
+         "",
+         "",
+         ""},
+        ,
+        ""},
 
     /* QUESTION #8 */
-
+    {"",
+        {"",
+         "",
+         "",
+         ""},
+        ,
+        ""},
 
     /* QUESTION #9 */
-
+    {"",
+        {"",
+         "",
+         "",
+         ""},
+        ,
+        ""},
 
     /* QUESTION #10 */
-
+    {"",
+        {"",
+         "",
+         "",
+         ""},
+        ,
+        ""},
 
     /* QUESTION #11 */
-
+    {"",
+        {"",
+         "",
+         "",
+         ""},
+        ,
+        ""},
 
     /* QUESTION #12 */
-
+    {"",
+        {"",
+         "",
+         "",
+         ""},
+        ,
+        ""},
 
     /* QUESTION #13 */
-
+    {"",
+        {"",
+         "",
+         "",
+         ""},
+        ,
+        ""},
 
     /* QUESTION #14 */
-
+    {"",
+        {"",
+         "",
+         "",
+         ""},
+        ,
+        ""},
 
     /* QUESTION #15 */
-
+    {"",
+        {"",
+         "",
+         "",
+         ""},
+        ,
+        ""},
 
     /* QUESTION #16 */
-
+    {"",
+        {"",
+         "",
+         "",
+         ""},
+        ,
+        ""},
 
     /* QUESTION #17 */
-
+    {"",
+        {"",
+         "",
+         "",
+         ""},
+        ,
+        ""},
 
     /* QUESTION #18 */
-
+    {"",
+        {"",
+         "",
+         "",
+         ""},
+        ,
+        ""},
 
     /* QUESTION #19 */
-
+    {"",
+        {"",
+         "",
+         "",
+         ""},
+        ,
+        ""},
 
     /* QUESTION #20 */
-    {{}}
+    {"",
+        {"",
+         "",
+         "",
+         ""},
+        ,
+        ""},
 
 #define NQ ((int)(sizeof quiz / sizeof quiz[0]))
 

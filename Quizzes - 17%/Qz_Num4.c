@@ -71,7 +71,7 @@ static const Question quiz[] = {
          "Random values",                    // 1 == B
          "Remaining elements are set to 0",  // 2 == C
          "Compile-time error"},              // 3 == D
-        2,                                   // Answer = (2 == D)
+        2,                                   // Answer = (2 == C)
         "HINT: "},
 
     /* QUESTION #7 */
@@ -98,7 +98,7 @@ static const Question quiz[] = {
          "scanf(a[i]);",            // 1 == B
          "scanf(\"\%d\", &a[i]);",  // 2 == C
          "scanf(\"\%d\", &a);"},    // 3 == D
-        2,                          // Answer = (2 == B)
+        2,                          // Answer = (2 == C)
         "HINT: "},
 
     /* QUESTION #10 */
@@ -116,7 +116,7 @@ static const Question quiz[] = {
          "Reversed",      // 1 == B
          "Contiguously",  // 2 == C
          "Randomly"},     // 3 == D
-        2,                // Answer = (2 == B)
+        2,                // Answer = (2 == C)
         "HINT: "},
 
     /* QUESTION #12 */
@@ -125,7 +125,7 @@ static const Question quiz[] = {
          "int x[10];",         // 1 == B
          "int b[0];",          // 2 == C
          "x[2] = 5;"},         // 3 == D
-        2,                     // Answer = (2 == B)
+        2,                     // Answer = (2 == C)
         "HINT: "},
 
     /* QUESTION #13 */
@@ -134,7 +134,7 @@ static const Question quiz[] = {
          "No, arrays are constants",          // 1 == B
          "No, but you can return a pointer",  // 2 == C
          "Yes, as arrays"},                   // 3 == D
-        2,                                    // Answer = (2 == B)
+        2,                                    // Answer = (2 == C)
         "HINT: "},
 
     /* QUESTION #14 */
@@ -147,147 +147,147 @@ static const Question quiz[] = {
         "HINT: "},
 
     /* QUESTION #15 */
-    {"",
-        {"", // 0 == A
-         "", // 1 == B
-         "", // 2 == C
-         ""}, // 3 == D
-        ,      // Answer = ( == )
+    {"What does the following do? int a[2] = {5};",
+        {"Causes an error",           // 0 == A
+         "Skips initialization",      // 1 == B
+         "Initializes all to 5",      // 2 == C
+         "Sets a[0] = 5, a[1] = 0"},  // 3 == D
+        3,                            // Answer = (3 == D)
         "HINT: "},
 
     /* QUESTION #16 */
-    {"",
-        {"", // 0 == A
-         "", // 1 == B
-         "", // 2 == C
-         ""}, // 3 == D
-        ,      // Answer = ( == )
+    {"How are 2D arrays declared in C?",
+        {"int a = [3][4];",  // 0 == A
+         "array a(3, 4);",   // 1 == B
+         "int a [3][4];",    // 2 == C
+         "int a[3, 4];"},    // 3 == D
+        2,                   // Answer = (2 == C)
         "HINT: "},
 
     /* QUESTION #17 */
-    {"",
-        {"", // 0 == A
-         "", // 1 == B
-         "", // 2 == C
-         ""}, // 3 == D
-        ,      // Answer = ( == )
+    {"What is the row-major order in C?",
+        {"Row-wise storage",     // 0 == A
+         "Reverse storage",      // 1 == B
+         "Column-wise storage",  // 2 == C
+         "Bitwise mapping"},     // 3 == D
+        0,                       // Answer = (0 == A)
         "HINT: "},
 
     /* QUESTION #18 */
-    {"",
-        {"", // 0 == A
-         "", // 1 == B
-         "", // 2 == C
-         ""}, // 3 == D
-        ,      // Answer = ( == )
+    {"Can a 2D array be partially initialized?",
+        {"No",                                    // 0 == A
+         "Yes, and rest stay uninitialized",      // 1 == B
+         "Yes, and remaining elements become 0",  // 2 == C
+         "Only for first row"},                   // 3 == D
+        2,                                        // Answer = (2 == C)
         "HINT: "},
 
     /* QUESTION #19 */
-    {"",
-        {"", // 0 == A
-         "", // 1 == B
-         "", // 2 == C
-         ""}, // 3 == D
-        ,      // Answer = ( == )
+    {"How many elements are in int x[][3] = {{1, 2, 3}, {4, 5, 6}}; ?",
+        {"0",                                 // 0 == A
+         "9",                                 // 1 == B
+         "3",                                 // 2 == C
+         "2 rows, 3 columns -> 6 elements"},  // 3 == D
+        3,                                    // Answer = (3 == D)
         "HINT: "},
     
     /* QUESTION #20 */
-    {"",
-        {"", // 0 == A
-         "", // 1 == B
-         "", // 2 == C
-         ""}, // 3 == D
-        ,      // Answer = ( == )
+    {"What is the output of the following code?\n\nint a[] = {1, 2, 3};\nprintf(\"\%d\", a[1]);",
+        {"Garbage value",  // 0 == A
+         "0",              // 1 == B
+         "2",              // 2 == C
+         "1"},             // 3 == D
+        2,                 // Answer = (2 == C)
         "HINT: "},
 
     /* QUESTION #21 */
-    {"",
-        {"", // 0 == A
-         "", // 1 == B
-         "", // 2 == C
-         ""}, // 3 == D
-        ,      // Answer = ( == )
+    {"What will sizeof(a) return in this code?\n\nint a[5];\nAssume int is 4 bytes",
+        {"4",    // 0 == A
+         "8",    // 1 == B
+         "10",   // 2 == C
+         "20"},  // 3 == D
+        3,       // Answer = (3 == D)
         "HINT: "},
 
     /* QUESTION #22 */
-    {"",
-        {"", // 0 == A
-         "", // 1 == B
-         "", // 2 == C
-         ""}, // 3 == D
-        ,      // Answer = ( == )
+    {"How can you initialize all values of an integer array to zero?",
+        {"int a[5] = 0;",         // 0 == A
+         "int a[] = {1, 1, 1};",  // 1 == B
+         "int a[5] = {0};",       // 2 == C
+         "int a = {0};"},         // 3 == D
+        2,                        // Answer = (2 == C)
         "HINT: "},
     
     /* QUESTION #23 */
-    {"",
-        {"", // 0 == A
-         "", // 1 == B
-         "", // 2 == C
-         ""}, // 3 == D
-        ,      // Answer = ( == )
+    {"What's the correct way to loop through an array a[5]?",
+        {"for (i = 0; i <= 5; i++)",   // 0 == A
+         "for (i = 0; i < 5; i++)",    // 1 == B
+         "for (i = 1; i < 5; i++)",    // 2 == C
+         "for (i = 1; i <= 5; i++)"},  // 3 == D
+        1,                             // Answer = (1 == B)
         "HINT: "},
 
     /* QUESTION #24 */
-    {"",
-        {"", // 0 == A
-         "", // 1 == B
-         "", // 2 == C
-         ""}, // 3 == D
-        ,      // Answer = ( == )
+    {"What is printed by this code?\n\nint arr[] = {4, 5, 6};\nprintf(\"\%d\", arr[3]);",
+        {"5",                       // 0 == A
+         "4",                       // 1 == B
+         "Garbage value or crash",  // 2 == C
+         "6"},                      // 3 == D
+        2,                          // Answer = (2 == C)
         "HINT: "},
 
     /* QUESTION #25 */
-    {"",
-        {"", // 0 == A
-         "", // 1 == B
-         "", // 2 == C
-         ""}, // 3 == D
-        ,      // Answer = ( == )
+    {"Which of these is valid syntax to pass an array to a function?",
+        {"All of the above",         // 0 == A
+         "void foo(int* arr);",      // 1 == B
+         "void foo(int arr[]);",     // 2 == C
+         "void foo(int arr[10]);"},  // 3 == D
+        0,                           // Answer = (0 == A)
         "HINT: "},
 
     /* QUESTION #26 */
-    {"",
-        {"", // 0 == A
-         "", // 1 == B
-         "", // 2 == C
-         ""}, // 3 == D
-        ,      // Answer = ( == )
+    {"Can you assign arrays directly in C like arr1 = arr2; ?",
+        {"Yes",                               // 0 == A
+         "Only for character arrays",         // 1 == B
+         "No, must copy element-by-element",  // 2 == C
+         "Only for static arrays"},           // 3 == D
+        2,                                    // Answer = (2 == C)
         "HINT: "},
 
     /* QUESTION #27 */
-    {"",
-        {"", // 0 == A
-         "", // 1 == B
-         "", // 2 == C
-         ""}, // 3 == D
-        ,      // Answer = ( == )
+    {"How do you declare a 2D array of 3 rows and 4 columns?",
+        {"int a[12];",     // 0 == A
+         "array[3, 4];",   // 1 == B
+         "int a[4][3];",   // 2 == C
+         "int a[3][4];"},  // 3 == D
+        3,                 // Answer = (3 == D)
         "HINT: "},
 
     /* QUESTION #28 */
-    {"",
-        {"", // 0 == A
-         "", // 1 == B
-         "", // 2 == C
-         ""}, // 3 == D
-        ,      // Answer = ( == )
+    {"How are arrays passed to functions?",
+        {"By reference (pointers)",  // 0 == A
+         "Not allowed",              // 1 == B
+         "By value",                 // 2 == C
+         "By address copy"},         // 3 == D
+        0,                           // Answer = (0 == A)
         "HINT: "},
 
     /* QUESTION #29 */
-    {"",
-        {"", // 0 == A
-         "", // 1 == B
-         "", // 2 == C
-         ""}, // 3 == D
-        ,      // Answer = ( == )
+    {"What is printed by the following code?\n\nint a[3] = {1, 2, 3};\nint *p = a;\nprintf(\"\%d\", *(p + 2));",
+        {"3",       // 0 == A
+         "1",       // 1 == B
+         "2",       // 2 == C
+         "Error"},  // 3 == D
+        0,          // Answer = (0 == A)
         "HINT: "},
 
     /* QUESTION #30 */
-    {"",
-        {"", // 0 == A
-         "", // 1 == B
-         "", // 2 == C
-         ""}, // 3 == D
-        ,      // Answer = ( == )
+    {"Which function can copy arrays safely in C?",
+        {"alloca()",  // 0 == A
+         "strcpy()",  // 1 == B
+         "memcpy()",  // 2 == C
+         "asign()"},  // 3 == D
+        2,            // Answer = (2 == C)
         "HINT: "},
 };
 #define NQ ((int)(sizeof quiz / sizeof quiz[0]))

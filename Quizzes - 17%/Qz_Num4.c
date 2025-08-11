@@ -21,129 +21,129 @@ typedef struct {
 static const Question quiz[] = {
 
     /* QUESTION #1 */
-    {"",
-        {"",   // 0 == A
-         "",   // 1 == B
-         "",  // 2 == C
-         ""},  // 3 == D
-        ,        // Answer = (1 == B)
+    {"What does int a[10]; do in C?",
+        {"Allocates memory dynamically for 10 variables",  // 0 == A
+         "Declares an array of 10 integers",               // 1 == B
+         "Declares an integer with value 10",              // 2 == C
+         "Initializes 10 arrays with default values"},     // 3 == D
+        1,                                                 // Answer = (1 == B)
         "HINT: "},
 
     /* QUESTION #2 */
-    {"",
-        {"",      // 0 == A
-         "",       // 1 == B
-         "",       // 2 == C
-         ""},  // 3 == D
-        ,                               // Answer = (2 == C)
+    {"Why is #define N 10 often used when declaring arrays?",
+        {"It allows easy updates to array size",    // 0 == A
+         "It makes code easier to debug",           // 1 == B
+         "It automatically initializes the array",  // 2 == C
+         "It improves runtime performance"},        // 3 == D
+        0,                                              // Answer = (2 == C)
         "HINT: "},
 
     /* QUESTION #3 */
-    {"",
-        {"",  // 0 == A
-         "",  // 1 == B
-         "",   // 2 == C
-         ""},  // 3 == D
-        ,        // Answer = (1 == B)
+    {"Which of these is a valid way to initialize an array?",
+        {"array a = [1, 2, 3];",  // 0 == A
+         "int a[] = (1, 2, 3);",  // 1 == B
+         "int a = {1, 2, 3};",    // 2 == C
+         "int a[] = 10;"},        // 3 == D
+        1,                        // Answer = (1 == B)
         "HINT: "},
 
     /* QUESTION #4 */
-    {"",
-        {"",      // 0 == A
-         "",  // 1 == B
-         "",           // 2 == C
-         ""},    // 3 == D
-        ,                // Answer = (1 == B)
+    {"What happens if you access an array index outside its declared size in C?",
+        {"The program stops automatically",    // 0 == A
+         "It gives a compile-time error",      // 1 == B
+         "It results in undefined behavior",   // 2 == C
+         "It results in undefined behavior"},  // 3 == D
+        3,                                     // Answer = (1 == B)
         "HINT: "},
 
     /* QUESTION #5 */
-    {"",
-        {"",                               // 0 == A
-         "",      // 1 == B
-         "",  // 2 == C
-         ""},                            // 3 == D
-        ,                                                  // Answer = (2 == C)
+    {"What is the index of the first element in a C array?",
+        {"1",                          // 0 == A
+         "Depends on the array type",  // 1 == B
+         "0",                          // 2 == C
+         "-1"},                        // 3 == D
+        3,                             // Answer = (2 == C)
         "HINT: "},
 
     /* QUESTION #6 */
-    {"",
-        {"", // 0 == A
-         "", // 1 == B
-         "", // 2 == C
-         ""}, // 3 == D
-        ,      // Answer = ( == )
+    {"What is stored in an array if it's only partially initialized?",
+        {"Previous values in memory",        // 0 == A
+         "Random values",                    // 1 == B
+         "Remaining elements are set to 0",  // 2 == C
+         "Compile-time error"},              // 3 == D
+        2,                                   // Answer = (2 == D)
         "HINT: "},
 
     /* QUESTION #7 */
-    {"",
-        {"", // 0 == A
-         "", // 1 == B
-         "", // 2 == C
-         ""}, // 3 == D
-        ,      // Answer = ( == )
+    {"What type of loop is commonly used to traverse an array?",
+        {"for loop",       // 0 == A
+         "do-while loop",  // 1 == B
+         "switch loop",    // 2 == C
+         "while loop"},    // 3 == D
+        0,                 // Answer = (0 == A)
         "HINT: "},
 
     /* QUESTION #8 */
-    {"",
-        {"", // 0 == A
-         "", // 1 == B
-         "", // 2 == C
-         ""}, // 3 == D
-        ,      // Answer = ( == )
+    {"What happens when you assign a value to a[5] in a 5-element array?",
+        {"It stores at the last element",  // 0 == A
+         "It returns 0",                   // 1 == B
+         "It gives a warning",             // 2 == C
+         "It causes undefined behavior"},  // 3 == D
+        3,                                 // Answer = (3 == D)
         "HINT: "},
 
     /* QUESTION #9 */
-    {"",
-        {"", // 0 == A
-         "", // 1 == B
-         "", // 2 == C
-         ""}, // 3 == D
-        ,      // Answer = ( == )
+    {"What is the correct syntax to read values into an array?",
+        {"scanf(\"\%d\", &a);",     // 0 == A
+         "scanf(a[i]);",            // 1 == B
+         "scanf(\"\%d\", &a[i]);",  // 2 == C
+         "scanf(\"\%d\", &a);"},    // 3 == D
+        2,                          // Answer = (2 == B)
         "HINT: "},
 
     /* QUESTION #10 */
-    {"",
-        {"", // 0 == A
-         "", // 1 == B
-         "", // 2 == C
-         ""}, // 3 == D
-        ,      // Answer = ( == )
+    {"What is the maximum index in int b[100]; ?",
+        {"99",   // 0 == A
+         "100",  // 1 == B
+         "101",  // 2 == C
+         "98"},  // 3 == D
+        0,       // Answer = (0 == A)
         "HINT: "},
 
     /* QUESTION #11 */
-    {"",
-        {"", // 0 == A
-         "", // 1 == B
-         "", // 2 == C
-         ""}, // 3 == D
-        ,      // Answer = ( == )
+    {"How are array elements stored in memory in C?",
+        {"Alternating",   // 0 == A
+         "Reversed",      // 1 == B
+         "Contiguously",  // 2 == C
+         "Randomly"},     // 3 == D
+        2,                // Answer = (2 == B)
         "HINT: "},
 
     /* QUESTION #12 */
-    {"",
-        {"", // 0 == A
-         "", // 1 == B
-         "", // 2 == C
-         ""}, // 3 == D
-        ,      // Answer = ( == )
+    {"Which of the following is NOT allowed?",
+        {"int a[] = (1, 2);",  // 0 == A
+         "int x[10];",         // 1 == B
+         "int b[0];",          // 2 == C
+         "x[2] = 5;"},         // 3 == D
+        2,                     // Answer = (2 == B)
         "HINT: "},
 
     /* QUESTION #13 */
-    {"",
-        {"", // 0 == A
-         "", // 1 == B
-         "", // 2 == C
-         ""}, // 3 == D
-        ,      // Answer = ( == )
+    {"Can arrays be returned directly from a function in C?",
+        {"Yes, using structs only",           // 0 == A
+         "No, arrays are constants",          // 1 == B
+         "No, but you can return a pointer",  // 2 == C
+         "Yes, as arrays"},                   // 3 == D
+        2,                                    // Answer = (2 == B)
         "HINT: "},
 
     /* QUESTION #14 */
-    {"",
-        {"", // 0 == A
-         "", // 1 == B
-         "", // 2 == C
-         ""}, // 3 == D
-        ,      // Answer = ( == )
+    {"Which operator is used to access array elements?",
+        {"[] (brackets)",  // 0 == A
+         ". (dot)",        // 1 == B
+         "&",              // 2 == C
+         "->"},            // 3 == D
+        0,                 // Answer = (0 == A)
         "HINT: "},
 
     /* QUESTION #15 */
@@ -289,12 +289,12 @@ static const Question quiz[] = {
          ""}, // 3 == D
         ,      // Answer = ( == )
         "HINT: "},
-
+};
 #define NQ ((int)(sizeof quiz / sizeof quiz[0]))
 
 /* ---------- helpers ---------- */
 static void shuffle_int_array(int *a, int n) {
-    for (int i = n - 1 > 0; --i)
+    for (int i = n - 1; i > 0; --i)
     {
         int j = rand() % (i + 1);
         int tmp = a[i];

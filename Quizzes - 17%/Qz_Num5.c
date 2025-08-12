@@ -103,39 +103,39 @@ static const Question quiz[] = {
         "HINT: "},
 
     /* QUESTION #10 */
-    {"",
-        {"", // 0 == A
-         "", // 1 == B
-         "", // 2 == C
-         ""}, // 3 == D
-        ,      // Answer = ( == )
+    {"What does \%p in printf print?",
+        {"Pointer value",      // 0 == A
+         "Dereferenced data",  // 1 == B
+         "Pointer address",    // 2 == C
+         "Character"},         // 3 == D
+        2,                     // Answer = (2 == C)
         "HINT: "},
 
     /* QUESTION #11 */
-    {"",
-        {"", // 0 == A
-         "", // 1 == B
-         "", // 2 == C
-         ""}, // 3 == D
-        ,      // Answer = ( == )
+    {"What happens if you use an uninitialized pointer?",
+        {"Compilation error",    // 0 == A
+         "Runtime warning",      // 1 == B
+         "It works fine",        // 2 == C
+         "Undefined behavior"},  // 3 == D
+        3,                       // Answer = (3 == D)
         "HINT: "},
 
     /* QUESTION #12 */
-    {"",
-        {"", // 0 == A
-         "", // 1 == B
-         "", // 2 == C
-         ""}, // 3 == D
-        ,      // Answer = ( == )
+    {"What operator is used to access the value a pointer points to?",
+        {"*",    // 0 == A
+         "#",    // 1 == B
+         "\%",   // 2 == C
+         "->"},  // 3 == D
+        0,      // Answer = ( == )
         "HINT: "},
 
     /* QUESTION #13 */
-    {"",
-        {"", // 0 == A
-         "", // 1 == B
-         "", // 2 == C
-         ""}, // 3 == D
-        ,      // Answer = ( == )
+    {"What operator gets the address of a variable?",
+        {"#",   // 0 == A
+         "&",   // 1 == B
+         "~",   // 2 == C
+         "*"},  // 3 == D
+        1,      // Answer = (1 == B)
         "HINT: "},
 
     /* QUESTION #14 */

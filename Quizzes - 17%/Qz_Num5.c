@@ -18,88 +18,88 @@ typedef struct {
     const char *why;                  // Got the Question wrong? There's feedback for you!
 } Question;
 
-/* REFERENCE QUESTIONS FOR Multiple Choice: Canvas -> COP 3514 -> Modules -> Week #4 -> 5 - Chapter 8  */
+/* REFERENCE QUESTIONS FOR Multiple Choice: Canvas -> COP 3514 -> Modules -> Week #4 -> 6 - Chapter 10 & 11  */
 static const Question quiz[] = {
 
     /* QUESTION #1 */
-    {"",
-        {"",   // 0 == A
-         "",   // 1 == B
-         "",  // 2 == C
-         ""},  // 3 == D
-        ,        // Answer = (1 == B)
+    {"What is the result of f(5) for the Fibonacci-style recursive function defined as: f(n) = f(n - 1) + f(n - 2), with f(1) = 1 and f(2) = 1?",
+        {"1",   // 0 == A
+         "11",  // 1 == B
+         "8",   // 2 == C
+         "5"},  // 3 == D
+        3,      // Answer = (3 == D)
         "HINT: "},
 
     /* QUESTION #2 */
-    {"",
-        {"",      // 0 == A
-         "",       // 1 == B
-         "",       // 2 == C
-         ""},  // 3 == D
-        ,                               // Answer = (2 == C)
+    {"Which is NOT a major element of a C program?",
+        {"External variable declarations",  // 0 == A
+         "Preprocessing directives",        // 1 == B
+         "Memory map templates",            // 2 == C
+         "Function definitions"},           // 3 == D
+        2,                                  // Answer = (2 == C)
         "HINT: "},
 
     /* QUESTION #3 */
-    {"",
-        {"",  // 0 == A
-         "",  // 1 == B
-         "",   // 2 == C
-         ""},  // 3 == D
-        ,        // Answer = (1 == B)
+    {"Where should #include directives appear in a well-organized C program?",
+        {"After the main()",             // 0 == A
+         "After external declarations",  // 1 == B
+         "After function definitions",   // 2 == C
+         "At the beginning"},            // 3 == D
+        3,                               // Answer = (3 == D)
         "HINT: "},
 
     /* QUESTION #4 */
-    {"",
-        {"",      // 0 == A
-         "",  // 1 == B
-         "",           // 2 == C
-         ""},    // 3 == D
-        ,                // Answer = (1 == B)
+    {"Which of the following describes local variable scope?",
+        {"Function scope",  // 0 == A
+         "Global scope",    // 1 == B
+         "Block scope",     // 2 == C
+         "File scope"},     // 3 == D
+        2,                  // Answer = (2 == C)
         "HINT: "},
 
     /* QUESTION #5 */
-    {"",
-        {"",                               // 0 == A
-         "",      // 1 == B
-         "",  // 2 == C
-         ""},                            // 3 == D
-        ,                                                  // Answer = (2 == C)
+    {"What is the scope of a function parameter",
+        {"Block scope",     // 0 == A
+         "Loop scope",      // 1 == B
+         "File scope",      // 2 == C
+         "Program scope"},  // 3 == D
+        0,                  // Answer = (0 == A)
         "HINT: "},
 
     /* QUESTION #6 */
-    {"",
-        {"", // 0 == A
-         "", // 1 == B
-         "", // 2 == C
-         ""}, // 3 == D
-        ,      // Answer = ( == )
+    {"What is the output of storage.c with a local counter inside fn()?",
+        {"0, 1, 2, 3, 4"    // 0 == A
+         "1, 1, 1, 1, 1",   // 1 == B
+         "5, 5, 5, 5, 5",   // 2 == C
+         "1, 2, 3, 4, 5"},  // 3 == D
+        1,                  // Answer = (1 == B)
         "HINT: "},
 
     /* QUESTION #7 */
-    {"",
-        {"", // 0 == A
-         "", // 1 == B
-         "", // 2 == C
-         ""}, // 3 == D
-        ,      // Answer = ( == )
+    {"What is the disadvantage of using global variables?",
+        {"Easier parameter passing",     // 0 == A
+         "Harder to reuse functions",    // 1 == B
+         "Faster execution",             // 2 == C
+         "Improved memory management"},  // 3 == D
+        1,                               // Answer = (1 == B)
         "HINT: "},
 
     /* QUESTION #8 */
-    {"",
-        {"", // 0 == A
-         "", // 1 == B
-         "", // 2 == C
-         ""}, // 3 == D
-        ,      // Answer = ( == )
+    {"Why should variable i be local in a program?",
+        {"To allow recursion",           // 0 == A
+         "To avoid unintended sharing",  // 1 == B
+         "To reduce memory use",         // 2 == C
+         "To avoid syntax errors"},      // 3 == D
+        1,                               // Answer = (1 == B)
         "HINT: "},
 
     /* QUESTION #9 */
-    {"",
-        {"", // 0 == A
-         "", // 1 == B
-         "", // 2 == C
-         ""}, // 3 == D
-        ,      // Answer = ( == )
+    {"Which symbol is used to declare pointer variables in C?",
+        {"ptr",   // 0 == A
+         "&",     // 1 == B
+         "*",     // 2 == C
+         "ref"},  // 3 == D
+        2,        // Answer = (2 == C)
         "HINT: "},
 
     /* QUESTION #10 */

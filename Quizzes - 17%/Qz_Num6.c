@@ -31,7 +31,7 @@ static const Question quiz[] = {
         "HINT: "},
 
     /* QUESTION #2 */
-    {"What type does a string literal like "abc" decay to when used in an expression or passed to a function in C?",
+    {"What type does a string literal like \"abc\" decay to when used in an expression or passed to a function in C?",
         {"char *",   // 0 == A
          "int *",    // 1 == B
          "char[]",   // 2 == C

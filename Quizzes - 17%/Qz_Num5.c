@@ -157,138 +157,138 @@ static const Question quiz[] = {
         "HINT: "},
 
     /* QUESTION #16 */
-    {"",
-        {"", // 0 == A
-         "", // 1 == B
-         "", // 2 == C
-         ""}, // 3 == D
-        ,      // Answer = ( == )
+    {"What is the output of the scope exercise?\n\nint i;\nvoid f(int i) {\n  i = 1;\n}\n\nvoid g(void) {\n  int i = 2;\n  if (i > 0) {\n    int i;\n     i = 3;\n  }\n  i = 4;\n}\n\nvoid h(void) {\n  i = 5;\n}",
+        {"6 3 2 3",   // 0 == A
+         "2 2 2 2",   // 1 == B
+         "2 3 2 3",   // 2 == C
+         "6 2 2 2"},  // 3 == D
+        0,            // Answer = (0 == A)
         "HINT: "},
 
     /* QUESTION #17 */
-    {"",
-        {"", // 0 == A
-         "", // 1 == B
-         "", // 2 == C
-         ""}, // 3 == D
-        ,      // Answer = ( == )
+    {"Which of the following is a valid pointer declaration?",
+        {"int p*;",  // 0 == A
+         "*int p;",  // 1 == B
+         "p *int;",  // 2 == C
+         "int *p"},  // 3 == D
+        3,           // Answer = (3 == D)
         "HINT: "},
 
     /* QUESTION #18 */
-    {"",
-        {"", // 0 == A
-         "", // 1 == B
-         "", // 2 == C
-         ""}, // 3 == D
-        ,      // Answer = ( == )
+    {"What type of memory is automatically deallocated at the end of a function?",
+        {"Automatic",   // 0 == A
+         "Global",      // 1 == B
+         "File-Scope",  // 2 == C
+         "Static"},     // 3 == D
+        0,              // Answer = (0 == A)
         "HINT: "},
 
     /* QUESTION #19 */
-    {"",
-        {"", // 0 == A
-         "", // 1 == B
-         "", // 2 == C
-         ""}, // 3 == D
-        ,      // Answer = ( == )
+    {"What does a block scope mean for a variable?",
+        {"It is visible only within it's block",  // 0 == A
+         "It overrides the main scope",           // 1 == B
+         "It is available everywhere",            // 2 == C
+         "It is global unless static"},           // 3 == D
+        0,                                        // Answer = (0 == A)
         "HINT: "},
     
     /* QUESTION #20 */
-    {"",
-        {"", // 0 == A
-         "", // 1 == B
-         "", // 2 == C
-         ""}, // 3 == D
-        ,      // Answer = ( == )
+    {"What happens when a variable declared inside a block has the same name as an external variable?",
+        {"An error occurs",                               // 0 == A
+         "The internal variable hides the external one",  // 1 == B
+         "The external one overrides",                    // 2 == C
+         "They share the same value"},                    // 3 == D
+        1,                                                // Answer = (1 == B)
         "HINT: "},
 
     /* QUESTION #21 */
-    {"",
-        {"", // 0 == A
-         "", // 1 == B
-         "", // 2 == C
-         ""}, // 3 == D
-        ,      // Answer = ( == )
+    {"Why are global variables risky in multi-function programs?",
+        {"They must be passed explicitly",        // 0 == A
+         "They aren't visible to all functions",  // 1 == B
+         "They consume too much memory",          // 2 == C
+         "Bugs are harder to trace"},             // 3 == D
+        3,                                        // Answer = (3 == D)
         "HINT: "},
 
     /* QUESTION #22 */
-    {"",
-        {"", // 0 == A
-         "", // 1 == B
-         "", // 2 == C
-         ""}, // 3 == D
-        ,      // Answer = ( == )
+    {"Which keyword do you use to create a pointer to a double?",
+        {"*double",          // 0 == A
+         "ref double",       // 1 == B
+         "pointer<double>",  // 2 == C
+         "double x;"},       // 3 == D
+        0,                   // Answer = (0 == A)
         "HINT: "},
     
     /* QUESTION #23 */
-    {"",
-        {"", // 0 == A
-         "", // 1 == B
-         "", // 2 == C
-         ""}, // 3 == D
-        ,      // Answer = ( == )
+    {"Why is it generally better to use parameters instead of global variables for communication between functions?",
+        {"It improves reusability and clarity",  // 0 == A
+         "It increases compilation speed",       // 1 == B
+         "It prevents pointer errors",           // 2 == C
+         "It saves memory"},                     // 3 == D
+        0,                                       // Answer = (0 == A)
         "HINT: "},
 
     /* QUESTION #24 */
-    {"",
-        {"", // 0 == A
-         "", // 1 == B
-         "", // 2 == C
-         ""}, // 3 == D
-        ,      // Answer = ( == )
+    {"What would be the correct way to declare multiple pointer variables to int?",
+        {"\"int *p; int *q;\" or \"int *p, *q;\"",  // 0 == A
+         "\"int p, *q;\" or \"int p; int *q;\"",    // 1 == B
+         "\"int *p, q;\" or \"int *p; int q;\"",    // 2 == C
+         "\"int* p, q;\" or \"int p; int q;\""},    // 3 == D
+        0,                                          // Answer = (0 == A)
         "HINT: "},
 
     /* QUESTION #25 */
-    {"",
-        {"", // 0 == A
-         "", // 1 == B
-         "", // 2 == C
-         ""}, // 3 == D
-        ,      // Answer = ( == )
+    {"Which of the following is a good reason to avoid global variables in large programs?",
+        {"They lead to hidden dependencies",   // 0 == A
+         "They can't be declared in headers",  // 1 == B
+         "They always use more memory",        // 2 == C
+         "They make the code run slower"},     // 3 == D
+        0,                                     // Answer = (0 == A)
         "HINT: "},
 
     /* QUESTION #26 */
-    {"",
-        {"", // 0 == A
-         "", // 1 == B
-         "", // 2 == C
-         ""}, // 3 == D
-        ,      // Answer = ( == )
+    {"What is the scope of a variable declared inside an if block?",
+        {"Until program termination",                            // 0 == A
+         "File scope",                                           // 1 == B
+         "The entire function",                                  // 2 == C
+         "From it's declaration to the end of the block only"},  // 3 == D
+        3,                                                       // Answer = (3 == D)
         "HINT: "},
 
     /* QUESTION #27 */
-    {"",
-        {"", // 0 == A
-         "", // 1 == B
-         "", // 2 == C
-         ""}, // 3 == D
-        ,      // Answer = ( == )
+    {"Which of the following accurately describes the default behavior of a local variable in C?",
+        {"It retains its value between function calls",       // 0 == A
+         "It is re-initialized on every call and discarded",  // 1 == B
+         "It must be passed by reference",                    // 2 == C
+         "It is stored in ROM"},                              // 3 == D
+        1,                                                    // Answer = (1 == B)
         "HINT: "},
 
     /* QUESTION #28 */
-    {"",
-        {"", // 0 == A
-         "", // 1 == B
-         "", // 2 == C
-         ""}, // 3 == D
-        ,      // Answer = ( == )
+    {"What is the main purpose of using pointer variables in C?",
+        {"To make global variables more accessible",         // 0 == A
+         "To access arrays only",                            // 1 == B
+         "To simplify loops",                                // 2 == C
+         "To work with memory addresses and dynamic data"},  // 3 == D
+        3,                                                   // Answer = (3 == D)
         "HINT: "},
 
     /* QUESTION #29 */
-    {"",
-        {"", // 0 == A
-         "", // 1 == B
-         "", // 2 == C
-         ""}, // 3 == D
-        ,      // Answer = ( == )
+    {"What is printed?\n\nint main() {\n  int b = 4, *q;\n  q = &b;\n  *q = 9;\n  printf(\"\%d \%d\", b, *q);\n  return 0;\n}",
+        {"9 4",  // 0 == A
+         "9 9",  // 1 == B
+         "4 4",  // 2 == C
+         "4 9"}, // 3 == D
+        1,       // Answer = (1 == B)
         "HINT: "},
 
     /* QUESTION #30 */
-    {"",
-        {"", // 0 == A
-         "", // 1 == B
-         "", // 2 == C
-         ""}, // 3 == D
-        ,      // Answer = ( == )
+    {"Given the array int a[] = {3, 5, 7};, what does *(a + 1) evaluate to?",
+        {"Address of a[1]", // 0 == A
+         "5",               // 1 == B
+         "3",               // 2 == C
+         "a[0]"},           // 3 == D
+        1,                  // Answer = (1 == B)
         "HINT: "},
 };
 #define NQ ((int)(sizeof quiz / sizeof quiz[0]))

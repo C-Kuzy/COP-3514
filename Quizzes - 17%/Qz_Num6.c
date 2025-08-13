@@ -22,7 +22,7 @@ typedef struct {
 static const Question quiz[] = {
 
     /* QUESTION #1 */
-    {"What is the actual type of a string literal like "abc" when declared in C?",
+    {"What is the actual type of a string literal like \"abc\" when declared in C?",
         {"int *",    // 0 == A
          "char *",   // 1 == B
          "string",   // 2 == C

@@ -28,7 +28,7 @@ static const Question quiz[] = {
          "8",   // 2 == C
          "5"},  // 3 == D
         3,      // Answer = (3 == D)
-        "HINT: "},
+        "HINT: Try writing out the sequence for a few values to see the pattern."},
 
     /* QUESTION #2 */
     {"Which is NOT a major element of a C program?",
@@ -37,7 +37,7 @@ static const Question quiz[] = {
          "Memory map templates",            // 2 == C
          "Function definitions"},           // 3 == D
         2,                                  // Answer = (2 == C)
-        "HINT: "},
+        "HINT: Consider which items are actually part of C syntax and structure."},
 
     /* QUESTION #3 */
     {"Where should #include directives appear in a well-organized C program?",
@@ -46,7 +46,7 @@ static const Question quiz[] = {
          "After function definitions",   // 2 == C
          "At the beginning"},            // 3 == D
         3,                               // Answer = (3 == D)
-        "HINT: "},
+        "HINT: Think about what needs to be processed before any code is compiled."},
 
     /* QUESTION #4 */
     {"Which of the following describes local variable scope?",
@@ -55,7 +55,7 @@ static const Question quiz[] = {
          "Block scope",     // 2 == C
          "File scope"},     // 3 == D
         2,                  // Answer = (2 == C)
-        "HINT: "},
+        "HINT: Consider where a variable is accessible if declared inside curly braces."},
 
     /* QUESTION #5 */
     {"What is the scope of a function parameter",
@@ -64,7 +64,7 @@ static const Question quiz[] = {
          "File scope",      // 2 == C
          "Program scope"},  // 3 == D
         0,                  // Answer = (0 == A)
-        "HINT: "},
+        "HINT: Think about where parameters can be used within a function."},
 
     /* QUESTION #6 */
     {"What is the output of storage.c with a local counter inside fn()?",
@@ -73,7 +73,7 @@ static const Question quiz[] = {
          "5, 5, 5, 5, 5",   // 2 == C
          "1, 2, 3, 4, 5"},  // 3 == D
         1,                  // Answer = (1 == B)
-        "HINT: "},
+        "HINT: Consider how local variables behave each time a function is called."},
 
     /* QUESTION #7 */
     {"What is the disadvantage of using global variables?",
@@ -82,7 +82,7 @@ static const Question quiz[] = {
          "Faster execution",             // 2 == C
          "Improved memory management"},  // 3 == D
         1,                               // Answer = (1 == B)
-        "HINT: "},
+        "HINT: Think about how global variables affect modularity and code reuse."},
 
     /* QUESTION #8 */
     {"Why should variable i be local in a program?",
@@ -91,7 +91,7 @@ static const Question quiz[] = {
          "To reduce memory use",         // 2 == C
          "To avoid syntax errors"},      // 3 == D
         1,                               // Answer = (1 == B)
-        "HINT: "},
+        "HINT: Consider what happens if multiple functions use the same variable name."},
 
     /* QUESTION #9 */
     {"Which symbol is used to declare pointer variables in C?",
@@ -100,7 +100,7 @@ static const Question quiz[] = {
          "*",     // 2 == C
          "ref"},  // 3 == D
         2,        // Answer = (2 == C)
-        "HINT: "},
+        "HINT: Look for the symbol that appears in pointer declarations and dereferencing."},
 
     /* QUESTION #10 */
     {"What does \%p in printf print?",
@@ -109,7 +109,7 @@ static const Question quiz[] = {
          "Pointer address",    // 2 == C
          "Character"},         // 3 == D
         2,                     // Answer = (2 == C)
-        "HINT: "},
+        "HINT: This format specifier is used for displaying memory locations."},
 
     /* QUESTION #11 */
     {"What happens if you use an uninitialized pointer?",
@@ -118,7 +118,7 @@ static const Question quiz[] = {
          "It works fine",        // 2 == C
          "Undefined behavior"},  // 3 == D
         3,                       // Answer = (3 == D)
-        "HINT: "},
+        "HINT: Consider what happens when a pointer doesn't point to a valid address."},
 
     /* QUESTION #12 */
     {"What operator is used to access the value a pointer points to?",
@@ -126,8 +126,8 @@ static const Question quiz[] = {
          "#",    // 1 == B
          "\%",   // 2 == C
          "->"},  // 3 == D
-        0,      // Answer = (0 == A)
-        "HINT: "},
+        0,       // Answer = (0 == A)
+        "HINT: This operator is used for dereferencing pointers."},
 
     /* QUESTION #13 */
     {"What operator gets the address of a variable?",
@@ -136,7 +136,7 @@ static const Question quiz[] = {
          "~",   // 2 == C
          "*"},  // 3 == D
         1,      // Answer = (1 == B)
-        "HINT: "},
+        "HINT: This operator is used to obtain the memory location of a variable."},
 
     /* QUESTION #14 */
     {"If p points to i, what does *p = 2 do?",
@@ -145,7 +145,7 @@ static const Question quiz[] = {
          "Sets i to 2",      // 2 == C
          "Sets p to 2"},     // 3 == D
         2,                   // Answer = (2 == C)
-        "HINT: "},
+        "HINT: Think about what happens when you assign a value to what a pointer references."},
 
     /* QUESTION #15 */
     {"Which assignment is illegal if i is int and p and q are int pointers?",
@@ -154,7 +154,7 @@ static const Question quiz[] = {
          "p = q;",     // 2 == C
          "p = *&q;"},  // 3 == D
         0,             // Answer = (0 == A)
-        "HINT: "},
+        "HINT: Consider the types involved in each assignment."},
 
     /* QUESTION #16 */
     {"What is the output of the scope exercise?\n\nint i;\nvoid f(int i) {\n  i = 1;\n}\n\nvoid g(void) {\n  int i = 2;\n  if (i > 0) {\n    int i;\n     i = 3;\n  }\n  i = 4;\n}\n\nvoid h(void) {\n  i = 5;\n}",
@@ -163,7 +163,7 @@ static const Question quiz[] = {
          "2 3 2 3",   // 2 == C
          "6 2 2 2"},  // 3 == D
         0,            // Answer = (0 == A)
-        "HINT: "},
+        "HINT: Pay attention to how variable shadowing affects values in different scopes."},
 
     /* QUESTION #17 */
     {"Which of the following is a valid pointer declaration?",
@@ -172,7 +172,7 @@ static const Question quiz[] = {
          "p *int;",  // 2 == C
          "int *p"},  // 3 == D
         3,           // Answer = (3 == D)
-        "HINT: "},
+        "HINT: The placement of the asterisk is important in pointer declarations."},
 
     /* QUESTION #18 */
     {"What type of memory is automatically deallocated at the end of a function?",
@@ -181,7 +181,7 @@ static const Question quiz[] = {
          "File-Scope",  // 2 == C
          "Static"},     // 3 == D
         0,              // Answer = (0 == A)
-        "HINT: "},
+        "HINT: This type of memory is associated with local variables."},
 
     /* QUESTION #19 */
     {"What does a block scope mean for a variable?",
@@ -190,7 +190,7 @@ static const Question quiz[] = {
          "It is available everywhere",            // 2 == C
          "It is global unless static"},           // 3 == D
         0,                                        // Answer = (0 == A)
-        "HINT: "},
+        "HINT: Consider where curly braces start and end a variable's visibility."},
     
     /* QUESTION #20 */
     {"What happens when a variable declared inside a block has the same name as an external variable?",
@@ -199,7 +199,7 @@ static const Question quiz[] = {
          "The external one overrides",                    // 2 == C
          "They share the same value"},                    // 3 == D
         1,                                                // Answer = (1 == B)
-        "HINT: "},
+        "HINT: Think about which variable is accessed inside the block."},
 
     /* QUESTION #21 */
     {"Why are global variables risky in multi-function programs?",
@@ -208,7 +208,7 @@ static const Question quiz[] = {
          "They consume too much memory",          // 2 == C
          "Bugs are harder to trace"},             // 3 == D
         3,                                        // Answer = (3 == D)
-        "HINT: "},
+        "HINT: Consider how changes to global variables can affect debugging."},
 
     /* QUESTION #22 */
     {"Which keyword do you use to create a pointer to a double?",
@@ -217,7 +217,7 @@ static const Question quiz[] = {
          "pointer<double>",  // 2 == C
          "double x;"},       // 3 == D
         0,                   // Answer = (0 == A)
-        "HINT: "},
+        "HINT: The symbol used for pointers is the same for all types."},
     
     /* QUESTION #23 */
     {"Why is it generally better to use parameters instead of global variables for communication between functions?",
@@ -226,7 +226,7 @@ static const Question quiz[] = {
          "It prevents pointer errors",           // 2 == C
          "It saves memory"},                     // 3 == D
         0,                                       // Answer = (0 == A)
-        "HINT: "},
+        "HINT: Think about how functions can be reused in different contexts."},
 
     /* QUESTION #24 */
     {"What would be the correct way to declare multiple pointer variables to int?",
@@ -235,7 +235,7 @@ static const Question quiz[] = {
          "\"int *p, q;\" or \"int *p; int q;\"",    // 2 == C
          "\"int* p, q;\" or \"int p; int q;\""},    // 3 == D
         0,                                          // Answer = (0 == A)
-        "HINT: "},
+        "HINT: Each pointer variable needs its own asterisk."},
 
     /* QUESTION #25 */
     {"Which of the following is a good reason to avoid global variables in large programs?",
@@ -244,7 +244,7 @@ static const Question quiz[] = {
          "They always use more memory",        // 2 == C
          "They make the code run slower"},     // 3 == D
         0,                                     // Answer = (0 == A)
-        "HINT: "},
+        "HINT: Consider how global variables can affect program structure and maintenance."},
 
     /* QUESTION #26 */
     {"What is the scope of a variable declared inside an if block?",
@@ -253,7 +253,7 @@ static const Question quiz[] = {
          "The entire function",                                  // 2 == C
          "From it's declaration to the end of the block only"},  // 3 == D
         3,                                                       // Answer = (3 == D)
-        "HINT: "},
+        "HINT: The variable is only accessible within the curly braces where it was declared."},
 
     /* QUESTION #27 */
     {"Which of the following accurately describes the default behavior of a local variable in C?",
@@ -262,7 +262,7 @@ static const Question quiz[] = {
          "It must be passed by reference",                    // 2 == C
          "It is stored in ROM"},                              // 3 == D
         1,                                                    // Answer = (1 == B)
-        "HINT: "},
+        "HINT: Local variables do not keep their values after a function ends."},
 
     /* QUESTION #28 */
     {"What is the main purpose of using pointer variables in C?",
@@ -271,7 +271,7 @@ static const Question quiz[] = {
          "To simplify loops",                                // 2 == C
          "To work with memory addresses and dynamic data"},  // 3 == D
         3,                                                   // Answer = (3 == D)
-        "HINT: "},
+        "HINT: Pointers allow you to manipulate memory directly."},
 
     /* QUESTION #29 */
     {"What is printed?\n\nint main() {\n  int b = 4, *q;\n  q = &b;\n  *q = 9;\n  printf(\"\%d \%d\", b, *q);\n  return 0;\n}",
@@ -280,7 +280,7 @@ static const Question quiz[] = {
          "4 4",  // 2 == C
          "4 9"}, // 3 == D
         1,       // Answer = (1 == B)
-        "HINT: "},
+        "HINT: Changing the value through a pointer affects the original variable."},
 
     /* QUESTION #30 */
     {"Given the array int a[] = {3, 5, 7};, what does *(a + 1) evaluate to?",
@@ -289,7 +289,7 @@ static const Question quiz[] = {
          "3",               // 2 == C
          "a[0]"},           // 3 == D
         1,                  // Answer = (1 == B)
-        "HINT: "},
+        "HINT: Pointer arithmetic lets you access elements by offset from the start."},
 };
 #define NQ ((int)(sizeof quiz / sizeof quiz[0]))
 

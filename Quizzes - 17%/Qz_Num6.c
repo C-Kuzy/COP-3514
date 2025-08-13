@@ -67,30 +67,30 @@ static const Question quiz[] = {
         "HINT: i.e., not pointing to any string!"},
 
     /* QUESTION #6 */
-    {"Which of the following correctly defines an empty string (a null string containing only '\0')?",
-        {"", // 0 == A
-         "", // 1 == B
-         "", // 2 == C
-         ""}, // 3 == D
-        ,      // Answer = ( == )
+    {"Which of the following correctly defines an empty string (a null string containing only '0')?",
+        {"char s[] = \"\"",      // 0 == A
+         "char *s = NULL;",      // 1 == B
+         "char *s = \"\n\"",     // 2 == C
+         "char s[] = \"NULL\""}, // 3 == D
+        0,                       // Answer = (0 == A)
         "HINT: "},
 
     /* QUESTION #7 */
-    {"",
-        {"", // 0 == A
-         "", // 1 == B
-         "", // 2 == C
-         ""}, // 3 == D
-        ,      // Answer = ( == )
+    {"What will the following code do?\n\nchar *p = \"abc\";\n*p = 'z';",
+        {"Change 'a' to 'z'",         // 0 == A
+         "Compile but do nothing",    // 1 == B
+         "Cause undefined behavior",  // 2 == C
+         "Produce a warning"},        // 3 == D
+        2,                            // Answer = (2 == C)
         "HINT: "},
 
     /* QUESTION #8 */
-    {"",
-        {"", // 0 == A
-         "", // 1 == B
-         "", // 2 == C
-         ""}, // 3 == D
-        ,      // Answer = ( == )
+    {"What does this declaration define: char date1[8] = \"June 15\"",
+        {"A char pointer",                             // 0 == A
+         "A string literal",                           // 1 == B
+         "An incomplete array",                        // 2 == C
+         "A character array with a null terminator"},  // 3 == D
+        3,                                             // Answer = (3 == D)
         "HINT: "},
 
     /* QUESTION #9 */

@@ -126,7 +126,7 @@ static const Question quiz[] = {
          "#",    // 1 == B
          "\%",   // 2 == C
          "->"},  // 3 == D
-        0,      // Answer = ( == )
+        0,      // Answer = (0 == A)
         "HINT: "},
 
     /* QUESTION #13 */
@@ -139,21 +139,21 @@ static const Question quiz[] = {
         "HINT: "},
 
     /* QUESTION #14 */
-    {"",
-        {"", // 0 == A
-         "", // 1 == B
-         "", // 2 == C
-         ""}, // 3 == D
-        ,      // Answer = ( == )
+    {"If p points to i, what does *p = 2 do?",
+        {"Throws an error",  // 0 == A
+         "Sets &i to 2",     // 1 == B
+         "Sets i to 2",      // 2 == C
+         "Sets p to 2"},     // 3 == D
+        2,                   // Answer = (2 == C)
         "HINT: "},
 
     /* QUESTION #15 */
-    {"",
-        {"", // 0 == A
-         "", // 1 == B
-         "", // 2 == C
-         ""}, // 3 == D
-        ,      // Answer = ( == )
+    {"Which assignment is illegal if i is int and p and q are int pointers?",
+        {"p = i;",     // 0 == A
+         "p = &i;",    // 1 == B
+         "p = q;",     // 2 == C
+         "p = *&q;"},  // 3 == D
+        0,             // Answer = (0 == A)
         "HINT: "},
 
     /* QUESTION #16 */

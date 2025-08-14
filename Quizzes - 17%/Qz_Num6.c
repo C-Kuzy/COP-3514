@@ -28,7 +28,7 @@ static const Question quiz[] = {
          "string",   // 2 == C
          "char[]"},  // 3 == D
         3,           // Answer = (3 == D)
-        "HINT: "},
+        "HINT: Think about how string literals are stored in memory at compile time."},
 
     /* QUESTION #2 */
     {"What type does a string literal like \"abc\" decay to when used in an expression or passed to a function in C?",
@@ -37,7 +37,7 @@ static const Question quiz[] = {
          "char[]",   // 2 == C
          "string"},  // 3 == D
         0,           // Answer = (0 == A)
-        "HINT: "},
+        "HINT: Arrays in C often become something else when used as function arguments."},
 
     /* QUESTION #3 */
     {"How many bytes are set aside for the string \"abc\" in memory?",
@@ -46,7 +46,7 @@ static const Question quiz[] = {
          "8",   // 2 == C
          "4"},  // 3 == D
         3,        // Answer = (3 == D)
-        "HINT: "},
+        "HINT: Don't forget the special character at the end of every string."},
 
     /* QUESTION #4 */
     {"What character is used to mark the end of a string in C?",
@@ -55,16 +55,16 @@ static const Question quiz[] = {
          "\\t",   // 2 == C
          "\\e"},  // 3 == D
         0,        // Answer = (0 == A)
-        "HINT: "},
+        "HINT: This character signals the end of a string in memory."},
 
     /* QUESTION #5 */
     {"Which of the following creates a null pointer to a string?",
         {"char s[] = \"NULL\";",  // 0 == A
          "char *s = NULL",        // 1 == B
          "char s[] = \"\"",       // 2 == C
-         "char *s = \"\\n\""}     // 3 == D
+         "char *s = \"\\n\""},    // 3 == D
         1,                        // Answer = (1 == B)
-        "HINT: i.e., not pointing to any string!"},
+        "HINT: A null pointer means it doesn't point to any valid memory location."},
 
     /* QUESTION #6 */
     {"Which of the following correctly defines an empty string (a null string containing only '0')?",
@@ -73,7 +73,7 @@ static const Question quiz[] = {
          "char *s = \"\n\"",     // 2 == C
          "char s[] = \"NULL\""}, // 3 == D
         0,                       // Answer = (0 == A)
-        "HINT: "},
+        "HINT: An empty string still has a special character at the end."},
 
     /* QUESTION #7 */
     {"What will the following code do?\n\nchar *p = \"abc\";\n*p = 'z';",
@@ -82,7 +82,7 @@ static const Question quiz[] = {
          "Cause undefined behavior",  // 2 == C
          "Produce a warning"},        // 3 == D
         2,                            // Answer = (2 == C)
-        "HINT: "},
+        "HINT: Modifying string literals can be risky in C."},
 
     /* QUESTION #8 */
     {"What does this declaration define: char date1[8] = \"June 15\" ?",
@@ -91,7 +91,7 @@ static const Question quiz[] = {
          "An incomplete array",                        // 2 == C
          "A character array with a null terminator"},  // 3 == D
         3,                                             // Answer = (3 == D)
-        "HINT: "},
+        "HINT: The array size matches the string length plus something extra."},
 
     /* QUESTION #9 */
     {"What size must a character array have to hold an 80 character string?",
@@ -100,7 +100,7 @@ static const Question quiz[] = {
          "83",   // 2 == C
          "81"},  // 3 == D
         3,       // Answer = (3 == D)
-        "HINT: "},
+        "HINT: Remember to leave space for the end-of-string marker."},
 
     /* QUESTION #10 */
     {"Why is it dangerous to define a char array as a char date3[7] = \"June 15\"; ?",
@@ -109,7 +109,7 @@ static const Question quiz[] = {
          "Too much memory",                  // 2 == C
          "Won't compile"},                   // 3 == D
         0,                                   // Answer = (0 == A)
-        "HINT: "},
+        "HINT: Every string in C must have room for a special character at the end."},
 
     /* QUESTION #11 */
     {"Which of the following is legal for declaring a string?",
@@ -117,8 +117,8 @@ static const Question quiz[] = {
          "char date[] = {'July'};",          // 1 == B
          "char *date = {'J','u','l','y'};",  // 2 == C
          "char date[] = \"July 4\";"},       // 3 == D
-        3,                                   // Answer = ( == )
-        "HINT: "},
+        3,                                   // Answer = (3 == D)
+        "HINT: Pay attention to the type and initializer used for string declarations."},
 
     /* QUESTION #12 */
     {"What is the major difference between char *date = \"June 15\"; and char date[] = \"June 15\";",
@@ -127,7 +127,7 @@ static const Question quiz[] = {
          "They both point to different data types",  // 2 == C
          "Only one has a null terminator"},          // 3 == D
         1,                                           // Answer = (1 == B)
-        "HINT: "},
+        "HINT: Consider which one allows you to change the string contents."},
 
     /* QUESTION #13 */
     {"What is the output of printf(\"\%s\", str); if str[] = \"fun\"?",
@@ -136,7 +136,7 @@ static const Question quiz[] = {
          "f",        // 2 == C
          "str"},     // 3 == D
         0,           // Answer = (0 == A)
-        "HINT: "},
+        "HINT: The format specifier prints the entire string up to a certain character."},
 
     /* QUESTION #14 */
     {"What causes scanf(\"\%s\", str); to stop reading?",
@@ -145,7 +145,7 @@ static const Question quiz[] = {
          "An integer",    // 2 == C
          "A period"},     // 3 == D
         0,                // Answer = (0 == A)
-        "HINT: "},
+        "HINT: This character separates words in standard input."},
 
     /* QUESTION #15 */
     {"What issue occurs if you don't use bounds with scanf(\"\%s\", str); ?",
@@ -154,7 +154,7 @@ static const Question quiz[] = {
          "Logical error",     // 2 == C
          "Buffer overflow"},  // 3 == D
         3,                    // Answer = (3 == D)
-        "HINT: "},
+        "HINT: Inputting more characters than the array can hold can cause this problem."},
 
     /* QUESTION #16 */
     {"What does scanf(\"\%20s\", str); do differently than scanf(\"\%s\", str); ?",
@@ -163,7 +163,7 @@ static const Question quiz[] = {
          "Stops after a newline",     // 2 == C
          "Writes 20 spaces"},         // 3 == D
         1,                            // Answer = (1 == B)
-        "HINT: "},
+        "HINT: The number in the format string limits how much is read."},
 
     /* QUESTION #17 */
     {"if sentence[21] is defined as char sentence[SENT_LEN+1], how many characters can it store?",
@@ -172,7 +172,7 @@ static const Question quiz[] = {
          "21",         // 2 == C
          "20"},        // 3 == D
         3,             // Answer = (3 == D)
-        "HINT: "},
+        "HINT: The extra space is for something special at the end of the string."},
 
     /* QUESTION #18 */
     {"When entering: To C, or not to C, how much will scanf(\"\%s\", str); capture?",
@@ -181,7 +181,7 @@ static const Question quiz[] = {
          "Nothing",            // 2 == C
          "Only To C"},         // 3 == D
         1,                     // Answer = (1 == B)
-        "HINT: "},
+        "HINT: This function stops reading at the first whitespace."},
 
     /* QUESTION #19 */
     {"Which user-defined function from the following stops at the first newline and discards the rest of the line?\n\nint i;\nfor (i = 1; i < argc; i++)\n  printf(\"\%s\\n\", argv[i]);",
@@ -190,7 +190,7 @@ static const Question quiz[] = {
          "getline()",    // 2 == C
          "gets()"},      // 3 == D
         0,               // Answer = (0 == A)
-        "HINT: "},
+        "HINT: This function is often written to safely read a line of input."},
     
     /* QUESTION #20 */
     {"Which POSIX function reads an entire line from standard input, stopping at the newline?",
@@ -199,7 +199,7 @@ static const Question quiz[] = {
          "scanf()",      // 2 == C
          "gets()"},      // 3 == D
         1,               // Answer = (1 == B)
-        "HINT: "},
+        "HINT: This function is available on Unix-like systems and handles lines of any length."},
 
     /* QUESTION #21 */
     {"What is the significance of #define STR_LEN 10 in main()?",
@@ -208,7 +208,7 @@ static const Question quiz[] = {
          "Counts newlines",         // 2 == C
          "Sets max characters"},    // 3 == D
         3,                          // Answer = (3 == D)
-        "HINT: "},
+        "HINT: This constant is used to limit the size of arrays or input."},
 
     /* QUESTION #22 */
     {"What's the result of using gets() for string input?",
@@ -217,7 +217,7 @@ static const Question quiz[] = {
          "Safe input",           // 2 == C
          "Ignores whitespace"},  // 3 == D
         0,                       // Answer = (A == 0)
-        "HINT: "},
+        "HINT: This function does not check how much data is read into the buffer."},
     
     /* QUESTION #23 */
     {"How many characters are stored in char name[] = \"Bob\"; ?",
@@ -226,7 +226,7 @@ static const Question quiz[] = {
          "4",              // 2 == C
          "3"},             // 3 == D
         2,                 // Answer = (2 == C)
-        "HINT: "},
+        "HINT: Don't forget to count the special character at the end."},
 
     /* QUESTION #24 */
     {"What does char *p = \"abc\"; point to?",
@@ -235,7 +235,7 @@ static const Question quiz[] = {
          "Array address",         // 2 == C
          "First character 'a'"},  // 3 == D
         3,                        // Answer = (3 == D)
-        "HINT: "},
+        "HINT: The pointer starts at the beginning of the string literal."},
 
     /* QUESTION #25 */
     {"Which line is invalid?",
@@ -244,7 +244,7 @@ static const Question quiz[] = {
          "char *ch = 'x';",      // 2 == C
          "char ch = 89;"},       // 3 == D
         2,                       // Answer = (2 == C)
-        "HINT: "},
+        "HINT: Pay attention to the difference between single and double quotes in declarations."},
 
     /* QUESTION #26 */
     {"What happens if a string isn't null-terminated?",
@@ -253,7 +253,7 @@ static const Question quiz[] = {
          "It prints blank",             // 2 == C
          "Stops at the first letter"},  // 3 == D
         0,                              // Answer = (0 == A)
-        "HINT: "},
+        "HINT: Functions that print or process strings rely on a special character to know where to stop."},
 
     /* QUESTION #27 */
     {"Which string operation causes undefined behavior?",
@@ -262,7 +262,7 @@ static const Question quiz[] = {
          "*p = 'z'; where p points to a literal",  // 2 == C
          "strlen(str);"},                          // 3 == D
         2,                                         // Answer = (2 == C)
-        "HINT: "},
+        "HINT: Modifying string literals is not allowed in C."},
 
     /* QUESTION #28 */
     {"Which of the following correctly accesses the 3rd character in a string str?",
@@ -271,7 +271,7 @@ static const Question quiz[] = {
          "str + 2",     // 2 == C
          "*str[2]"},    // 3 == D
         0,              // Answer = (0 == A)
-        "HINT: "},
+        "HINT: Remember how pointer arithmetic and array indexing work together."},
 
     /* QUESTION #29 */
     {"Which is the safest way to prevent buffer overflow using scanf?",
@@ -280,7 +280,7 @@ static const Question quiz[] = {
          "Use scanf(\"\%ns\", str); with n defined",  // 2 == C
          "Use gets()"},                               // 3 == D
         2,                                            // Answer = (2 == C)
-        "HINT: "},
+        "HINT: Limiting the number of characters read helps prevent overwriting memory."},
 
     /* QUESTION #30 */
     {"Which function version reads characters one by one using pointer notation?",
@@ -289,7 +289,7 @@ static const Question quiz[] = {
          "for (p = s; *p != '\\0'; p++)",      // 2 == C
          "scanf(\"\%s\", str)"},               // 3 == D
         2,                                     // Answer = (2 == C)
-        "HINT: "},
+        "HINT: This loop uses a pointer to move through each character in the string."},
 };
 #define NQ ((int)(sizeof quiz / sizeof quiz[0]))
 

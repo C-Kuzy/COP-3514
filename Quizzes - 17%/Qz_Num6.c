@@ -85,7 +85,7 @@ static const Question quiz[] = {
         "HINT: "},
 
     /* QUESTION #8 */
-    {"What does this declaration define: char date1[8] = \"June 15\"",
+    {"What does this declaration define: char date1[8] = \"June 15\" ?",
         {"A char pointer",                             // 0 == A
          "A string literal",                           // 1 == B
          "An incomplete array",                        // 2 == C
@@ -94,66 +94,66 @@ static const Question quiz[] = {
         "HINT: "},
 
     /* QUESTION #9 */
-    {"",
-        {"", // 0 == A
-         "", // 1 == B
-         "", // 2 == C
-         ""}, // 3 == D
-        ,      // Answer = ( == )
+    {"What size must a character array have to hold an 80 character string?",
+        {"79",   // 0 == A
+         "80",   // 1 == B
+         "83",   // 2 == C
+         "81"},  // 3 == D
+        3,       // Answer = (3 == D)
         "HINT: "},
 
     /* QUESTION #10 */
-    {"",
-        {"", // 0 == A
-         "", // 1 == B
-         "", // 2 == C
-         ""}, // 3 == D
-        ,      // Answer = ( == )
+    {"Why is it dangerous to define a char array as a char date3[7] = \"June 15\"; ?",
+        {"Cannot store the null character",  // 0 == A
+         "Invalid array declaration",        // 1 == B
+         "Too much memory",                  // 2 == C
+         "Won't compile"},                   // 3 == D
+        0,                                   // Answer = (0 == A)
         "HINT: "},
 
     /* QUESTION #11 */
-    {"",
-        {"", // 0 == A
-         "", // 1 == B
-         "", // 2 == C
-         ""}, // 3 == D
-        ,      // Answer = ( == )
+    {"Which of the following is legal for declaring a string?",
+        {"string date = \"July\";",          // 0 == A
+         "char date[] = {'July'};",          // 1 == B
+         "char *date = {'J','u','l','y'};",  // 2 == C
+         "char date[] = \"July 4\";"},       // 3 == D
+        3,                                   // Answer = ( == )
         "HINT: "},
 
     /* QUESTION #12 */
-    {"",
-        {"", // 0 == A
-         "", // 1 == B
-         "", // 2 == C
-         ""}, // 3 == D
-        ,      // Answer = ( == )
+    {"What is the major difference between char *date = \"June 15\"; and char date[] = \"June 15\";",
+        {"Both are pointers",                        // 0 == A
+         "One is mutable, one is not",               // 1 == B
+         "They both point to different data types",  // 2 == C
+         "Only one has a null terminator"},          // 3 == D
+        1,                                           // Answer = (1 == B)
         "HINT: "},
 
     /* QUESTION #13 */
-    {"",
-        {"", // 0 == A
-         "", // 1 == B
-         "", // 2 == C
-         ""}, // 3 == D
-        ,      // Answer = ( == )
+    {"What is the output of printf(\"\%s\", str); if str[] = \"fun\"?",
+        {"fun",      // 0 == A
+         "\"FUN\"",  // 1 == B
+         "f",        // 2 == C
+         "str"},     // 3 == D
+        0,           // Answer = (0 == A)
         "HINT: "},
 
     /* QUESTION #14 */
-    {"",
-        {"", // 0 == A
-         "", // 1 == B
-         "", // 2 == C
-         ""}, // 3 == D
-        ,      // Answer = ( == )
+    {"What causes scanf(\"\%s\", str); to stop reading?",
+        {"A whitespace",  // 0 == A
+         "A comma",       // 1 == B
+         "An integer",    // 2 == C
+         "A period"},     // 3 == D
+        0,                // Answer = (0 == A)
         "HINT: "},
 
     /* QUESTION #15 */
-    {"",
-        {"", // 0 == A
-         "", // 1 == B
-         "", // 2 == C
-         ""}, // 3 == D
-        ,      // Answer = ( == )
+    {"What does scanf(\"\%20s\", str); do differently than scanf(\"\%s\", str); ?",
+        {"Nothing",           // 0 == A
+         "Syntax error",      // 1 == B
+         "Logical error",     // 2 == C
+         "Buffer overflow"},  // 3 == D
+        3,                    // Answer = (3 == D)
         "HINT: "},
 
     /* QUESTION #16 */

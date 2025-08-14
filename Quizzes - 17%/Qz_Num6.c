@@ -266,20 +266,20 @@ static const Question quiz[] = {
 
     /* QUESTION #28 */
     {"Which of the following correctly accesses the 3rd character in a string str?",
-        {"", // 0 == A
-         "", // 1 == B
-         "", // 2 == C
-         ""}, // 3 == D
-        ,      // Answer = ( == )
+        {"*(str + 2)",  // 0 == A
+         "str[3]",      // 1 == B
+         "str + 2",     // 2 == C
+         "*str[2]"},    // 3 == D
+        0,              // Answer = (0 == A)
         "HINT: "},
 
     /* QUESTION #29 */
-    {"",
-        {"", // 0 == A
-         "", // 1 == B
-         "", // 2 == C
-         ""}, // 3 == D
-        ,      // Answer = ( == )
+    {"Which is the safest way to prevent buffer overflow using scanf?",
+        {"Use fgets()",                               // 0 == A
+         "Avoid input functions",                     // 1 == B
+         "Use scanf(\"\%ns\", str); with n defined",  // 2 == C
+         "Use gets()"},                               // 3 == D
+        2,                                            // Answer = (2 == C)
         "HINT: "},
 
     /* QUESTION #30 */

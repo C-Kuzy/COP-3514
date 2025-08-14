@@ -240,32 +240,32 @@ static const Question quiz[] = {
     /* QUESTION #25 */
     {"Which line is invalid?",
         {"char ch[] = \"cd\";",  // 0 == A
-         "char ch[]", // 1 == B
-         "", // 2 == C
-         ""}, // 3 == D
-        ,      // Answer = ( == )
+         "char *ch = \"ab\";",   // 1 == B
+         "char *ch = 'x';",      // 2 == C
+         "char ch = 89;"},       // 3 == D
+        2,                       // Answer = (2 == C)
         "HINT: "},
 
     /* QUESTION #26 */
-    {"",
-        {"", // 0 == A
-         "", // 1 == B
-         "", // 2 == C
-         ""}, // 3 == D
-        ,      // Answer = ( == )
+    {"What happens if a string isn't null-terminated?",
+        {"It causes garbage or crash",  // 0 == A
+         "Nothing",                     // 1 == B
+         "It prints blank",             // 2 == C
+         "Stops at the first letter"},  // 3 == D
+        0,                              // Answer = (0 == A)
         "HINT: "},
 
     /* QUESTION #27 */
-    {"",
-        {"", // 0 == A
-         "", // 1 == B
-         "", // 2 == C
-         ""}, // 3 == D
-        ,      // Answer = ( == )
+    {"Which string operation causes undefined behavior?",
+        {"printf(\"\%s\", str);",                  // 0 == A
+         "strcpy(dest, src);",                     // 1 == B
+         "*p = 'z'; where p points to a literal",  // 2 == C
+         "strlen(str);"},                          // 3 == D
+        2,                                         // Answer = (2 == C)
         "HINT: "},
 
     /* QUESTION #28 */
-    {"",
+    {"Which of the following correctly accesses the 3rd character in a string str?",
         {"", // 0 == A
          "", // 1 == B
          "", // 2 == C

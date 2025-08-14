@@ -22,20 +22,20 @@ typedef struct {
 static const Question quiz[] = {
 
     /* QUESTION #1 */
-    {"",
-        {"",
-         "",
-         "",
-         ""},
-        ,
-        ""},
+    {"What does buffering in file I/O primarily help with in C programming?",
+        {"Enhancing speed by reducing disk access",  // 0 == A
+         "Sorting data before saving",               // 1 == B
+         "Converting binary to text",                // 2 == C
+         "Compressing data before writing"},         // 3 == D
+        0,                                           // Answer = (0 == A)
+        "HINT: "},
 
     /* QUESTION #2 */
     {"",
-        {"",
-         "",
-         "",
-         ""},
+        {"",   // 0 == A
+         "",   // 1 == B
+         "",   // 2 == C
+         ""},  // 3 == D
         ,
         ""},
 

@@ -148,7 +148,7 @@ static const Question quiz[] = {
         "HINT: "},
 
     /* QUESTION #15 */
-    {"What does scanf(\"\%20s\", str); do differently than scanf(\"\%s\", str); ?",
+    {"What issue occurs if you don't use bounds with scanf(\"\%s\", str); ?",
         {"Nothing",           // 0 == A
          "Syntax error",      // 1 == B
          "Logical error",     // 2 == C
@@ -157,90 +157,90 @@ static const Question quiz[] = {
         "HINT: "},
 
     /* QUESTION #16 */
-    {"",
-        {"", // 0 == A
-         "", // 1 == B
-         "", // 2 == C
-         ""}, // 3 == D
-        ,      // Answer = ( == )
+    {"What does scanf(\"\%20s\", str); do differently than scanf(\"\%s\", str); ?",
+        {"Reads until null",          // 0 == A
+         "Reads only 20 characters",  // 1 == B
+         "Stops after a newline",     // 2 == C
+         "Writes 20 spaces"},         // 3 == D
+        1,                            // Answer = (1 == B)
         "HINT: "},
 
     /* QUESTION #17 */
-    {"",
-        {"", // 0 == A
-         "", // 1 == B
-         "", // 2 == C
-         ""}, // 3 == D
-        ,      // Answer = ( == )
+    {"if sentence[21] is defined as char sentence[SENT_LEN+1], how many characters can it store?",
+        {"19",         // 0 == A
+         "Unlimited",  // 1 == B
+         "21",         // 2 == C
+         "20"},        // 3 == D
+        3,             // Answer = (3 == D)
         "HINT: "},
 
     /* QUESTION #18 */
-    {"",
-        {"", // 0 == A
-         "", // 1 == B
-         "", // 2 == C
-         ""}, // 3 == D
-        ,      // Answer = ( == )
+    {"When entering: To C, or not to C, how much will scanf(\"\%s\", str); capture?",
+        {"The full sentence",  // 0 == A
+         "Only To",            // 1 == B
+         "Nothing",            // 2 == C
+         "Only To C"},         // 3 == D
+        1,                     // Answer = (1 == B)
         "HINT: "},
 
     /* QUESTION #19 */
-    {"",
-        {"", // 0 == A
-         "", // 1 == B
-         "", // 2 == C
-         ""}, // 3 == D
-        ,      // Answer = ( == )
+    {"Which user-defined function from the following stops at the first newline and discards the rest of the line?\n\n",
+        {"read_line()",  // 0 == A
+         "scanf()",      // 1 == B
+         "getline()",    // 2 == C
+         "gets()"},      // 3 == D
+        0,               // Answer = (0 == A)
         "HINT: "},
     
     /* QUESTION #20 */
-    {"",
-        {"", // 0 == A
-         "", // 1 == B
-         "", // 2 == C
-         ""}, // 3 == D
-        ,      // Answer = ( == )
+    {"Which POSIX function reads an entire line from standard input, stopping at the newline?",
+        {"read_line()",  // 0 == A
+         "getline()",    // 1 == B
+         "scanf()",      // 2 == C
+         "gets()"},      // 3 == D
+        1,               // Answer = (1 == B)
         "HINT: "},
 
     /* QUESTION #21 */
-    {"",
-        {"", // 0 == A
-         "", // 1 == B
-         "", // 2 == C
-         ""}, // 3 == D
-        ,      // Answer = ( == )
+    {"What is the significance of #define STR_LEN 10 in main()?",
+        {"Makes a null character",  // 0 == A
+         "Sets string value",       // 1 == B
+         "Counts newlines",         // 2 == C
+         "Sets max characters"},    // 3 == D
+        3,                          // Answer = (3 == D)
         "HINT: "},
 
     /* QUESTION #22 */
-    {"",
-        {"", // 0 == A
-         "", // 1 == B
-         "", // 2 == C
-         ""}, // 3 == D
-        ,      // Answer = ( == )
+    {"What's the result of using gets() for string input?",
+        {"Possible overflow",    // 0 == A
+         "No effect",            // 1 == B
+         "Safe input",           // 2 == C
+         "Ignores whitespace"},  // 3 == D
+        0,                       // Answer = (A == 0)
         "HINT: "},
     
     /* QUESTION #23 */
-    {"",
-        {"", // 0 == A
-         "", // 1 == B
-         "", // 2 == C
-         ""}, // 3 == D
-        ,      // Answer = ( == )
+    {"How many characters are stored in char name[] = \"Bob\"; ?",
+        {"5",              // 0 == A
+         "Depends on OS",  // 1 == B
+         "4",              // 2 == C
+         "3"},             // 3 == D
+        2,                 // Answer = (2 == C)
         "HINT: "},
 
     /* QUESTION #24 */
-    {"",
-        {"", // 0 == A
-         "", // 1 == B
-         "", // 2 == C
-         ""}, // 3 == D
-        ,      // Answer = ( == )
+    {"What does char *p = \"abc\"; point to?",
+        {"Null character",        // 0 == A
+         "Second character",      // 1 == B
+         "Array address",         // 2 == C
+         "First character 'a'"},  // 3 == D
+        3,                        // Answer = (3 == D)
         "HINT: "},
 
     /* QUESTION #25 */
-    {"",
-        {"", // 0 == A
-         "", // 1 == B
+    {"Which line is invalid?",
+        {"char ch[] = \"cd\";",  // 0 == A
+         "char ch[]", // 1 == B
          "", // 2 == C
          ""}, // 3 == D
         ,      // Answer = ( == )

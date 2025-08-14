@@ -283,12 +283,12 @@ static const Question quiz[] = {
         "HINT: "},
 
     /* QUESTION #30 */
-    {"",
-        {"", // 0 == A
-         "", // 1 == B
-         "", // 2 == C
-         ""}, // 3 == D
-        ,      // Answer = ( == )
+    {"Which function version reads characters one by one using pointer notation?",
+        {"while ((ch = getchar()) != '\\n')",  // 0 == A
+         "str[i++] = ch;",                     // 1 == B
+         "for (p = s; *p != '\\0'; p++)",      // 2 == C
+         "scanf(\"\%s\", str)"},               // 3 == D
+        2,                                     // Answer = (2 == C)
         "HINT: "},
 };
 #define NQ ((int)(sizeof quiz / sizeof quiz[0]))

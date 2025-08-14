@@ -184,7 +184,7 @@ static const Question quiz[] = {
         "HINT: "},
 
     /* QUESTION #19 */
-    {"Which user-defined function from the following stops at the first newline and discards the rest of the line?\n\n",
+    {"Which user-defined function from the following stops at the first newline and discards the rest of the line?\n\nint i;\nfor (i = 1; i < argc; i++)\n  printf(\"\%s\\n\", argv[i]);",
         {"read_line()",  // 0 == A
          "scanf()",      // 1 == B
          "getline()",    // 2 == C

@@ -138,30 +138,30 @@ static const Question quiz[] = {
         0,                                                          // Answer = (0 == A)
         "HINT: "},
 
-    /* QUESTION #*/
+    /* QUESTION #14 */
     {"For safe and robust string input from files (when dealing with unpredictable user input), what is a good reason to use fgets() over scanf() when reading from a file?",
-        {"", // 0 == A
-         "", // 1 == B
-         "",
-         ""},
-        ,
-        ""},
+        {"It prevents overflow",  // 0 == A
+         "It skips whitespace",   // 1 == B
+         "It's faster",           // 2 == C
+         "It returns int"},       // 3 == D
+        0,                        // Answer = (0 == A)
+        "HINT: "},
 
-    /* QUESTION #*/
-    {"",
-        {"",
-         "",
-         "",
-         ""},
-        ,
-        ""},
+    /* QUESTION #15 */
+    {"What happens if you fopen() i write mode and hte file exists?",
+        {"The file is deleted",       // 0 == A
+         "The file is appended",      // 1 == B
+         "The file is renamed",       // 2 == C
+         "The file is overwritten"},  // 3 == D
+        3,                            // Answer = (3 == D)
+        "HINT: "},
 
-    /* QUESTION #*/
-    {"",
-        {"",
-         "",
-         "",
-         ""},
+    /* QUESTION #16 */
+    {"What function is used to set the file position back to the beginning of a file?",
+        {"freset",   // 0 == A
+         "rewind",   // 1 == B
+         "restart",  // 2 == C
+         "fseek"},   // 3 == D
         ,
         ""},
 
@@ -206,7 +206,7 @@ int main(void) {
         qs_ordr[i] = i;
     shuffle_int_array(qs_ordr, NQ);
 
-    printf("\nWelcome to Summer C: 2025 COP-3514 Quiz #8 -- Chapter 22 Multiple Choice Review (enter Q/q to quit)\n\n");
+    printf("\nWelcome to Summer C: 2025 COP-3514 Quiz #7 -- Chapter 22 Multiple Choice Review (enter Q/q to quit)\n\n");
 
     int correct_count = 0;
     int correct_bank[NQ] = {0}; // 1 if correct, 0 if not

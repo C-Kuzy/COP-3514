@@ -251,7 +251,7 @@ static const Question quiz[] = {
         {"fprintf",          // 0 == A
          "fscanf",           // 1 == B
          "rewind",           // 2 == C
-         "selection_sort",}  // 3 == D
+         "selection_sort"},  // 3 == D
         3,                   // Answer = (3 == D)
         "HINT: Sorting is typically done with a dedicated algorithm."},
 
@@ -260,7 +260,7 @@ static const Question quiz[] = {
         {"JSON",  // 0 == A
          "CSV",   // 1 == B
          "TXT",   // 2 == C
-         "XML",}  // 3 == D
+         "XML"},  // 3 == D
         1,        // Answer = (1 == B)
         "HINT: This format is commonly used for spreadsheets and databases."},
 
@@ -269,7 +269,7 @@ static const Question quiz[] = {
         {"Use rewind",
          "Print each value",
          "Parse and store in an array",
-         "Use fclose",}
+         "Use fclose"},
         2,
         "HINT: You need to have the data in a structure you can sort."},
         
@@ -278,7 +278,7 @@ static const Question quiz[] = {
         {"stdout",              // 0 == A
          "stderr",              // 1 == B
          "The specified file",  // 2 == C
-         "Console",}            // 3 == D
+         "Console"},            // 3 == D
         2,                      // Answer = (2 == C)
         "HINT: This function writes to the file pointer you provide."},
 
@@ -287,7 +287,7 @@ static const Question quiz[] = {
         {"fprint",   // 0 == A
          "fprintf",  // 1 == B
          "putf",     // 2 == C
-         "fopen",}   // 3 == D
+         "fopen"},   // 3 == D
         1,           // Answer = (1 == B)
         "HINT: The name is similar to printf but starts with an 'f' for file."},
 };

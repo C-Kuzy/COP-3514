@@ -118,7 +118,7 @@ static const Question quiz[] = {
          "File remains open and data may not be saved",  // 2 == C
          "Compilation fails"},                           // 3 == D
         2,                                               // Answer = (2 == C)
-        ""},
+        "HINT: "},
 
     /* QUESTION #12 */
     {"Which function is ideal for writing a string to a file?",
@@ -126,17 +126,17 @@ static const Question quiz[] = {
          "fputs()",     // 1 == B
          "write()",     // 2 == C
          "fprintf()"},  // 3 == D
-        ,
-        ""},
+        1,              // Answer = (1 == B)
+        "HINT: "},
 
-    /* QUESTION #*/
-    {"",
-        {"",
-         "",
-         "",
-         ""},
-        ,
-        ""},
+    /* QUESTION #13 */
+    {"Why is FILE* used instead of int in file operations?",
+        {"To hide complexity",                                      // 0 == A
+         "Because it saves memory",                                 // 1 == B
+         "Because int cannot return EOF",                           // 2 == C
+         "Because FILE* is the only return type allowed by ANSI"},  // 3 == D
+        0,                                                          // Answer = (0 == A)
+        "HINT: "},
 
     /* QUESTION #*/
     {"",

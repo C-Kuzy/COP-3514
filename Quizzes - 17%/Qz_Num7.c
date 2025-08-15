@@ -226,37 +226,37 @@ static const Question quiz[] = {
          "Writes to stderr",               // 2 == C
          "Writes to stdout",}              // 3 == D
         1,                                 // Answer = (1 == B)
-        ""},
+        "HINT: "},
 
     /* QUESTION #24 */
-    {"",
-        {"",
-         "",
-         "",
-         "",}
-        ,
-        ""},
+    {"What does fscanf return if all inputs match correctly?",
+        {"Number of matched inputs",   // 0 == A
+         "Nothing",                    // 1 == B
+         "Number of characters",       // 2 == C
+         "EOF",}                       // 3 == D
+        0,                             // Answer = (0 == A)
+        "HINT: "},
 
     /* QUESTION #25 */
-    {"",
-        {"",
-         "",
-         "",
-         "",}
-        ,
-        ""},
+    {"What stream does printf write to by default?",
+        {"stderr",      // 0 == A
+         "The screen",  // 1 == B
+         "stdout",      // 2 == C
+         "a file",}     // 3 == D
+        2,              // Answer = (2 == C)
+        "HINT: "},
 
     /* QUESTION #26 */
-    {"",
-        {"",
-         "",
-         "",
-         "",}
-        ,
+    {"Which function would most likely help sort input from a file?",
+        {"fprintf",          // 0 == A
+         "fscanf",           // 1 == B
+         "rewind",           // 2 == C
+         "selection_sort",}  // 3 == D
+        3,                   // Answer = (3 == D)
         ""},
 
     /* QUESTION #27 */
-    {"",
+    {"What type of file format is typically used with comma separators?",
         {"",
          "",
          "",

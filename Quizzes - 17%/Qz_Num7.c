@@ -253,25 +253,25 @@ static const Question quiz[] = {
          "rewind",           // 2 == C
          "selection_sort",}  // 3 == D
         3,                   // Answer = (3 == D)
-        ""},
+        "HINT: "},
 
     /* QUESTION #27 */
     {"What type of file format is typically used with comma separators?",
-        {"",
-         "",
-         "",
-         "",}
-        ,
-        ""},
+        {"JSON",  // 0 == A
+         "CSV",   // 1 == B
+         "TXT",   // 2 == C
+         "XML",}  // 3 == D
+        1,        // Answer = (1 == B)
+        "HINT: "},
 
     /* QUESTION #28 */
-    {"",
-        {"",
-         "",
-         "",
-         "",}
-        ,
-        ""},
+    {"What must be done before sorting file data in memory?",
+        {"Use rewind",
+         "Print each value",
+         "Parse and store in an array",
+         "Use fclose",}
+        2,
+        "HINT: "},
         
     /* QUESTION #29 */
     {"",
@@ -282,7 +282,7 @@ static const Question quiz[] = {
         ,
         ""},
 
-    /* QUESTION # */
+    /* QUESTION #30 */
     {"",
         {"",
          "",

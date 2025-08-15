@@ -274,12 +274,12 @@ static const Question quiz[] = {
         "HINT: "},
         
     /* QUESTION #29 */
-    {"",
-        {"",
-         "",
-         "",
-         "",}
-        ,
+    {"What is the output destination for fprintf by default?",
+        {"stdout",              // 0 == A
+         "stderr",              // 1 == B
+         "The specified file",  // 2 == C
+         "Console",}            // 3 == D
+        2,                      // Answer = (2 == C)
         ""},
 
     /* QUESTION #30 */

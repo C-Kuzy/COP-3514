@@ -1,6 +1,6 @@
 /*
  Author: C-Kuzy
- Description: 2025 Summer C Semester: COP-3514 Chapter 10 & 11 Quiz Bank
+ Description: 2025 Summer C Semester: COP-3514 Chapter 22 Quiz Bank
 */
 
 #include <stdio.h>

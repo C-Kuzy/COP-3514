@@ -139,9 +139,9 @@ static const Question quiz[] = {
         "HINT: "},
 
     /* QUESTION #*/
-    {"",
-        {"",
-         "",
+    {"For safe and robust string input from files (when dealing with unpredictable user input), what is a good reason to use fgets() over scanf() when reading from a file?",
+        {"", // 0 == A
+         "", // 1 == B
          "",
          ""},
         ,

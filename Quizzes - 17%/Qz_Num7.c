@@ -112,20 +112,20 @@ static const Question quiz[] = {
         "HINT: "},
 
     /* QUESTION #11 */
-    {"What happens if you forget to call fclose()?",
-        {"The system closes it automatically",
-         "Nothing happens",
-         "File remains open and data may not be saved",
-         "Compilation fails"},
-        ,
+    {"What happens if you forget to call fclose()?",     
+        {"The system closes it automatically",           // 0 == A
+         "Nothing happens",                              // 1 == B
+         "File remains open and data may not be saved",  // 2 == C
+         "Compilation fails"},                           // 3 == D
+        2,                                               // Answer = (2 == C)
         ""},
 
     /* QUESTION #12 */
-    {"",
-        {"",
-         "",
-         "",
-         ""},
+    {"Which function is ideal for writing a string to a file?",
+        {"fgets()",     // 0 == A
+         "fputs()",     // 1 == B
+         "write()",     // 2 == C
+         "fprintf()"},  // 3 == D
         ,
         ""},
 

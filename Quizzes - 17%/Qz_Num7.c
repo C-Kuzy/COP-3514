@@ -31,92 +31,92 @@ static const Question quiz[] = {
         "HINT: "},
 
     /* QUESTION #2 */
-    {"",
-        {"",   // 0 == A
-         "",   // 1 == B
-         "",   // 2 == C
-         ""},  // 3 == D
-        ,
-        ""},
+    {"When does the automatic buffer flush occur in C's file handling?",
+        {"When the buffer is full or the file is closed",  // 0 == A
+         "After each byte is read",                        // 1 == B
+         "When explicitly flushed using flush only",       // 2 == C
+         "When fclose is called only"},                    // 3 == D
+        0,                                                 // Answer = (0 == A)
+        "HINT:"},
 
     /* QUESTION #3 */
-    {"",
-        {"",
-         "",
-         "",
-         ""},
-        ,
-        ""},
+    {"What is the return type of fopen()?",
+        {"int",     // 0 == A
+         "char*",   // 1 == B
+         "void*",   // 2 == C
+         "FILE*"},  // 3 == D
+        3,          // Answer = (3 == D)
+        "HINT: "},
 
     /* QUESTION #4 */
-    {"",
-        {"",
-         "",
-         "",
-         ""},
-        ,
-        ""},
+    {"What will fopen(\"file.txt\", \"r\") return if the file doesn't exist?",
+        {"\"file.txt\"",  // 0 == A
+         "0",             // 1 == B
+         "NULL",          // 2 == C
+         "-1"},           // 3 == D
+        2,                // Answer = (2 == C)
+        "HINT: "},
 
     /* QUESTION #5 */
-    {"",
-        {"",
-         "",
-         "",
-         ""},
-        ,
-        ""},
+    {"What does the \"a\" mode fopen() do?",
+        {"Opens for writing and truncates",  // 0 == A
+         "Opens in binary mode",             // 1 == B
+         "Opens for appending",              // 2 == C
+         "Opens for reading only"},          // 3 == D
+        2,                                   // Answer = (2 == C)
+        "HINT: "},
 
     /* QUESTION #6 */
-    {"",
-        {"",
-         "",
-         "",
-         ""},
-        ,
-        ""},
+    {"What must be checked immediately after calling fopen()?",
+        {"Whether return value is NULL",    // Whether return value is NULL
+         "Return value is greater than 0",  // Return value is greater than 0
+         "File permissions",                // File permissions
+         "File contents"},                  // File contents
+        0,                                  // Answer = (0 == A)
+        "HINT: "},
 
     /* QUESTION #7 */
-    {"",
-        {"",
-         "",
-         "",
-         ""},
-        ,
-        ""},
+    {"What does the following code do?\n\n FILE *f = fopen(\"a.txt\", \"r\");",
+        {"Creates a.txt",             // 0 == A
+         "Writes to a.txt",           // 1 == B
+         "Appends to a.txt",          // 2 == C
+         "Reads file if it exists"},  // 3 == D
+        3,                            // Answer = (3 == D)
+        "HINT: "},
 
     /* QUESTION #8 */
-    {"",
-        {"",
-         "",
-         "",
-         ""},
-        ,
-        ""},
+    {"What is EOF typically used for in file operations?",
+        {"To signal an error or end-of-file",  // 0 == A
+         "To end a line",                      // 1 == B
+         "To indicate file closed",            // 2 == C
+         "To terminate strings"},              // 3 == D
+        0,                                     // Answer = (0 == A)
+        "HINT: "},
 
     /* QUESTION #9 */
-    {"",
-        {"",
-         "",
-         "",
-         ""},
-        ,
-        ""},
+    {"What is the correct signature of fgets() for reading from files?",
+        {"char* fgets(FILE*, char*, int)",  // 0 == A
+         "int fgets(char*, FILE*, int)",    // 1 == B
+         "char* fgets(char*, int, FILE*)",  // 2 == C
+         "char fgets(int, char*, FILE*)"},  // 3 == D
+        2,                                  // Answer = (2 == C)
+        "HINT: "},
         
     /* QUESTION #10 */
-    {"",
-        {"",
-         "",
-         "",
-         ""},
-        ,
-        ""},
+    {"Which function closes an opened file?",
+        {"endfile()",    // 0 == A
+         "closefile()",  // 1 == B
+         "fclose()",     // 2 == C
+         "fend()"},      // 3 == D
+        2,               // Answer = (2 == C)
+        "HINT: "},
 
     /* QUESTION #11 */
-    {"",
-        {"",
-         "",
-         "",
-         ""},
+    {"What happens if you forget to call fclose()?",
+        {"The system closes it automatically",
+         "Nothing happens",
+         "File remains open and data may not be saved",
+         "Compilation fails"},
         ,
         ""},
 

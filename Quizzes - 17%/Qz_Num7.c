@@ -184,20 +184,101 @@ static const Question quiz[] = {
         "HINT: "},
 
     /* QUESTION #19 */
-    {"",
-        {"",
-         "",
-         "",
-         ""},
-        ,
-        ""},
+    {"What is the correct usage of \%[^\\n] in fscanf?",
+        {"Matches all characters but newlines",  // 0 == A
+         "Matches any digits",                   // 1 == B
+         "Matches everything after a newline",   // 2 == C
+         "Matches whitespace"},                  // 3 == D
+        0,                                       // Answer = (0 == A)
+        "HINT: "},
 
     /* QUESTION #20 */
+    {"What format specifier should be used to read a CSV line, excluding commas?",
+        {"\%[^,]",    // 0 == A
+         "\%]^\\n",   // 1 == B
+         "\%c",       // 2 == C
+         "\%[a-z]"},  // 3 == D
+        0,            // Answer = (0 == A)
+        "HINT: "},
+
+    /* QUESTION #21 */
+    {"What does fscanf(fp, \"\%s\%d\", name, &score) expect as input?",
+        {"A single number",          // 0 == A
+         "A string and an integer",  // 1 == B
+         "Only one string",          // 2 == C
+         "A name and float"},        // 3 == D
+        1,                           // Answer = (1 == B)
+        "HINT: "},
+
+    /* QUESTION #22 */
+    {"Which is not a reason for fscanf() to return fewer items than requested?",
+        {"File is corrupted",  // 0 == A
+         "File is binary",     // 1 == B
+         "Reached EOF",        // 2 == C
+         "Matching failure"},  // 3 == D
+        1,                     // Answer = (1 == B)
+        "HINT: "},
+
+    /* QUESTION #23 */
+    {"What happens if fprintf is passed a NULL pointer?",
+        {"Creates the file automatically", // 0 == A
+         "Causes a segmentation fault",    // 1 == B
+         "Writes to stderr",               // 2 == C
+         "Writes to stdout",}              // 3 == D
+        1,                                 // Answer = (1 == B)
+        ""},
+
+    /* QUESTION #24 */
     {"",
         {"",
          "",
          "",
-         ""},
+         "",}
+        ,
+        ""},
+
+    /* QUESTION #25 */
+    {"",
+        {"",
+         "",
+         "",
+         "",}
+        ,
+        ""},
+
+    /* QUESTION #26 */
+    {"",
+        {"",
+         "",
+         "",
+         "",}
+        ,
+        ""},
+
+    /* QUESTION #27 */
+    {"",
+        {"",
+         "",
+         "",
+         "",}
+        ,
+        ""},
+
+    /* QUESTION #28 */
+    {"",
+        {"",
+         "",
+         "",
+         "",}
+        ,
+        ""},
+        
+    /* QUESTION #29 */
+    {"",
+        {"",
+         "",
+         "",
+         "",}
         ,
         ""},
 
@@ -206,19 +287,9 @@ static const Question quiz[] = {
         {"",
          "",
          "",
-         ""},
+         "",}
         ,
         ""},
-
-    /* QUESTION # */
-    {"",
-        {"",
-         "",
-         "",
-         ""},
-        ,
-        ""},
-
 };
 #define NQ ((int)(sizeof quiz / sizeof quiz[0]))
 

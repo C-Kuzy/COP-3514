@@ -280,16 +280,16 @@ static const Question quiz[] = {
          "The specified file",  // 2 == C
          "Console",}            // 3 == D
         2,                      // Answer = (2 == C)
-        ""},
+        "HINT: "},
 
     /* QUESTION #30 */
-    {"",
-        {"",
-         "",
-         "",
-         "",}
-        ,
-        ""},
+    {"What is the equivalent of printf when writing to a file?",
+        {"fprint",   // 0 == A
+         "fprintf",  // 1 == B
+         "putf",     // 2 == C
+         "fopen",}   // 3 == D
+        1,           // Answer = (1 == B)
+        "HINT: "},
 };
 #define NQ ((int)(sizeof quiz / sizeof quiz[0]))
 

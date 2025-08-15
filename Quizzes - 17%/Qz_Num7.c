@@ -162,10 +162,28 @@ static const Question quiz[] = {
          "rewind",   // 1 == B
          "restart",  // 2 == C
          "fseek"},   // 3 == D
-        ,
-        ""},
+        1,           // Answer = (1 == B)
+        "HINT: "},
 
-    /* QUESTION #*/
+    /* QUESTION #17 */
+    {"Which of the following best describes the behavior of fgets() when the destination array is too small?",
+        {"fgets will crash",                           // 0 == A
+         "fgets will truncate and stop reading",       // 1 == B
+         "fgets will automatically resize the array",  // 2 == C
+         "fgets will skip the rest of the line"},      // 3 == D
+        1,                                             // Answer = (1 == B)
+        "HINT: "},
+
+    /* QUESTION #18 */
+    {"What happens if fscanf(fp, \"\%d\%d\", &a, &b) only matches one value?",
+        {"The function returns 1",                    // 0 == A
+         "fscanf skips the line",                     // 1 == B
+         "The program crashes",                       // 2 == C
+         "The second variable is initialized to 0"},  // 3 == D
+        0,                                            // Answer = (0 == A)
+        "HINT: "},
+
+    /* QUESTION #19 */
     {"",
         {"",
          "",
@@ -174,7 +192,25 @@ static const Question quiz[] = {
         ,
         ""},
 
-    /* QUESTION #*/
+    /* QUESTION #20 */
+    {"",
+        {"",
+         "",
+         "",
+         ""},
+        ,
+        ""},
+
+    /* QUESTION # */
+    {"",
+        {"",
+         "",
+         "",
+         ""},
+        ,
+        ""},
+
+    /* QUESTION # */
     {"",
         {"",
          "",

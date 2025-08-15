@@ -313,7 +313,7 @@ int main(void) {
         qs_ordr[i] = i;
     shuffle_int_array(qs_ordr, NQ);
 
-    printf("\nWelcome to Summer C: 2025 COP-3514 Quiz #7 -- Chapter 13 Multiple Choice Review (enter Q/q to quit)\n\n");
+    printf("\nWelcome to Summer C: 2025 COP-3514 Quiz #6 -- Chapter 13 Multiple Choice Review (enter Q/q to quit)\n\n");
 
     int correct_count = 0;
     int correct_bank[NQ] = {0}; // 1 if correct, 0 if not

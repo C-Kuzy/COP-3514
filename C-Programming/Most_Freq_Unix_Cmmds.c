@@ -4,4 +4,4 @@
  Course: COP 3514 // Program Design
 */
 
-// Currently Editing for future development
+// Currently Editing for future development of this course

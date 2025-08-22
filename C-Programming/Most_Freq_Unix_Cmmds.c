@@ -8,7 +8,6 @@
 
 mkdir  ; // List the contents of the currently directory
 
-
 cd     ; // Create (make) a directory
 
 exit   ; // Change directory to the directory

@@ -10,6 +10,16 @@
 #include <unistd.h>   // used for chdir, getcwd
 
 int main() { // main function
+    
+    // terminates the current session
+    system("exit");
+    
+    // Changes specific permissions of a file/directory
+    system("chmod");
+    
+    // Copy files when necessary
+    system("cp demo_dir demo_dir")
+    
     // list files, plain and simple
     system("ls -la");
 
@@ -58,6 +68,14 @@ int main() { // main function
 
     // network check, ping once
     system("ping -c 1 google.com");
+
+    // ways to terminate sessions inside vi
+    system(":wq")
+    
+    // save changes to current file and quit in vi
+    system()
+
+    // save changes to current file without quitting in vi
 
     // done. no errors, no noise.
     return 0;

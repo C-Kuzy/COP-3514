@@ -4,20 +4,61 @@
  Course: COP 3514 --- Program Design
 */
 
-// Currently Editing 
+// unix_cmds.c — CD's cheat sheet of Unix moves, C-style
+#include <stdio.h>
+#include <stdlib.h>
+#include <unistd.h>
 
-mkdir  ; // List the contents of the currently directory
+int main() { // main function
+    // list files, plain and simple
+    system("ls -la");
 
-cd     ; // Create (make) a directory
+    // show current directory, no fluff
+    system("pwd");
 
-exit   ; // Change directory to the directory
+    // who’s logged in, just the facts
+    system("who");
 
-chmod  ; // Change the mode (permissions) of file or directory
+    // print env vars, because context matters
+    system("printenv");
 
-mv file1 file2   ;
+    // make a new folder, no drama
+    system("mkdir demo_dir");
 
-cp file1 file2   ;
+    // jump into it, like you mean it
+    chdir("demo_dir");
 
-rm file(s)       ;
+    // create a file, touch and go
+    system("touch sample.txt");
 
-/* KEYWORD TRICKS: */
+    // write something in it, quick and dirty
+    system("echo 'Hello, CD' > sample.txt");
+
+    // read it back, verify
+    system("cat sample.txt");
+
+    // move it, because structure matters
+    system("mv sample.txt ../sample_moved.txt");
+
+    // delete the folder, clean exit
+    chdir("..");
+    system("rmdir demo_dir");
+
+    // remove the file, no trace
+    system("rm sample_moved.txt");
+
+    // check disk usage, keep it lean
+    system("df -h");
+
+    // memory stats, because you care
+    system("free -h");
+
+    // process snapshot, top-down view
+    system("ps aux");
+
+    // network check, ping once
+    system("ping -c 1 google.com");
+
+    // done. no errors, no noise.
+    return 0;
+}

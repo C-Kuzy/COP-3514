@@ -5,9 +5,9 @@
 */
 
 // unix_cmds.c — CD's cheat sheet of Unix moves, C-style
-#include <stdio.h>
-#include <stdlib.h>
-#include <unistd.h>
+#include <stdio.h>    // used for printf, perror
+#include <stdlib.h>   // used for system, exit
+#include <unistd.h>   // used for chdir, getcwd
 
 int main() { // main function
     // list files, plain and simple

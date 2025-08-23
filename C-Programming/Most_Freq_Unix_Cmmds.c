@@ -70,12 +70,24 @@ int main() { // main function
     system("ping -c 1 google.com");
 
     // ways to terminate sessions inside vi
-    system(":wq")
+    system(":wq");
     
     // save changes to current file and quit in vi
-    system()
+    system(":w");
 
     // save changes to current file without quitting in vi
+    system(":w filename");
+
+    // save changes a new file name of "filename" without quitting
+    system(":q")
+
+    // quit current file. No changes from last write are made. after ":w"
+    system(":q!")
+
+    // Up and Down arrow keys
+
+        // UP: Moves to the previous history entry
+        // DOWN: Moves to the next history entry
 
     // done. no errors, no noise.
     return 0;
